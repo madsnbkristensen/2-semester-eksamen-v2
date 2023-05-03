@@ -1,0 +1,29 @@
+{
+    "roedvin": [{
+            "navn": "Denis Meyer, Pinot noir, 2019",
+            "billede": "TBA",
+            "billedtekst": "rødvin",
+            "pris": "129,50kr",
+            "beskrivelse": "Let saftig og delikat rødvin på Pinot Noir druen. Vinen er ren i stilen med masser af bær-noter",
+            "land": "Frankrig",
+            "område": "Alsace",
+            "producent": "Dennis Meyer",
+            "drue": "Pinot noir"
+        }
+    ],
+
+    "hvidvin": [{
+            "navn": "Denis Meyer, Riesling, 2 terroir 2017",
+            "billede": "TBA",
+            "billedtekst": "hvidvin",
+            "pris": "169,50",
+            "beskrivelse": "Helt klassisk tør, sprød og stringent riesling i Alsace-stil. Druerne stammer fra familiens Grand Cru-mark Habsbourg, samt en Lieut dits nabomark.",
+            "land": "Frankrig",
+            "område": "Alsace",
+            "producent": "Dennis Meyer",
+            "drue": "Riesling"
+        }
+    ]
+}
+
+
