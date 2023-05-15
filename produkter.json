@@ -1,0 +1,55 @@
+{
+    "roedvin": [
+        {
+            "navn": "Denis Meyer, Pinot noir, 2019",
+            "billede": "TBA",
+            "billedtekst": "rødvin",
+            "pris": "129,50kr",
+            "beskrivelse": "Let saftig og delikat rødvin på Pinot Noir druen. Vinen er ren i stilen med masser af bær-noter",
+            "land": "Frankrig",
+            "område": "Alsace",
+            "producent": "Dennis Meyer",
+            "drue": "Pinot noir"
+        }, 
+
+        {
+            "navn": "La Grange Tiphaine, Ad Libitum, Touraine 2020",
+            "billede": "TBA",
+            "billedtekst": "rødvin",
+            "pris": "149,50kr",
+            "beskrivelse": "Manuel høst, håndselektering af frugten, spontangæring og 5 mdrs. lagring på cement. Let filtrering og minimal stabilisering med svovl.Frisk og frugtigt udtryk af de 3 store røde Loire druer. Perfekt sommer rød. Potentiale: 3 til 5 år.  Drik den ung.",
+            "land": "Frankrig",
+            "område": "Loire, Louraine",
+            "producent": "Coralie og Damien Delecheneau",
+            "drue": "Côt (Malbec), Cabernet Franc og Gamay"
+        }
+    ],
+
+    "hvidvin": [{
+            "navn": "Denis Meyer, Riesling, 2 terroir 2017",
+            "billede": "TBA",
+            "billedtekst": "hvidvin",
+            "pris": "169,50",
+            "beskrivelse": "Helt klassisk tør, sprød og stringent riesling i Alsace-stil. Druerne stammer fra familiens Grand Cru-mark Habsbourg, samt en Lieut dits nabomark.",
+            "land": "Frankrig",
+            "område": "Alsace",
+            "producent": "Dennis Meyer",
+            "drue": "Riesling"
+        }
+    ],
+
+    "champagne": [{
+            "navn": "Champagne, Gallimard Cuvee de Reserve Blanc des Noirs Demi-sec N.V.",
+            "billede": "TBA",
+            "billedtekst": "champagne",
+            "pris": "169,50",
+            "beskrivelse": "Husets signaturvin, her i demi-sec (halvtør) versionen. Cote des Bar er den sydligste del af Champagne distriktet og især kendt for Pinot Noir, da druen her når fuld modenhed og undergrunden især består af Kimmeridge-soil (samme undergrund der er med til at skabe de helt store Bourgogne vine).Denne cuvee besidder en stor dybde og kompleksitet grundet tilsætning af 30% gammel reserve vin og 10% fra en løbende solera. En fyldig, men utrolig velbalanceret champagne. Noter af moden citron og tropiske frugter pakket ind i en cremet og fed tekstur. Masser af toast, mange lag og stor kompleksitet.",
+            "land": "Frankrig",
+            "område": "Les Riceys, Cote des Bar, Champagne",
+            "producent": "Didier & Arnaud Gallimard",
+            "drue": "100% Pinot Noir"
+        }
+    ]
+}
+
+
