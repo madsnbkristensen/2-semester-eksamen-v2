@@ -8,6 +8,7 @@
 }
 :root {
     /* VARRIBLES */ 
+    --redwine: #58181F; 
   }
   
 
@@ -71,6 +72,46 @@ margin: 0px 20px 0px 40px
     display: none;
     cursor: pointer;
 }
+
+
+
+/* wavey */ 
+
+
+
+
+.ocean { 
+  height: 90vh;
+  width: 100%;
+  -webkit-mask-image: url("/img/wineBottle.webp");
+  mask-image: url("/img/wineBottle.webp");
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  background: url(/img/wineBottle.webp);
+  background-repeat: no-repeat;
+  background-size: contain;
+
+}
+
+.wave {
+  background: url("/img/redwineWave.svg") repeat-x; 
+  background-size: cover;
+ height: 1000px;
+  animation: wave 5s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1000px;
+  }
+}
+
+
 
 
 
