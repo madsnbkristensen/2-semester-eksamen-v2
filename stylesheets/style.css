@@ -8,8 +8,13 @@
 }
 :root {
     /* VARRIBLES */ 
-    --redwine: #58181F; 
+    --redbg: #780000; 
     --background: #fdf0d5; 
+    --bluebg: #003049; 
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oleo Script', cursive;
   }
   
   body {
@@ -76,98 +81,41 @@ margin: 0px 20px 0px 40px
     align-items: center;
 }
 
+.nav-icons {
+  font-size: 1.5rem;
+
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 20px;
+}
+
 
 .hamburger {
     display: none;
     cursor: pointer;
 }
 
-/* Om os HTML Side START  */ 
-
-.omOsFirst {
-  width: 80%;
+.landingpage_text {
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin: auto;
-}
-
-.omOsTekst {
-  padding: 20px;
-  font-size: 2rem;
-  line-height: 3rem;
-  
-}
-
-.omOsTekstWrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  margin: auto;
-  margin-right: 10%;
-  background-color: white;
-  padding: 20px;
-  border-radius: 20px; 
-  border: 1px black solid;
-}
-
-.omOsTekstWrapper h2 {
-  font-size: 3rem;
-}
-
-
-/* wave animation with bottle  */ 
-
-
-.ocean { 
-  height: 90vh;
-  width: 40%;
-  -webkit-mask-image: url("/img/winebottle_1.svg");
-  mask-image: url("/img/winebottle_1.svg");
-  mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  background: url(/img/winebottle-02.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-
-  
-}
-
-.wave {
-  background: url("/img/redwineWave.svg") repeat-x; 
-  background-size: cover;
-  height: 90vh;
-  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite; 
- 
-}
-
-
-@keyframes wave {
-  0% {
-    margin-left: 0;
-  }
-  100% {
-    margin-left: -3000px;
-  }
-}
-
-.blueBox {
-  background-color: rgb(13, 13, 77);
-  position: absolute;
-  top: 60%;
+  justify-content: center;
+  height: 120vh;
   width: 100%;
-  height: 30rem;
-  align-items: center;
-  overflow: hidden;
-  z-index: -2;
+  background-image: url(/img/Frontpage-pic.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.landingpage_text h2 {
+  margin-top: 30%;
+  padding: 20px;
+  font-size: clamp(3rem, 4rem, 5rem);
+  
 }
 
-/* End of wave animation with bottle */ 
 
-
-/* Om os HTML Side SLUT */ 
 
 
 @media(max-width:768px) {
