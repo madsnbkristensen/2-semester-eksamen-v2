@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
     
 }
 :root {
@@ -195,3 +197,192 @@ margin: 0px 20px 0px 40px
         Left: 0;
     } 
 }
+
+
+
+/* Inspirations side START */
+
+
+.infographic-header {
+  width: 100%;
+  height: 120px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: #FEF1EE;
+}
+
+.wine-head-svg{
+  position: absolute;
+  left: -60%;
+  width: 140%;
+  z-index: 9;
+}
+
+.wine-sect{
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sect-red{
+  background-color: #E94A4C;
+}
+
+.sect-yellow{
+  background-color: #FDF0D5;
+}
+
+.wine-text-red-sect{
+  color: #FEF1EE;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+}
+
+.wine-text-yellow-sect{
+  color: #E94A4C;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  gap: 10px;
+}
+
+.wine-text h3,h4{
+  font-weight: 400;
+}
+
+.wine-text h3{
+  font-size: 20px;
+}
+
+.wine-text h4{
+  font-size: 18px;
+}
+
+.wine-and-glass{
+  width: 100px;
+}
+
+.wine-illu{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.grid-circle-container{
+  display: grid;
+  grid-template-columns: repeat(4, 30px);
+  grid-template-rows: repeat(3, 30px);
+  gap: 7px;
+}
+
+.grid-circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #F18F97;
+}
+
+.grid-text-yellow{
+  display: flex;
+  align-items: center;
+  color: #FEF1EE;
+  font-size: 18px;
+}
+
+.grid-text-red{
+  display: flex;
+  align-items: center;
+  color: #E94A4C;
+  font-size: 18px;
+}
+
+.grid-circle.filled-yellow{
+  background-image: linear-gradient(to right, #FDF0D5 50%, #FDF0D5 50%);
+}
+
+.grid-circle.filled-red{
+  background-image: linear-gradient(to right, #E94A4C 50%, #E94A4C 50%);
+}
+
+
+.grid-circle.half-filled-yellow{
+  background-image: linear-gradient(to right, #FDF0D5 50%, #F18F97 50%);
+}
+
+.grid-circle.half-filled-red{
+  background-image: linear-gradient(to right, #E94A4C 50%, #F18F97 50%);
+}
+
+
+@media (min-width:430px) {
+  .infographic{
+      width: 90%;
+      margin: auto;
+  }
+}
+
+@media (min-width: 768px){
+  .infographic{
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 850px;
+  }
+
+  .infographic-header{
+      grid-column: span 2;
+  }
+
+  .sect-red{
+      background-image: url(/img/wave-bg-info-01.svg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 100%;
+  }
+
+  .sect-yellow{
+      background-color: #FDF0D5;
+      background-image: url(/img/wave-bg-info-02.svg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 100%;
+  }
+
+  .info-1{
+    order: 1;
+  }
+
+   .info-2{
+    order: 3;
+  }
+
+   .info-3{
+    order: 3;
+  }
+
+   .info-4{
+    order: 4;
+  }
+
+   .info-5{
+    order: 5;
+  }
+
+   .info-6{
+    order: 6;
+  }
+
+}
+
+
+
+/* Inspirations side SLUT */
