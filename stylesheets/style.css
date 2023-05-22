@@ -14,7 +14,7 @@
   --redbg: #780000;
   --background: #fdf0d5;
   --bluebg: #003049;
-  --mediumred: #C1121F; 
+  --mediumred: #C1121F;
 }
 
 h1,
@@ -148,6 +148,7 @@ a {
   justify-content: center;
   align-items: center;
   gap: 30px;
+  margin-top: 20px;
 }
 
 .overskrift-wrapper hr {
@@ -155,19 +156,31 @@ a {
   border: solid 1px black;
 }
 
-.produkt-teaser-section{
+.produkt-teaser-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
 }
+
 .produkt-teaser-text {
   margin: auto;
   max-width: 80%;
 }
 
-.se-mere-button{
+.produkt-teaser-section-spiritus {
+  background-color: var(--redbg);
+  padding: 15px 0;
+}
+.produkt-teaser-section-spiritus h3 {
+  color: white;
+}
+.produkt-teaser-text-spiritus {
+  color: white;
+}
+
+.se-mere-button {
   background-color: var(--mediumred);
   color: white;
   border-radius: 10px;
@@ -175,7 +188,7 @@ a {
   font-size: 17px;
 }
 
-/*-------------- SLIDER --------------*/ 
+/*-------------- SLIDER --------------*/
 
 /* Slideshow container */
 .slideshow-container {
@@ -258,6 +271,56 @@ a {
   background-color: #717171;
 }
 
+/*------------- NYHEDSBREV -------------*/
+
+.nyhedsbrev-article {
+  background-color: var(--bluebg);
+}
+form {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	color: white;
+	font-size: 1rem;
+}
+
+.input-felt {
+	position: relative;
+	margin-bottom: 1rem;
+}
+
+input {
+	background-color: var(--bluebg);
+	color: white;
+	font-size: 0.9rem;
+	border: none;
+	border-bottom: 2px solid white;
+	font-size: 0.9rem;
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 0 5px;
+}
+
+input:focus {
+	outline: none;
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+button {
+	background-color: white;
+	color: var(--bluebg);
+	font-size: 0.9rem;
+	font-weight: 600;
+	width: 50%;
+	padding: 0.4rem;
+	margin: auto;
+	margin-top: 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
 
 
 
