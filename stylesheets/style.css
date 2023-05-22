@@ -744,7 +744,6 @@ h4 {
 }
 
 @media (min-width: 768px) {
-
   .infographic,
   .video-article {
     display: grid;
