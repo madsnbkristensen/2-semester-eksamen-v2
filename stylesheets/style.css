@@ -14,6 +14,7 @@
   --redbg: #780000;
   --background: #fdf0d5;
   --bluebg: #003049;
+  --mediumred: #C1121F; 
 }
 
 h1,
@@ -128,16 +129,53 @@ a {
   align-items: center;
   color: white;
   text-align: center;
+}
+
 .landingpage_text h2 {
   margin-top: 30%;
   padding: 20px;
-  font-size: clamp(3rem, 4rem, 5rem);
+  font-size: clamp(1rem, 2rem, 5rem);
 
 }
 
 .big-wave p {
   max-width: 90%;
 }
+
+.produkt-teaser-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.overskrift-wrapper hr {
+  width: 100%;
+  border: solid 1px black;
+}
+
+.produkt-teaser-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.produkt-teaser-text {
+  margin: auto;
+  max-width: 80%;
+}
+
+.se-mere-button{
+  background-color: var(--mediumred);
+  color: white;
+  border-radius: 10px;
+  padding: 7px 13px;
+  font-size: 17px;
+}
+
+/*-------------- SLIDER --------------*/ 
 
 /* Slideshow container */
 .slideshow-container {
@@ -157,6 +195,7 @@ a {
 .mySlides2 img,
 .mySlides3 img {
   width: 100%;
+  height: 212px;
 }
 
 /* Next & previous buttons */
@@ -318,7 +357,7 @@ a {
   text-align: center;
   gap: 4rem;
   max-width: 850px;
-} 
+}
 
 
 .video-article p {
@@ -468,96 +507,101 @@ h4 {
 
 @media (min-width: 768px) {
   .infographic {
-  .video-article {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-    max-width: 850px;
-    padding-bottom: 20px;
+    .video-article {
+      display: grid;
+      align-items: center;
+      grid-template-columns: 1fr 1fr;
+      max-width: 850px;
+      padding-bottom: 20px;
+    }
+
+    #myVideo {
+      height: 300px;
+      width: 500px;
+    }
+
+    .video-article-text {
+
+      text-align: start;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding-top: 15%;
+    }
+
+    .video-article p {
+      font-size: 1.5rem;
+
+    }
+
+    .video-article h2 {
+      font-size: clamp(1rem, 2rem, 3rem);
+
+
+    }
+
+    .inspir-header-mobile {
+      display: none;
+    }
+
+    .inspir-header-desktop {
+      display: block;
+    }
+
+    .video-article,
+    .infographic {
+      width: 90%;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      max-width: 850px;
+      max-width: 1000px;
+    }
+
+    .infographic-header {
+      grid-column: span 2;
+      height: 200px;
+    }
+
+    .sect-red {
+      background-image: url(/img/wave-bg-info-01.svg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    .sect-yellow {
+      background-color: #FDF0D5;
+      background-image: url(/img/wave-bg-info-02.svg);
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: 100%;
+    }
+
+    .info-1 {
+      order: 1;
+    }
+
+    .info-2 {
+      order: 3;
+    }
+
+    .info-3 {
+      order: 3;
+    }
+
+    .info-4 {
+      order: 4;
+    }
+
+    .info-5 {
+      order: 5;
+    }
+
+    .info-6 {
+      order: 6;
+    }
+
   }
-  #myVideo {
-    height: 300px;
-    width: 500px;
-  }
-  .video-article-text {
-  
-    text-align: start;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-top: 15%;
-  }
-  .video-article p {
-    font-size: 1.5rem;
-   
-  }
-  .video-article h2 {
-    font-size: clamp(1rem, 2rem, 3rem);
-    
-    
-  }
-  
-  .inspir-header-mobile {
-  display: none;
 }
-.inspir-header-desktop {
-  display: block;
-}
-
-  .video-article, .infographic {
-    width: 90%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    max-width: 850px;
-    max-width: 1000px;
-  }
-
-  .infographic-header {
-    grid-column: span 2;
-    height: 200px;
-  }
-
-  .sect-red {
-    background-image: url(/img/wave-bg-info-01.svg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-
-  .sect-yellow {
-    background-color: #FDF0D5;
-    background-image: url(/img/wave-bg-info-02.svg);
-    background-position: bottom;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-
-  .info-1 {
-    order: 1;
-  }
-
-  .info-2 {
-    order: 3;
-  }
-
-  .info-3 {
-    order: 3;
-  }
-
-  .info-4 {
-    order: 4;
-  }
-
-  .info-5 {
-    order: 5;
-  }
-
-  .info-6 {
-    order: 6;
-  }
-
-}
-
-/* Inspirations side SLUT */
