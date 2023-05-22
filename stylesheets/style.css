@@ -146,13 +146,7 @@ footer {
 
 
 
-footer li,
-h6 {
-  color: white;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 100;
-  list-style: none;
-}
+
 
 .big-wave p {
   max-width: 90%;
@@ -403,7 +397,7 @@ footer h6 {
 }
 
 footer li {
-  line-height: 1.7rem;
+  line-height: 2rem;
   width: 70%;
   white-space: nowrap;
   font-size: clamp(.3rem, .8rem, 1rem);
@@ -448,11 +442,7 @@ footer {
 .aabningstider-footer {
   color: white;
   font-size: 0.9rem;
-  padding: 0 5px;
-  height: 100%;
 
-  
-  
 }
 
 footer article {
@@ -460,7 +450,7 @@ footer article {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
- 
+ padding: 20px 0px
 }
 
 footer li,
@@ -470,7 +460,6 @@ h6 {
   font-weight: 100;
   list-style: none;
 }
-
 
 
 footer h6 {
@@ -509,7 +498,10 @@ footer h6 {
   padding: 10px 20px 30px 20px;
 
 }
+/*end of footer design */ 
 
+
+/* Burger menu */ 
 @media(max-width:768px) {
 
   .hamburger {
@@ -812,7 +804,7 @@ h4 {
   footer article {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    
+    padding-top: 30px;
    
   }
 
@@ -859,7 +851,7 @@ h4 {
   }
 
   footer li {
-    font-size: clamp(.3rem, .5rem, 1rem);
+    font-size: clamp(.9rem, 1.2rem, 2rem);
   
   }
 
