@@ -7,8 +7,52 @@
     <title>Document</title>
     <link rel="stylesheet" href="stylesheets/style.css">
 </head>
+<header>
+    <nav class="navbar">
+        <!--LOGO-->
+        <a href="index.html"><img src="#" class="logo"></a>
+
+        <!--NAV MENU -->
+        <div class="header-wrapper">
+        <ul class="nav-menu">
+            <li class="nav-item"> <a href="#" class="nav-link">Produkter</a> </li>
+            <li class="nav-item"> <a href="#" class="nav-link">Inspiration</a> </li>
+            <li class="nav-item"> <a href="#" class="nav-link">Om os</a> </li>
+        </ul>
+      
+            <i class="fa-solid fa-basket-shopping nav-icons"></i>
+            <i class="fa-solid fa-magnifying-glass nav-icons"></i>           
+            
+            <!--BURGER MENU -->
+       
+    
+        <label class="hamburger">
+            <input class="dropdown" type="checkbox">
+            <svg viewBox="0 0 32 32">
+                <path class="line line-top-bottom"
+                    d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                </path>
+                <path class="line" d="M7 16 27 16"></path>
+            </svg>
+        </label>
+    </div>
+    </nav>
+</header>
 <body>
     <main>
+        <article class="video-article">
+            <h2 class="inspir-header-mobile">I tvivl om hvilken vin du skal vælge?</h2>
+            <video id="myVideo" width="100%" controls>
+                <source src="/video/vinguide-vid.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <section class="video-article-text">
+              <h2 class="inspir-header-desktop">I tvivl om hvilken vin du skal vælge?</h2>
+              <p>Har du svært ved at finde den rigtige vin? bare rolig, du er ikke den eneste.
+                Følg vores vinguide for hurtigt at få et overblik over hvilken slags 
+                vin du skal vælge til begivenheden. </p>
+            </section>
+        </article>
         <article class="infographic">
             <div class="infographic-header">
                     <img class="wine-head-svg" src="/img/wine-header.svg" alt="">
