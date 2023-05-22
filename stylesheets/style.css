@@ -25,13 +25,14 @@ h6 {
   font-family: 'Oleo Script', cursive;
 }
 
+p {
+  font-family: 'Raleway', sans-serif;
+}
+
+
 body {
 
   background-color: var(--background);
-}
-
-p {
-  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -125,10 +126,65 @@ a {
 
 }
 
+ footer {
+  background-color: var(--bluebg);
+ } 
+ footer article {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+ }
+ footer li, h6 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  list-style: none;
+ }
 
+ footer h6 {
+  font-size: 1.5rem;
+  padding: 10px 0px;
+ }
 
+ footer li {
+  font-size: .9rem;
+  line-height: 1.7rem;
+ }
 
+ .div-line-one {
+  width: 100%;
+ }
+ .div-line-two {
+  width: 200%;
+ }
+ .footer-wrapper-mobile {
+  display: flex;
+  flex-direction: column;
+ }
+ .aabningstider-footer {
+  width: 100%;
+  height: 100%;
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ justify-content: start;
+ }
 
+ .soMe-footer {
+  width: 200%;
+  text-align: center;
+ }
+ .soMe-footer h6 {
+  display: none;
+ }
+
+ .soMe {
+font-size: 2.4rem;
+padding: 10px 20px 30px 20px;
+
+ }
 
 @media(max-width:768px) {
 
@@ -461,8 +517,60 @@ h4 {
     order: 6;
   }
 
-}
-
-
-
 /* Inspirations side SLUT */
+
+
+/*footer design */ 
+
+
+  footer article {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+  .footer-wrapper-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  footer hr {
+    display: none;
+  }
+  .soMe-footer {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 100%;
+    align-items: center;
+    gap: 20px;
+    
+
+  }
+  .soMe {
+    padding: 0px;
+  }
+
+  .kontakt-footer{
+    order: 1;
+  }
+
+  .soMe-footer{
+    order: 2;
+  }
+
+  .adresse-footer{
+    order: 3;
+  }
+
+
+  .soMe-footer h6 {
+    display: block;
+  }
+ 
+  footer li {
+    line-height: 2rem;
+  }
+  
+
+
+
+
+}
