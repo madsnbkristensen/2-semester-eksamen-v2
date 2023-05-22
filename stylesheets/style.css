@@ -358,9 +358,7 @@ footer {
  .div-line-one {
   width: 100%;
  }
- .div-line-two {
-  width: 250%;
- }
+
  .footer-wrapper-mobile {
   display: flex;
   flex-direction: column;
@@ -374,8 +372,10 @@ footer {
  }
 
  .soMe-footer {
-  width: 250%;
+  width: 200%;
+  overflow: hidden;
   text-align: center;
+  border-top: 1px solid white;
  }
  .soMe-footer h6 {
   display: none;
@@ -702,6 +702,7 @@ h4 {
     width: 100%;
     align-items: center;
     gap: 20px;
+    border: 0px;
     
 
   }
