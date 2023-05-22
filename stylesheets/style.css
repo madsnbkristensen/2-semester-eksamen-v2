@@ -144,13 +144,7 @@ footer {
   background-color: var(--bluebg);
 }
 
-footer article {
-  width: 90%;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
+
 
 footer li,
 h6 {
@@ -409,35 +403,15 @@ footer h6 {
 }
 
 footer li {
-  font-size: .9rem;
   line-height: 1.7rem;
+  width: 70%;
+  white-space: nowrap;
+  font-size: clamp(.3rem, .8rem, 1rem);
+  
 }
 
 .div-line-one {
   width: 100%;
-}
-
-.div-line-two {
-  width: 200%;
-}
-
-.footer-wrapper-mobile {
-  display: flex;
-  flex-direction: column;
-}
-
-.aabningstider-footer {
-  width: 100%;
-  background-color: var(--bluebg);
-  color: white;
-  font-size: 0.9rem;
-  border: none;
-  border-bottom: 2px solid white;
-  font-size: 0.9rem;
-  width: 100%;
-  border-radius: 5px;
-  margin-top: 10px;
-  padding: 0 5px;
 }
 
 input:focus {
@@ -466,12 +440,27 @@ footer {
   background-color: var(--bluebg);
 }
 
+.footer-wrapper-mobile {
+  display: flex;
+  flex-direction: column;
+}
+
+.aabningstider-footer {
+  color: white;
+  font-size: 0.9rem;
+  padding: 0 5px;
+  height: 100%;
+
+  
+  
+}
+
 footer article {
   width: 90%;
   margin: auto;
   display: flex;
   justify-content: space-evenly;
-  gap: 20px;
+ 
 }
 
 footer li,
@@ -489,10 +478,7 @@ footer h6 {
   padding: 10px 0px;
 }
 
-footer li {
-  font-size: 1rem;
-  line-height: 2rem;
-}
+
 
 .div-line-one {
   width: 100%;
@@ -503,23 +489,16 @@ footer li {
   flex-direction: column;
 }
 
-.aabningstider-footer {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: start;
-}
+
 
 .soMe-footer {
   width: 200%;
   overflow: hidden;
   text-align: center;
+  border-top: 1px white solid;
 }
 
-.soMe-footer h6 {
-  border-top: 1px solid white;
-}
+
 
 .soMe-footer h6 {
   display: none;
@@ -833,6 +812,8 @@ h4 {
   footer article {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    
+   
   }
 
   .footer-wrapper-mobile {
@@ -851,8 +832,7 @@ h4 {
     width: 100%;
     align-items: center;
     gap: 20px;
-
-    border: 0px;
+    border: hidden;
 
 
   }
@@ -879,7 +859,8 @@ h4 {
   }
 
   footer li {
-    line-height: 2rem;
+    font-size: clamp(.3rem, .5rem, 1rem);
+  
   }
 
   .video-article h2 {
