@@ -128,6 +128,11 @@ a {
   align-items: center;
   color: white;
   text-align: center;
+.landingpage_text h2 {
+  margin-top: 30%;
+  padding: 20px;
+  font-size: clamp(3rem, 4rem, 5rem);
+
 }
 
 .big-wave p {
@@ -218,6 +223,8 @@ a {
 
 
 
+
+
 @media(max-width:768px) {
 
   .hamburger {
@@ -301,6 +308,31 @@ a {
 
 /* Inspirations side START */
 
+
+.video-article {
+  width: 90%;
+  margin: auto;
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 4rem;
+  max-width: 850px;
+} 
+
+
+.video-article p {
+  font-size: clamp(1rem, 1.5rem, 3rem);
+  margin-bottom: 3rem;
+}
+
+.video-article h2 {
+  font-size: clamp(1rem, 3rem, 5rem);
+}
+
+.inspir-header-desktop {
+  display: none;
+}
 
 .infographic-header {
   width: 100%;
@@ -428,19 +460,63 @@ h4 {
     width: 90%;
     margin: auto;
   }
+
+
+
+
 }
 
 @media (min-width: 768px) {
   .infographic {
+  .video-article {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    max-width: 850px;
+    padding-bottom: 20px;
+  }
+  #myVideo {
+    height: 300px;
+    width: 500px;
+  }
+  .video-article-text {
+  
+    text-align: start;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 15%;
+  }
+  .video-article p {
+    font-size: 1.5rem;
+   
+  }
+  .video-article h2 {
+    font-size: clamp(1rem, 2rem, 3rem);
+    
+    
+  }
+  
+  .inspir-header-mobile {
+  display: none;
+}
+.inspir-header-desktop {
+  display: block;
+}
+
+  .video-article, .infographic {
     width: 90%;
     margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     max-width: 850px;
+    max-width: 1000px;
   }
 
   .infographic-header {
     grid-column: span 2;
+    height: 200px;
   }
 
   .sect-red {
