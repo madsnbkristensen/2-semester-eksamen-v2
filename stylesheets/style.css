@@ -424,6 +424,78 @@ footer li {
 
 .aabningstider-footer {
   width: 100%;
+input {
+	background-color: var(--bluebg);
+	color: white;
+	font-size: 0.9rem;
+	border: none;
+	border-bottom: 2px solid white;
+	font-size: 0.9rem;
+	width: 100%;
+	border-radius: 5px;
+	margin-top: 10px;
+	padding: 0 5px;
+}
+
+input:focus {
+	outline: none;
+	color: white;
+	border-bottom: 2px solid white;
+}
+
+button {
+	background-color: white;
+	color: var(--bluebg);
+	font-size: 0.9rem;
+	font-weight: 600;
+	width: 50%;
+	padding: 0.4rem;
+	margin: auto;
+	margin-top: 1rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+/*Footer design */ 
+
+footer {
+  background-color: var(--bluebg);
+ } 
+ footer article {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+ }
+ footer li, h6 {
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 100;
+  list-style: none;
+ }
+
+
+
+ footer h6 {
+  font-size: 1.5rem;
+  padding: 10px 0px;
+ }
+
+ footer li {
+  font-size: 1rem;
+  line-height: 2rem;
+ }
+
+ .div-line-one {
+  width: 100%;
+ }
+
+ .footer-wrapper-mobile {
+  display: flex;
+  flex-direction: column;
+ }
+ .aabningstider-footer {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -433,10 +505,14 @@ footer li {
 
 .soMe-footer {
   width: 200%;
+  overflow: hidden;
   text-align: center;
 }
 
 .soMe-footer h6 {
+  border-top: 1px solid white;
+ }
+ .soMe-footer h6 {
   display: none;
 }
 
@@ -767,6 +843,8 @@ h4 {
     align-items: center;
     gap: 20px;
 
+    border: 0px;
+    
 
   }
 
