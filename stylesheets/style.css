@@ -139,16 +139,17 @@ header.sticky .line {
   justify-content: center;
   height: 40vh;
   width: 100%;
-  background-image: url(/img/Frontpage-pic.jpg);
+  background-image: url(/img/toby\ lol.png);
   background-size: cover;
-  background-position: center;
+  background-position: -25px;
   margin-top: -52px;
+
 }
 
 .landingpage_text h2 {
   margin-top: 30%;
   padding: 20px;
-  font-size: clamp(1rem, 3rem, 5rem);
+  font-size: clamp(1rem, 2rem, 5rem);
   color: white;
 }
 
