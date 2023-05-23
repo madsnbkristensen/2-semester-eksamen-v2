@@ -1009,10 +1009,18 @@ width: 100%;
 
   .info-3 {
     order: 3;
+    background-image: url(/img/wave-bg-info-reverse-02.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   .info-4 {
     order: 4;
+    background-image: url(/img/wave-bg-info-reverse-01.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   .info-5 {
