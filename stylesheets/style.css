@@ -116,7 +116,7 @@ a {
 }
 
 header .logo {
-  height: 30px;
+  height: 45px;
 }
 
 header .logo-2 {
@@ -266,7 +266,11 @@ footer {
 .mySlides2 img,
 .mySlides3 img {
   width: 100%;
+  height: 212px;
   max-width: 318px;
+  display: block;
+  margin: 0 auto;
+  clip-path: inset(0% 10% 0% 10%);
 }
 
 /* Next & previous buttons */
@@ -290,6 +294,11 @@ footer {
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
+  margin-right: -15px;
+}
+.prev {
+  left: 0;
+  margin-left: -15px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -461,25 +470,6 @@ footer li {
   width: 100%;
 }
 
-input:focus {
-  outline: none;
-  color: white;
-  border-bottom: 2px solid white;
-}
-
-button {
-  background-color: white;
-  color: var(--bluebg);
-  font-size: 0.9rem;
-  font-weight: 600;
-  width: 50%;
-  padding: 0.4rem;
-  margin: auto;
-  margin-top: 1rem;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
 
 /*Footer design */
 
