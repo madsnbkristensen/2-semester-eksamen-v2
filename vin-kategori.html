@@ -17,13 +17,11 @@
     <meta property="og:locale" content="da_dk">
     <meta name="theme-color" content="TBA">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/60e57c91d1.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap"
-        rel="stylesheet">
-        <script src="https://kit.fontawesome.com/60e57c91d1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
 
 </head>
 
@@ -34,31 +32,35 @@
             <a href="index.html"><img src="#" class="logo"></a>
 
             <!--NAV MENU -->
+            <div class="header-wrapper">
+                <ul class="nav-menu">
+                    <li class="nav-item"> <a href="#" class="nav-link">Produkter</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">Inspiration</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">Om os</a> </li>
+                </ul>
 
-            <ul class="nav-menu">
-                <li class="nav-item"> <a href="#" class="nav-link">Produkter</a> </li>
-                <li class="nav-item"> <a href="#" class="nav-link">Inspiration</a> </li>
-                <li class="nav-item"> <a href="#" class="nav-link">Om os</a> </li>
-                </a>
-            </ul>
-            <!--BURGER MENU -->
+                <i class="fa-solid fa-basket-shopping nav-icons"></i>
+                <i class="fa-solid fa-magnifying-glass nav-icons"></i>
 
-            <label class="hamburger">
-                <input class="dropdown" type="checkbox">
-                <svg viewBox="0 0 32 32">
-                    <path class="line line-top-bottom"
-                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-                    </path>
-                    <path class="line" d="M7 16 27 16"></path>
-                </svg>
-            </label>
+                <!--BURGER MENU -->
+
+
+                <label class="hamburger">
+                    <input class="dropdown" type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </div>
         </nav>
     </header>
-
     <body>
         <main class="vinflaske-bg">
             <section class="roodvin-kategori produkter">
-                <a href="#">  <h2 class="rødvin-header">Rødvin</h2>
+                <a href="#">  <h2 class="roodvin-header">Rødvin</h2>
                 </a>
             </section>
             <section class="hvidvin-kategori produkter">
@@ -74,11 +76,6 @@
                 </a>
             </section>
         </main>
-
-
-        <script src="/scripts/burgermenu.js"></script>
-
-
         <footer>
             <article>
                 <div class="footer-wrapper-mobile">
@@ -120,6 +117,8 @@
                 </section>
             </article>
         </footer>
+        <script src="/scripts/headerscroll.js"></script>
+        <script src="/scripts/burgermenu.js"></script>
     </body>
 
 </html>
