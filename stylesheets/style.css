@@ -225,6 +225,14 @@ footer {
   max-width: 400px;
 }
 
+.produkt-teaser-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .produkt-teaser-section-spiritus {
   background-color: var(--redbg);
   padding: 15px 0;
@@ -262,6 +270,14 @@ footer {
   display: none;
 }
 
+.desktop-img-container {
+  display: none;
+}
+
+.desktop-img-container img {
+  clip-path: inset(0% 10% 0% 10%);
+}
+
 .mySlides img,
 .mySlides2 img,
 .mySlides3 img {
@@ -290,12 +306,18 @@ footer {
   user-select: none;
 }
 
+.arrow-black {
+  color: black;
+  font-size: 25px;
+}
+
 /* Position the "next button" to the right */
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
   margin-right: -15px;
 }
+
 .prev {
   left: 0;
   margin-left: -15px;
@@ -353,7 +375,14 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 15px;
+  gap: 30px;
+}
+
+.nyhedsbrev-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
 
 .nyhedsbrev-section h2 {
@@ -417,14 +446,20 @@ footer {
 }
 
 /* inspirations teaser */
+.ins-teaser-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
 .ins-teaser-article {
   background-color: var(--mediumred);
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  gap: 50px;
   overflow: hidden;
   height: 60vh;
 }
@@ -860,7 +895,8 @@ h4 {
 
 .filter-wrapper {
   display: flex;
-  flex-wrap: wrap; /* Allow flex items to wrap to a new line */
+  flex-wrap: wrap;
+  /* Allow flex items to wrap to a new line */
 }
 
 .list-wrapper {
@@ -892,8 +928,10 @@ h4 {
   display: grid;
   border-radius: 5px;
   overflow: hidden;
-  max-height: 0; /* Set initial height to 0 */
-  transition: max-height 0.4s; /* Animate the height transition */
+  max-height: 0;
+  /* Set initial height to 0 */
+  transition: max-height 0.4s;
+  /* Animate the height transition */
 }
 
 .list-item {
@@ -913,11 +951,12 @@ h4 {
   color: #fff;
 }
 
-.toggle:focus ~ .list {
-  max-height: 300px; /* Set the maximum height for unfolding */
+.toggle:focus~.list {
+  max-height: 300px;
+  /* Set the maximum height for unfolding */
 }
 
-.toggle:focus ~ .list .list-item {
+.toggle:focus~.list .list-item {
   transform: translateX(0);
 }
 
@@ -1134,10 +1173,11 @@ h4 {
   .mySlides3 img {
     width: 100%;
     max-width: 700px;
+    height: 300px;
   }
 
   .produkt-teaser-section {
-    height: 80vh;
+    height: 70vh;
     gap: 40px;
   }
 
@@ -1170,7 +1210,7 @@ h4 {
 
   /*-------- nyhedsbrev --------*/
   .nyhedsbrev-section {
-    max-width: 500px;
+    max-width: 470px;
     gap: 50px;
   }
 
@@ -1187,12 +1227,14 @@ h4 {
   }
 
   /*-------- inspirations teaser --------*/
+
   .ins-teaser-article h2 {
     font-size: 34px;
   }
 
   .ins-teaser-article p {
     font-size: 22px;
+    max-width: 470px;
   }
 
   .ins-teaser-article a {
@@ -1202,6 +1244,178 @@ h4 {
 
   .wine-bottle-wrapper img {
     width: 85px;
+  }
+
+  .landingpage_text {
+    background-position: 35px;
+  }
+
+  .landingpage_text h2 {
+    font-size: 40px;
+    margin-top: 20%;
+  }
+
+  .big-wave {
+    height: 20vh;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .slideshow-container {
+    display: none;
+  }
+
+  .desktop-img-container {
+    display: flex;
+    gap: 0px;
+  }
+
+  .desktop-img-container img {
+    width: 310px;
+  }
+
+  .dot,
+  .dot2,
+  .dot3 {
+    display: none;
+  }
+
+  .produkt-teaser-section {
+    height: 50vh;
+    gap: 0px;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+  }
+
+  .se-mere-button {
+    margin-top: 300px;
+    margin-right: -270px;
+  }
+
+  .se-mere-button-2 {
+    margin-right: 0px;
+    margin-left: -270px;
+  }
+
+  .produkt-teaser-section-spiritus {
+    flex-direction: row;
+  }
+
+  .produkt-teaser-text {
+    font-size: 24px;
+    margin: 0 auto;
+  }
+
+  .produkt-teaser-article h3 {
+    font-size: 40px;
+  }
+
+  .produkt-teaser-article h2 {
+    font-size: 50px;
+  }
+
+  .se-mere-button {
+    font-size: 24px;
+  }
+
+  /*-------- big wawe --------*/
+  .big-wave p {
+    max-width: 460px;
+    font-size: 22px;
+  }
+
+  /*-------- nyhedsbrev --------*/
+  .nyhedsbrev-section {
+    max-width: 100%;
+    gap: 100px;
+    flex-direction: row;
+  }
+
+  .nyhedsbrev-section h2 {
+    font-size: 40px;
+  }
+
+  .nyhedsbrev-section p {
+    font-size: 24px;
+  }
+
+  .nyhedsbrev-text-wrapper {
+    max-width: 500px;
+    gap: 70px;
+  }
+
+  .tilmeld-wrapper input {
+    background-color: white;
+    color: var(--bluebg);
+    border-bottom: 2px solid var(--bluebg);
+    font-size: 1.2rem;
+  }
+
+  .tilmeld-wrapper input:focus {
+    color: var(--bluebg);
+    border-bottom: 2px solid var(--bluebg);
+  }
+
+  .tilmeld-wrapper {
+    background-color: white;
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+
+  .tilmeld-wrapper form {
+    color: var(--bluebg);
+    font-size: 20px;
+    gap: 40px;
+  }
+
+  .tilmeld-wrapper button {
+    font-size: 22px;
+    background-color: var(--bluebg);
+    color: white;
+  }
+
+  /*-------- inspirations teaser --------*/
+
+  .ins-teaser-article {
+    background-image: url(/img/ins-teaser-dekstop-foto.webp);
+  }
+
+  .ins-teaser-content-wrapper {
+    background-color: var(--mediumred);
+    width: 600px;
+    align-items: flex-start;
+    padding-left: 85px;
+    gap: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: 80px;
+  }
+
+  .wine-bottle-wrapper {
+    margin-left: 190px;
+    margin-top: -40px;
+  }
+
+  .wine-bottle-wrapper img {
+    width: 45px;
+    margin-bottom: 10px;
+  }
+
+  .landingpage_text {
+    background-position: 35px;
+  }
+
+  .landingpage_text h2 {
+    font-size: 40px;
+    margin-top: 20%;
+  }
+
+  .big-wave {
+    height: 20vh;
   }
 
 }

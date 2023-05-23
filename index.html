@@ -77,11 +77,14 @@
                 <hr>
             </div>
             <section class="produkt-teaser-section produkt-teaser-section-vin">
-                <h3>Vin</h3>
-                <p class="produkt-teaser-text produkt-teaser-text-vin">
-                    Se vores udvalg af vine. Vi har alt fra rødvin til hedvin. Vi har også et udvalg af egne importerede
-                    vine.
-                </p>
+                <div class="produkt-teaser-text-container">
+                    <h3>Vin</h3>
+                    <p class="produkt-teaser-text produkt-teaser-text-vin">
+                        Se vores udvalg af vine. Vi har alt fra rødvin til hedvin. Vi har også et udvalg af egne
+                        importerede
+                        vine.
+                    </p>
+                </div>
                 <!-- Slideshow container -->
                 <div class="slideshow-container">
 
@@ -102,10 +105,14 @@
                     </div>
 
                     <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides(-1)"><i class="ph-caret-left"></i></a>
-                    <a class="next" onclick="plusSlides(1)"><i class="ph-caret-right"></i></a>
+                    <a class="prev arrow-black" onclick="plusSlides(-1)"><i class="ph-caret-left"></i></a>
+                    <a class="next arrow-black" onclick="plusSlides(1)"><i class="ph-caret-right"></i></a>
                 </div>
-
+                <div class="desktop-img-container">
+                    <img src="./img/rødvin_finca.webp" alt="">
+                    <img src="./img/rose_perlesauvage.webp" alt="">
+                    <img src="./img/hvidvin_rullyCru.webp" alt="">
+                </div>
                 <!-- The dots/circles -->
                 <div>
                     <span class="dot" onclick="currentSlide(1)"></span>
@@ -115,9 +122,12 @@
                 <a class="se-mere-button" href="#">Se mere</a>
             </section>
             <section class="produkt-teaser-section produkt-teaser-section-spiritus">
-                <h3>Spiritus</h3>
-                <p class="produkt-teaser-text produkt-teaser-text-spiritus">Se vores udvalg af spiritus. Vi har alt fra
-                    gin til whisky. Så tøv ikke, vi har spiritus til alle begivenheder.</p>
+                <div class="produkt-teaser-text-container">
+                    <h3>Spiritus</h3>
+                    <p class="produkt-teaser-text produkt-teaser-text-spiritus">Se vores udvalg af spiritus. Vi har alt
+                        fra
+                        gin til whisky. Så tøv ikke, vi har spiritus til alle begivenheder.</p>
+                </div>
                 <!-- Slideshow container -->
                 <div class="slideshow-container">
 
@@ -141,6 +151,11 @@
                     <a class="prev" onclick="plusSlides2(-1)"><i class="ph-caret-left"></i></a>
                     <a class="next" onclick="plusSlides2(1)"><i class="ph-caret-right"></i></a>
                 </div>
+                <div class="desktop-img-container">
+                    <img src="./img/rødvin_finca.webp" alt="">
+                    <img src="./img/rose_perlesauvage.webp" alt="">
+                    <img src="./img/hvidvin_rullyCru.webp" alt="">
+                </div>
 
                 <!-- The dots/circles -->
                 <div>
@@ -148,13 +163,15 @@
                     <span class="dot2" onclick="currentSlide2(2)"></span>
                     <span class="dot2" onclick="currentSlide2(3)"></span>
                 </div>
-                <a class="se-mere-button" href="#">Se mere</a>
+                <a class="se-mere-button se-mere-button-2" href="#">Se mere</a>
 
             </section>
             <section class="produkt-teaser-section produkt-teaser-section-oel">
-                <h3>Øl</h3>
-                <p class="produkt-teaser-text produkt-teaser-text-oel">Se vores udvalg af special øl. Vi har flere
-                    forskellige muligheder til enhver smag.</p>
+                <div class="produkt-teaser-text-container">
+                    <h3>Øl</h3>
+                    <p class="produkt-teaser-text produkt-teaser-text-oel">Se vores udvalg af special øl. Vi har flere
+                        forskellige muligheder til enhver smag.</p>
+                </div>
 
                 <!-- Slideshow container -->
                 <div class="slideshow-container">
@@ -176,8 +193,13 @@
                     </div>
 
                     <!-- Next and previous buttons -->
-                    <a class="prev" onclick="plusSlides3(-1)"><i class="ph-caret-left"></i></a>
-                    <a class="next" onclick="plusSlides3(1)"><i class="ph-caret-right"></i></a>
+                    <a class="prev arrow-black" onclick="plusSlides3(-1)"><i class="ph-caret-left"></i></a>
+                    <a class="next arrow-black" onclick="plusSlides3(1)"><i class="ph-caret-right"></i></a>
+                </div>
+                <div class="desktop-img-container">
+                    <img src="./img/rødvin_finca.webp" alt="">
+                    <img src="./img/rose_perlesauvage.webp" alt="">
+                    <img src="./img/hvidvin_rullyCru.webp" alt="">
                 </div>
 
                 <!-- The dots/circles -->
@@ -191,10 +213,12 @@
         </article>
         <article class="nyhedsbrev-article">
             <section class="nyhedsbrev-section">
-                <h2 class="nyhedsbrev-text">Tilmeld dig vores nyhedsbrev!</h2>
-                <img src="./img/paperplane.svg" alt="papairsfly">
-                <p class="nyhedsbrev-text">Du er blandt de første, der får besked om de nyeste tilbud i Aarhus
-                    Vinhandel. Skynd dig og meld dig ind, og gå ikke glip af chancen for et godt tilbud! </p>
+                <div class="nyhedsbrev-text-wrapper">
+                    <h2 class="nyhedsbrev-text">Tilmeld dig vores nyhedsbrev!</h2>
+                    <img src="./img/paperplane.svg" alt="papairsfly">
+                    <p class="nyhedsbrev-text">Du er blandt de første, der får besked om de nyeste tilbud i Aarhus
+                        Vinhandel. Skynd dig og meld dig ind, og gå ikke glip af chancen for et godt tilbud! </p>
+                </div>
                 <div class="tilmeld-wrapper">
                     <form action="">
                         <div class="input-felt input-navn">
@@ -211,16 +235,18 @@
             </section>
         </article>
         <article class="ins-teaser-article">
-            <h2>I tvivl om vinen er den rigtige?</h2>
-            <p>
-                Få hjælp til at finde det helt rigtige for dig med vores vinguide på vores inspirationsside
-            </p>
-            <a href="#">Se mere</a>
-            <div class="wine-bottle-wrapper">
-                <img src="./img/vinflaske-moerk-roed.svg" alt="vinflaske">
-                <img src="./img/vinflaske-lys-roed.svg" alt="vinflaske">
-                <img src="./img/vinflaske-moerk-roed.svg" alt="vinflaske">
-                <img src="./img/vinflaske-lys-roed.svg" alt="vinflaske">
+            <div class="ins-teaser-content-wrapper">
+                <h2>I tvivl om vinen er den rigtige?</h2>
+                <p>
+                    Få hjælp til at finde det helt rigtige for dig med vores vinguide på vores inspirationsside
+                </p>
+                <a href="#">Se mere</a>
+                <div class="wine-bottle-wrapper">
+                    <img src="./img/vinflaske-moerk-roed.svg" alt="vinflaske">
+                    <img src="./img/vinflaske-lys-roed.svg" alt="vinflaske">
+                    <img src="./img/vinflaske-moerk-roed.svg" alt="vinflaske">
+                    <img src="./img/vinflaske-lys-roed.svg" alt="vinflaske">
+                </div>
             </div>
         </article>
 
