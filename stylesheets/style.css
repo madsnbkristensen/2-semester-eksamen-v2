@@ -772,7 +772,6 @@ h4 {
 .produkter {
   height: 150px;
   width: 80%;
-  background-color: white;
   margin: 10px auto;
   display: flex;
   background-size: cover;
@@ -806,6 +805,9 @@ h4 {
   background-size: contain;
   background-position: right;
 }
+.vinflaske-bg a {
+width: 100%;
+}
 
 .produkter h2 {
   font-family: 'Raleway', sans-serif;
@@ -817,6 +819,7 @@ h4 {
   padding: 20px;
 
 
+  
 }
 
 .hvidvin-header,
@@ -1082,8 +1085,5 @@ h4 {
   .wine-bottle-wrapper img {
     width: 85px;
   }
-  /*-------- header --------*/
-  header {
-    height: ;
-  }
+  
 }
