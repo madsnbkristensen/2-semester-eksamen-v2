@@ -25,61 +25,83 @@
     <script src="/scripts/filterfunction.js"></script>
 
 </head>
-    <header>
-        <nav class="navbar">
-            <!--LOGO-->
-            <a href="index.html"><img src="#" class="logo"></a>
+<header>
+    <nav class="navbar">
+        <!--LOGO-->
+        <a href="index.html"><img src="#" class="logo"></a>
 
-            <!--NAV MENU -->
-            <div class="header-wrapper">
-                <ul class="nav-menu">
-                    <li class="nav-item"> <a href="#" class="nav-link">Produkter</a> </li>
-                    <li class="nav-item"> <a href="#" class="nav-link">Inspiration</a> </li>
-                    <li class="nav-item"> <a href="#" class="nav-link">Om os</a> </li>
-                </ul>
+        <!--NAV MENU -->
+        <div class="header-wrapper">
+            <ul class="nav-menu">
+                <li class="nav-item"> <a href="#" class="nav-link">Produkter</a> </li>
+                <li class="nav-item"> <a href="#" class="nav-link">Inspiration</a> </li>
+                <li class="nav-item"> <a href="#" class="nav-link">Om os</a> </li>
+            </ul>
 
-                <i class="fa-solid fa-basket-shopping nav-icons"></i>
-                <i class="fa-solid fa-magnifying-glass nav-icons"></i>
+            <i class="fa-solid fa-basket-shopping nav-icons"></i>
+            <i class="fa-solid fa-magnifying-glass nav-icons"></i>
 
-                <!--BURGER MENU -->
+            <!--BURGER MENU -->
 
 
-                <label class="hamburger">
-                    <input class="dropdown" type="checkbox">
-                    <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom"
-                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-                        </path>
-                        <path class="line" d="M7 16 27 16"></path>
-                    </svg>
-                </label>
-            </div>
-        </nav>
-    </header>
+            <label class="hamburger">
+                <input class="dropdown" type="checkbox">
+                <svg viewBox="0 0 32 32">
+                    <path class="line line-top-bottom"
+                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                    </path>
+                    <path class="line" d="M7 16 27 16"></path>
+                </svg>
+            </label>
+        </div>
+    </nav>
+</header>
+
 <body>
-    
+
 
     <main>
         <section class="bannerfilter">
             <h3 class="roodvin-banner">Rødvin</h3>
+            </form>
+            </div>
+            <div class="filter-wrapper"> 
+            <select name="filter" id="filter">
+                <option value="All">Filter</option>
+                <optgroup label="Område">
+                    <option value="Cat1">Rhone</option>
+                    <option value="Cat2">Alsace</option>
+                    <option value="Cat3">Bourgogne</option>
+                    <option value="Cat4">Lorie</option>
+                    <option value="Cat5">Rheingau</option>
+                    <option value="Cat6">Ribera del Duero</option>
+            </select>
 
-            
-            <div class="container">
 
-			</div>
-		</form>
-	</div>
-	<div class="row" id="filter">
-		<form>
-			<div class="form-group col-sm-3 col-xs-6">
-				<select data-filter="make" class="filter-land filter form-control">
-					<option value="">Select Make</option>
-					<option value="">Show All</option>
-				</select>
-			</div>
-			
+    
+            <section class="news-list">
+                <article class="news-item" data-category="Cat1">
+                    
+                    <div class="news-txt">
+                   
+                    </div>
+                </article>
+                
+                    <div class="sortBy">
+                      <button class="toggle">Topics</button>
+                      <ul class="list">
+                        <li class="list-item" style="--delay:0.2s">Front-end</li>
+                        <li class="list-item" style="--delay:0.4s">Back-end</li>
+                        <li class="list-item" style="--delay:0.6s">Full-Stack</li>
+                        <li class="list-item" style="--delay:0.8s">@Website_Mentor</li>
+                      </ul>
+                    </div>
+                  
+
+            </div>
+
+            </section>
         </section>
-
     </main>
 
     <footer>
@@ -126,6 +148,8 @@
     <script src="/scripts/headerscroll.js"></script>
     <script src="/scripts/burgermenu.js"></script>
     <script src="/scripts/filterfunction.js"></script>
-    </body>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-12/jquery-2.0.3.min_1.js"></script>
 
-    </html>
+</body>
+
+</html>
