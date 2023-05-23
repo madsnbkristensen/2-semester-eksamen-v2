@@ -770,7 +770,7 @@ h4 {
 /* vin-kategori html START  */
 
 .produkter {
-  height: 150px;
+  height: 25vh;
   width: 80%;
   margin: 10px auto;
   display: flex;
@@ -804,6 +804,7 @@ h4 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right;
+  height: 100%;
 }
 .vinflaske-bg a {
 width: 100%;
@@ -814,8 +815,8 @@ width: 100%;
   font-size: clamp(1rem, 2.2rem, 3rem);
   color: white;
   display: flex;
-  width: 100%;
   align-items: center;
+  height: 100%;
   padding: 20px;
 
 
@@ -829,6 +830,29 @@ width: 100%;
 
 
 /* vin-kategori html  SLUT */
+
+/* roodvin-produkter html START */ 
+
+.roodvin-banner {
+  font-size: clamp(1rem, 2.4rem, 3rem);
+  color: white;
+  height: 20vh;
+  width: 100%;
+  margin: 10px auto;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(/img/roodvin-kategori.webp);
+  font-family: 'Raleway', sans-serif;
+  padding: 20px;
+}
+
+
+
+
+/*  roodvin-produkter html SLUT  */ 
+
 
 
 @media (min-width:430px) {
