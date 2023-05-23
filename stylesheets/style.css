@@ -43,6 +43,8 @@ a {
   font-size: 1.5rem;
 }
 
+/*-------- header --------*/
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -104,10 +106,30 @@ a {
   gap: 20px;
 }
 
+.header-wrapper i {
+  color: white;
+}
 
 .hamburger {
   display: none;
   cursor: pointer;
+}
+
+header {
+  transition: 0.5s;
+}
+
+header.sticky {
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+}
+
+header.sticky i,
+header.sticky .line {
+  color: black;
+  stroke: black;
 }
 
 .landingpage_text {
@@ -118,8 +140,10 @@ a {
   background-image: url(/img/Frontpage-pic.jpg);
   background-size: cover;
   background-position: center;
+  margin-top: -52px;
 }
 
+/*-------- big wave ---------*/
 
 .big-wave {
   background-image: url(/img/wave.svg);
@@ -139,25 +163,23 @@ a {
 
 }
 
+.big-wave p {
+  max-width: 90%;
+}
+
 
 footer {
   background-color: var(--bluebg);
 }
 
 
-
-
-
-.big-wave p {
-  max-width: 90%;
-}
+/*-------- produkt teaser --------*/
 
 .produkt-teaser-article {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 30px;
   margin-top: 20px;
 }
 
@@ -172,6 +194,8 @@ footer {
   justify-content: center;
   align-items: center;
   gap: 20px;
+  height: 60vh;
+  margin: 10px 0;
 }
 
 .produkt-teaser-text {
@@ -197,7 +221,7 @@ footer {
   color: white;
   border-radius: 10px;
   padding: 7px 13px;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 /*-------------- SLIDER --------------*/
@@ -287,6 +311,8 @@ footer {
 
 .nyhedsbrev-article {
   background-color: var(--bluebg);
+  height: 60vh;
+  display: flex;
 }
 
 .nyhedsbrev-section {
@@ -332,7 +358,7 @@ footer {
   border-bottom: 2px solid white;
   font-size: 0.9rem;
   width: 100%;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-top: 10px;
   padding: 0 5px;
 }
@@ -365,8 +391,9 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 50px;
   overflow: hidden;
+  height: 60vh;
 }
 
 .ins-teaser-article a {
@@ -374,6 +401,7 @@ footer {
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
+  font-size: 22px;
 }
 
 .ins-teaser-article p {
@@ -386,10 +414,10 @@ footer {
 }
 
 .wine-bottle-wrapper img {
-  margin-bottom: -70px;
+  margin-bottom: -120px;
 }
 
-
+/*-------- footer --------*/
 
 footer h6 {
   font-size: 1.5rem;
@@ -401,7 +429,7 @@ footer li {
   width: 70%;
   white-space: nowrap;
   font-size: clamp(.3rem, .8rem, 1rem);
-  
+
 }
 
 .div-line-one {
@@ -450,7 +478,7 @@ footer article {
   margin: auto;
   display: flex;
   justify-content: space-evenly;
- padding: 20px 0px
+  padding: 20px 0px
 }
 
 footer li,
@@ -488,7 +516,6 @@ footer h6 {
 }
 
 
-
 .soMe-footer h6 {
   display: none;
 }
@@ -498,10 +525,11 @@ footer h6 {
   padding: 10px 20px 30px 20px;
 
 }
-/*end of footer design */ 
+
+/*end of footer design */
 
 
-/* Burger menu */ 
+/* Burger menu */
 @media(max-width:768px) {
 
   .hamburger {
@@ -525,7 +553,7 @@ footer h6 {
 
   .line {
     fill: none;
-    stroke: rgb(0, 0, 0);
+    stroke: white;
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-width: 3;
@@ -546,9 +574,6 @@ footer h6 {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
   }
-
-
-
 
   .nav-menu {
     position: fixed;
@@ -744,6 +769,7 @@ h4 {
 }
 
 @media (min-width: 768px) {
+
   .infographic,
   .video-article {
     display: grid;
@@ -804,7 +830,7 @@ h4 {
     display: grid;
     grid-template-columns: 3fr 1fr;
     padding-top: 30px;
-   
+
   }
 
   .footer-wrapper-mobile {
@@ -851,7 +877,7 @@ h4 {
 
   footer li {
     font-size: clamp(.9rem, 1.2rem, 2rem);
-  
+
   }
 
   .video-article h2 {
