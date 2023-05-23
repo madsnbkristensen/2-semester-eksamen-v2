@@ -115,6 +115,14 @@ a {
   cursor: pointer;
 }
 
+header .logo {
+  height: 30px;
+}
+
+header .logo-2 {
+  display: none;
+}
+
 header {
   transition: 0.5s;
 }
@@ -130,6 +138,14 @@ header.sticky i,
 header.sticky .line {
   color: black;
   stroke: black;
+}
+
+header.sticky .logo-1 {
+  display: none;
+}
+
+header.sticky .logo-2 {
+  display: block;
 }
 
 /*-------- big foto --------*/
@@ -807,8 +823,9 @@ h4 {
   background-position: right;
   height: 100%;
 }
+
 .vinflaske-bg a {
-width: 100%;
+  width: 100%;
 }
 
 .produkter h2 {
@@ -821,7 +838,7 @@ width: 100%;
   padding: 20px;
 
 
-  
+
 }
 
 .hvidvin-header,
@@ -832,7 +849,7 @@ width: 100%;
 
 /* vin-kategori html  SLUT */
 
-/* roodvin-produkter html START */ 
+/* roodvin-produkter html START */
 
 .roodvin-banner {
   font-size: clamp(1rem, 2.4rem, 3rem);
@@ -852,7 +869,7 @@ width: 100%;
 
 
 
-/*  roodvin-produkter html SLUT  */ 
+/*  roodvin-produkter html SLUT  */
 
 
 
@@ -1064,59 +1081,73 @@ width: 100%;
     width: 100%;
     max-width: 700px;
   }
+
   .produkt-teaser-section {
     height: 80vh;
     gap: 40px;
   }
+
   .produkt-teaser-text {
     font-size: 22px;
     margin: 0 auto;
   }
+
   .slideshow-container {
     margin: 0 auto;
   }
+
   .produkt-teaser-article h2 {
     font-size: 34px;
   }
+
   .produkt-teaser-article h3 {
     font-size: 30px;
   }
 
-  .se-mere-button{
+  .se-mere-button {
     font-size: 24px;
   }
- /*-------- big wawe --------*/
-  .big-wave p{
+
+  /*-------- big wawe --------*/
+  .big-wave p {
     max-width: 460px;
     font-size: 22px;
   }
+
   /*-------- nyhedsbrev --------*/
   .nyhedsbrev-section {
     max-width: 500px;
     gap: 50px;
   }
+
   .nyhedsbrev-section h2 {
     font-size: 34px;
   }
+
   .nyhedsbrev-section p {
     font-size: 22px;
   }
+
   .tilmeld-wrapper button {
     font-size: 18px;
   }
+
   /*-------- inspirations teaser --------*/
   .ins-teaser-article h2 {
     font-size: 34px;
   }
+
   .ins-teaser-article p {
     font-size: 22px;
   }
+
   .ins-teaser-article a {
     font-size: 24px;
     padding: 15px 20px;
   }
+
   .wine-bottle-wrapper img {
     width: 85px;
   }
-  
+
 }
