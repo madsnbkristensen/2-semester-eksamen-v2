@@ -605,7 +605,7 @@ footer h6 {
     Left: 0;
   }
 }
-
+/*End of burger menu */ 
 
 
 /* Inspirations side START */
@@ -755,6 +755,62 @@ h4 {
 .grid-circle.half-filled-red {
   background-image: linear-gradient(to right, #E94A4C 50%, #F18F97 50%);
 }
+
+
+/* vin-kategori html START  */ 
+
+.produkter {
+  height: 150px;
+  width: 80%;
+  background-color: white;
+  margin: 10px auto;
+  display: flex;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.roodvin-kategori {
+  background-image: url(/img/roodvin-kategori.webp);
+  background-position: center;
+}
+.hvidvin-kategori {
+  background-image: url(/img/hvidvin-kategori.webp);
+  background-position: center;
+}
+.mousserende-kategori {
+  background-image: url(/img/mousserende-kategori.webp);
+  background-position: center;
+}
+.andre-vine-kategori {
+  background-image: url(/img/andre-vine-kategori.webp);
+  background-position: center;
+}
+.vinflaske-bg {
+  background-image: url(/img/vinflaske-beige.svg);
+  background-repeat:  no-repeat;
+  background-size: contain;
+  background-position: right;
+}
+
+.produkter h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: clamp(1rem, 2.2rem, 3rem);
+  color: white;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 20px;
+  
+ 
+}
+
+.hvidvin-header, .andre-vine-header {
+  justify-content: flex-end;
+}
+
+
+/* vin-kategori html  SLUT */ 
 
 
 @media (min-width:430px) {
