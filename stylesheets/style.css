@@ -851,54 +851,38 @@ h4 {
   align-items: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   background-image: url(/img/roodvin-kategori.webp);
   font-family: 'Raleway', sans-serif;
   padding: 20px;
 }
 
-#filter {
-  height: 100%;
-  width: 50%;
-  text-align: center;
-  font-size: 1rem;
-}
-
-
 
 .filter-wrapper {
-  height: 60px;
-  width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  
+  flex-wrap: wrap; /* Allow flex items to wrap to a new line */
 }
 
-
-
+.list-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 .toggle {
   all: unset;
   background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
-  width: 100%;
   font-weight: 200;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.5rem;
   cursor: pointer;
+  text-align: center;
   height: 100%;
- 
-}
-
-.toggle::after {
-  content: "";
-  width: 6px;
-  height: 6px;
-  border-width: 0 3px 3px 0;
-  border-style: solid;
-  transform: rotate(45deg);
-  transition: 0.4s;
 }
 
 .list {
@@ -906,17 +890,18 @@ h4 {
   color: #444;
   list-style: none;
   display: grid;
- 
   border-radius: 5px;
   overflow: hidden;
-  height: 0;
-  transition: 0.4s;
+  max-height: 0; /* Set initial height to 0 */
+  transition: max-height 0.4s; /* Animate the height transition */
 }
 
 .list-item {
   display: flex;
   align-items: center;
-  padding-left: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 1.5rem;
   transition: 0.4s, transform 0.4s var(--delay);
   transform: translateX(-100%);
   user-select: none;
@@ -928,12 +913,8 @@ h4 {
   color: #fff;
 }
 
-.toggle:focus::after {
-  transform: rotate(225deg);
-}
-
 .toggle:focus ~ .list {
-  height: 160px;
+  max-height: 300px; /* Set the maximum height for unfolding */
 }
 
 .toggle:focus ~ .list .list-item {
