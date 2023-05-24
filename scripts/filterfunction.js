@@ -1,13 +1,15 @@
 fetch("produkter.json")
-.then(function(response){
-   return response.json();
-})
-.then(function(products){
-   let placeholder = document.querySelector("#produkt-liste");
-   let out = "";
-   for(let product of products){
-      out += `
+   .then(function (response) {
+      return response.json();
+   })
+   .then(function (products) {
+      let placeholder = document.querySelector("#produkt-liste");
+      let out = "";
+      for (let product of products) {
+         out += `
+      <a href=""> 
 	  <div class="produkt-kasser">
+     
 			<img src='${product.billede}'>
 			<div class="produkt-tekst-baggrund">
 			<p>${product.navn}<p>
@@ -15,8 +17,9 @@ fetch("produkter.json")
 			<p id="produkt-pris">${product.pris}</p>
 			</div>
 			</div>
+         </a>
       `;
-   }
- 
-   placeholder.innerHTML = out;
-});
+      }
+
+      placeholder.innerHTML = out;
+   });
