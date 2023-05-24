@@ -801,6 +801,7 @@ h4 {
 }
 
 
+
 /* vin-kategori html START  */
 
 .produkter {
@@ -1006,6 +1007,50 @@ h4 {
 
 /*  roodvin-produkter html SLUT  */
 
+
+/* udvalgte produkt html START */ 
+
+.udvalgt-produkt-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+#product-details {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 150%;
+  text-align: center;
+  
+}
+#product-details p {
+  color: white;
+}
+#product-price {
+  font-size: 2rem;
+}
+
+
+#product-image {
+  position: relative;
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+  border-radius: 20px;
+  clip-path: inset(0% 20% 0% 20%);
+
+
+}
+.baggrunds-kasse {
+  position: absolute;
+  top: 60%;
+  background-color: var(--bluebg);
+  height: 20rem;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Udvalgte produkt html SLUT */ 
 
 
 @media (min-width:430px) {
