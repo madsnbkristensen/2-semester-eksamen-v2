@@ -611,7 +611,8 @@ footer h6 {
     stroke-dasharray: 20 300;
     stroke-dashoffset: -32.42;
   }
-  .hamburger input:checked+svg .line{
+
+  .hamburger input:checked+svg .line {
     stroke: black;
   }
 
@@ -644,6 +645,7 @@ footer h6 {
   .nav-menu.active {
     right: 0;
   }
+
   .nav-menu.active a {
     color: black;
   }
@@ -955,12 +957,12 @@ h4 {
   transform: translateX(0);
 }
 
-#produkt-liste {
+#wineList {
   display: inline-grid;
   grid-template-columns: auto auto;
   align-items: center;
   justify-content: center;
-  gap: 20px;
+  gap: 100px 50px;
   margin: 20px;
 
 }
@@ -1008,24 +1010,27 @@ h4 {
 /*  roodvin-produkter html SLUT  */
 
 
-/* udvalgte produkt html START */ 
+/* udvalgte produkt html START */
 
 .udvalgt-produkt-wrapper {
   display: flex;
   justify-content: center;
   margin: auto;
 }
+
 #product-details {
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 150%;
   text-align: center;
-  
+
 }
+
 #product-details p {
   color: white;
 }
+
 #product-price {
   font-size: 2rem;
 }
@@ -1041,6 +1046,7 @@ h4 {
 
 
 }
+
 .baggrunds-kasse {
   position: absolute;
   top: 60%;
@@ -1050,7 +1056,7 @@ h4 {
   z-index: -1;
 }
 
-/* Udvalgte produkt html SLUT */ 
+/* Udvalgte produkt html SLUT */
 
 
 @media (min-width:430px) {
