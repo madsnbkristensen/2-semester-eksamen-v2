@@ -75,22 +75,53 @@
             <div class="list-wrapper">
                 <button class="toggle">Sorter efter <i class="fa-solid fa-caret-down"></i></button>
                 <ul class="list">
-                    <li class="list-item" style="--delay:0.2s">Område</li>
-                    <li class="list-item" style="--delay:0.4s">Land</li>
-                    <li class="list-item" style="--delay:0.6s">Drue</li>
+                    <li class="list-item">Område</li>
+                    <li class="list-item">Land</li>
+                    <li class="list-item">Drue</li>
                 </ul>
             </div>
             <div class="list-wrapper">
                 <button class="toggle">Filtre <i class="fa-solid fa-arrow-down-wide-short" style="color: #000000;"></i>
                 </button>
                 <ul class="list">
-                    <li class="list-item" style="--delay:0.2s">Pris</li>
-                    <li class="list-item" style="--delay:0.4s">Nyeste</li>
-                    <li class="list-item" style="--delay:0.6s">Mest populære</li>
+                    <li class="list-item">Pris</li>
+                    <li class="list-item">Nyeste</li>
+                    <li class="list-item">Mest populære</li>
 
                 </ul>
             </div>
         </div>
+        <label for="land">Land:</label>
+        <select id="land">
+            <option value="">-- Vælg land --</option>
+            <option value="Frankrig">Frankrig</option>
+            <!-- Add more options for other countries -->
+        </select>
+
+        <label for="omraade">Område:</label>
+        <select id="omraade">
+            <option value="">-- Vælg område --</option>
+            <option value="Alsace">Alsace</option>
+            <!-- Add more options for other regions -->
+        </select>
+
+        <label for="producent">Producent:</label>
+        <select id="producent">
+            <option value="">-- Vælg producent --</option>
+            <option value="Dennis Meyer">Dennis Meyer</option>
+            <!-- Add more options for other producers -->
+        </select>
+
+        <label for="drue">Drue:</label>
+        <select id="drue">
+            <option value="">-- Vælg drue --</option>
+            <option value="Pinot noir">Pinot noir</option>
+            <!-- Add more options for other grape varieties -->
+        </select>
+
+        <button onclick="filterWines()">Filtrer</button>
+
+        <div id="wineList"></div>
 
         <section id="produkt-liste">
         </section>
@@ -137,8 +168,8 @@
         </article>
     </footer>
     <script src="/scripts/headerscroll.js"></script>
+    <script src="/scripts/filter.js"></script>
     <script src="/scripts/burgermenu.js"></script>
-    <script src="/scripts/fetch-produkter.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-12/jquery-2.0.3.min_1.js"></script>
 
 </body>
