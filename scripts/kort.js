@@ -2,24 +2,24 @@
 let map;
 
 async function initMap() {
-  // The location of Uluru
-  const RundhoejAlle73 = { lat: 56.1199326, lng: 10.1757884 };
+  // The location of Aarhus vinhandel
+  const aarhusVinhandel = { lat: 56.14780350023491, lng:10.2037641071365 };
   // Request needed libraries.
   //@ts-ignore
   const { Map } = await google.maps.importLibrary("maps");
   const { Marker } = await google.maps.importLibrary("marker");
 
-  // The map, centered at Uluru
+  // The map, centered at Aarhus vinhandel
   map = new Map(document.getElementById("map"), {
-    zoom: 12,
-    center: RundhoejAlle73,
+    zoom: 13,
+    center: aarhusVinhandel,
     mapId: "DEMO_MAP_ID",
   });
 
   // The marker, positioned at Uluru
   const marker = new Marker({
     map: map,
-    position: RundhoejAlle73,
+    position: aarhusVinhandel,
     title: "Rundhoej Alle",
   });
 }
