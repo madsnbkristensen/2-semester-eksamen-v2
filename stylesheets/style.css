@@ -569,7 +569,10 @@ footer h6 {
 }
 
 /*end of footer design */
-
+#map{
+  width: 100%;
+  height: 20vh;
+}
 
 /* Burger menu */
 @media(max-width:768px) {
@@ -1412,7 +1415,7 @@ margin: auto;
   .mySlides img,
   .mySlides2 img,
   .mySlides3 img {
-    width: 100%;
+    width: 450px;
     max-width: 700px;
     height: 300px;
   }
@@ -1697,4 +1700,42 @@ margin: auto;
   header .logo {
     height: 80px;
   }
+}
+
+@media (min-width: 1920px){
+  .produkt-teaser-section{
+    justify-content: center;
+    padding: 0;
+  }
+  .produkt-teaser-text{
+    margin: 0;
+    width: 100%;
+    font-size: 28px;
+  }
+  .produkt-teaser-text-container{
+    gap: 20px;
+  }
+  .produkt-teaser-article h3{
+    font-size: 45px;
+  }
+  .produkt-teaser-article h2 {
+    font-size: 55px;
+  }
+  .big-wave p{
+    font-size: 32px;
+    max-width: 650px;
+    margin-top: 30px;
+  }
+  .big-wave{
+    height: 30vh;
+  }
+  .landingpage_text {
+    background-position: 80px -70px;
+  }
+  .mySlides img,
+  .mySlides2 img,
+  .mySlides3 img {
+    width: 100%;
+  }
+  
 }
