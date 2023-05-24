@@ -66,65 +66,42 @@
         <section class="bannerfilter">
             <h3 class="roodvin-banner">Rødvin</h3>
             </form>
-            </div>
         </section>
 
-
-
         <div class="filter-wrapper">
-            <div class="list-wrapper">
-                <button class="toggle">Sorter efter <i class="fa-solid fa-caret-down"></i></button>
-                <ul class="list">
-                    <li class="list-item">Område</li>
-                    <li class="list-item">Land</li>
-                    <li class="list-item">Drue</li>
-                </ul>
-            </div>
-            <div class="list-wrapper">
-                <button class="toggle">Filtre <i class="fa-solid fa-arrow-down-wide-short" style="color: #000000;"></i>
-                </button>
-                <ul class="list">
-                    <li class="list-item">Pris</li>
-                    <li class="list-item">Nyeste</li>
-                    <li class="list-item">Mest populære</li>
+            <label for="land">Land:</label>
+            <select id="land">
+                <option value="">-- Vælg land --</option>
+                <option value="Frankrig">Frankrig</option>
+                <!-- Add more options for other countries -->
+            </select>
 
-                </ul>
-            </div>
+            <label for="omraade">Område:</label>
+            <select id="omraade">
+                <option value="">-- Vælg område --</option>
+                <option value="Alsace">Alsace</option>
+                <!-- Add more options for other regions -->
+            </select>
+
+            <label for="producent">Producent:</label>
+            <select id="producent">
+                <option value="">-- Vælg producent --</option>
+                <option value="Dennis Meyer">Dennis Meyer</option>
+                <!-- Add more options for other producers -->
+            </select>
+
+            <label for="drue">Drue:</label>
+            <select id="drue">
+                <option value="">-- Vælg drue --</option>
+                <option value="Pinot noir">Pinot noir</option>
+                <!-- Add more options for other grape varieties -->
+            </select>
+
+            <button onclick="filterWines()">Filtrer</button>
         </div>
-        <label for="land">Land:</label>
-        <select id="land">
-            <option value="">-- Vælg land --</option>
-            <option value="Frankrig">Frankrig</option>
-            <!-- Add more options for other countries -->
-        </select>
-
-        <label for="omraade">Område:</label>
-        <select id="omraade">
-            <option value="">-- Vælg område --</option>
-            <option value="Alsace">Alsace</option>
-            <!-- Add more options for other regions -->
-        </select>
-
-        <label for="producent">Producent:</label>
-        <select id="producent">
-            <option value="">-- Vælg producent --</option>
-            <option value="Dennis Meyer">Dennis Meyer</option>
-            <!-- Add more options for other producers -->
-        </select>
-
-        <label for="drue">Drue:</label>
-        <select id="drue">
-            <option value="">-- Vælg drue --</option>
-            <option value="Pinot noir">Pinot noir</option>
-            <!-- Add more options for other grape varieties -->
-        </select>
-
-        <button onclick="filterWines()">Filtrer</button>
 
         <div id="wineList"></div>
 
-
-        </section>
     </main>
     <footer>
         <article>
