@@ -955,12 +955,21 @@ h4 {
 
 }
 
-#product-details p {
-  color: white;
+.udvalgt-produkt-tekst {
+width: 60%;
+margin: auto;
 }
 
-#product-price {
-  font-size: 2rem;
+.prisklasse {
+  font-size: 2.5rem;
+}
+
+
+#product-details p {
+  color: white;
+  margin: auto;
+  text-align: start;
+  font-size: 1.5rem;
 }
 
 
@@ -976,12 +985,17 @@ h4 {
 
 .baggrunds-kasse {
   position: absolute;
-  top: 60%;
+  top: 40%;
   background-color: var(--bluebg);
-  height: 20rem;
+  height: 30rem;
   width: 100%;
   z-index: -1;
 }
+
+.prisklasse {
+  font-size: 2.5rem;
+}
+
 
 /* Udvalgte produkt html SLUT */
 
