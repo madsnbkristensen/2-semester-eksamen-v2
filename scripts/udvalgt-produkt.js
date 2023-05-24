@@ -9,15 +9,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const productCountry = urlParams.get("country");
     const productRegion = urlParams.get("region");
     const productGrape = urlParams.get("grape");
+    const productIcon = urlParams.get("icon")
  
     // Update product details in the HTML
     document.getElementById("product-name").textContent =  productName;
     document.getElementById("product-image").src = productImage;
+    document.getElementById("product-icon").src = productIcon;
     document.getElementById("product-country").textContent = "Land: " + productCountry;
     document.getElementById("product-region").textContent = "Område: " + productRegion;
     document.getElementById("product-producer").textContent = "Producent: " + productProducer;
     document.getElementById("product-grape").textContent = "Drue: " + productGrape;
     document.getElementById("product-price").textContent =  productPrice;
+
    
  });
  
