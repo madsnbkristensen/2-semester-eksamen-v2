@@ -1,22 +1,25 @@
-//Filter News
-$('select#filter').change(function() {
-	var filter = $(this).val()
-	filterList(filter);
-});
+fetch("produkter.json")
+   .then(function (response) {
+      return response.json();
+   })
+   .then(function (products) {
+      let placeholder = document.querySelector("#produkt-liste");
+      let out = "";
+      for (let product of products) {
+         out += `
+      <a href=""> 
+	  <div class="produkt-kasser">
+     
+			<img src='${product.billede}'>
+			<div class="produkt-tekst-baggrund">
+			<p>${product.navn}<p>
+			<p>${product.producent}</p>
+			<p id="produkt-pris">${product.pris}</p>
+			</div>
+			</div>
+         </a>
+      `;
+      }
 
-//News filter function
-function filterList(value) {
-	var list = $(".news-list .news-item");
-	$(list).fadeOut("fast");
-	if (value == "All") {
-		$(".news-list").find("article").each(function (i) {
-			$(this).delay(200).slideDown("fast");
-		});
-	} else {
-		//Notice this *=" <- This means that if the data-category contains multiple options, it will find them
-		//Ex: data-category="Cat1, Cat2"
-		$(".news-list").find("article[data-category*=" + value + "]").each(function (i) {
-			$(this).delay(200).slideDown("fast");
-		});
-	}
-}
+      placeholder.innerHTML = out;
+   });

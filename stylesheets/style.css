@@ -888,6 +888,8 @@ h4 {
 .filter-wrapper {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
+  overflow: hidden;
   /* Allow flex items to wrap to a new line */
 }
 
@@ -952,7 +954,56 @@ h4 {
   transform: translateX(0);
 }
 
+#produkt-liste {
+  display: inline-grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
 
+}
+
+.produkt-kasser img {
+  height: 100%;
+  width: 100%;
+
+}
+
+.produkt-kasser {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+
+
+
+}
+
+.produkt-tekst-baggrund {
+  background-color: #E94A4C;
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  margin: auto;
+
+
+}
+
+.produkt-tekst-baggrund p {
+  font-size: .9rem;
+  line-height: 1.5rem;
+  font-weight: 200;
+
+}
+
+#produkt-pris {
+  font-size: 1.5rem;
+  margin: 10px;
+}
 
 /*  roodvin-produkter html SLUT  */
 
