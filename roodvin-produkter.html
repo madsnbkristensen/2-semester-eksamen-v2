@@ -68,39 +68,61 @@
             </form>
         </section>
 
-        <div class="filter-wrapper">
-            <label for="land">Land:</label>
-            <select id="land">
-                <option value="">-- Vælg land --</option>
-                <option value="Frankrig">Frankrig</option>
-                <!-- Add more options for other countries -->
-            </select>
-
-            <label for="omraade">Område:</label>
-            <select id="omraade">
-                <option value="">-- Vælg område --</option>
-                <option value="Alsace">Alsace</option>
-                <!-- Add more options for other regions -->
-            </select>
-
-            <label for="producent">Producent:</label>
-            <select id="producent">
-                <option value="">-- Vælg producent --</option>
-                <option value="Dennis Meyer">Dennis Meyer</option>
-                <!-- Add more options for other producers -->
-            </select>
-
-            <label for="drue">Drue:</label>
-            <select id="drue">
-                <option value="">-- Vælg drue --</option>
-                <option value="Pinot noir">Pinot noir</option>
-                <!-- Add more options for other grape varieties -->
-            </select>
-
-            <button onclick="filterWines()">Filtrer</button>
+        <div class="wrapper-filter-desktop">
+            <div class="filter-wrapper">
+                <label for="land">Land</label>
+                <select id="land">
+                    <option value="" selected>Land</option>
+                    <option value="Frankrig">Frankrig</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Spanien">Spanien</option>
+                    <option value="Portugal">Portugal</option>
+                    <option value="Tyskland">Tyskland</option>
+                    <!-- Add more options for other countries -->
+                </select>
+    
+                <label for="omraade">Område</label>
+                <select id="omraade">
+                    <option value="" selected>Område</option> 
+                    <option value="Alsace">Alsace</option>
+                    <option value="Bourgogne">Bourgogne</option>
+                    <option value="Lorie">Lorie</option>
+                    <option value="Rheingau">Rheingau</option>
+                    <option value="Rhône">Rhône</option>
+                    <option value="Ribera del Duero">Ribena del Duero</option>
+                    <!-- Add more options for other regions -->
+                </select>
+    
+                <label for="producent">Producent</label>
+                <select id="producent">
+                    <option value="" selected>Producent</option>
+                    <option value="Dennis Meyer">Dennis Meyer</option>
+                    <!-- Add more options for other producers -->
+                </select>
+    
+                <label for="drue">Drue</label>
+                <select id="drue">
+                    <option value="" selected>Drue</option>
+                    <option value="Pinot noir">Pinot noir</option>
+                    <option value="Carbanet Franc">Carbanet Franc</option>
+                    <option value="Grenache">Grenache</option>
+                    <option value="Syrah">Syrah</option>
+                    <option value="Malbec">Malbec</option>
+                    <!-- Add more options for other grape varieties -->
+                </select>
+    
+            </div>
+    
+            <div class="filterBtnCont">
+                <button onclick="filterWines()">Filtrer</button>
+                <button id="resetButton">Nustil</button>
+            </div>
+          
+    
+            <div id="wineList"></div>
         </div>
 
-        <div id="wineList"></div>
+        
 
     </main>
     <footer>
