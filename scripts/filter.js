@@ -1,4 +1,3 @@
-// Assuming the wine data is stored in a variable called "wines"
 let wines = [];
 
 fetch('produkter.json')
@@ -7,6 +6,7 @@ fetch('produkter.json')
     })
     .then(function (data) {
         wines = data;
+        displayFilteredWines(wines);
     })
     .catch(function (error) {
         console.log('Error fetching wine data:', error);
@@ -40,19 +40,17 @@ function displayFilteredWines(filteredWines) {
     }
 
     filteredWines.forEach(wine => {
-        const wineElement = document.createElement('produkt-liste');
+        const wineElement = document.createElement('div');
+        wineElement.classList.add('produkt-kasser');
         wineElement.innerHTML = `
-      <a href="">
-      <div class="produkt-kasser">
-        
-        <img src="${wine.billede}" alt="${wine.billedtekst}">
-        <div class="produkt-tekst-baggrund">
-        <p>${wine.navn}</p>
-        <p id="produkt-pris">${wine.pris}</p>
-        <p>${wine.producent}</p>
-        </div>
-        </div>
-      </a>`;
+            <a href="">
+                <img src="${wine.billede}" alt="${wine.billedtekst}">
+                <div class="produkt-tekst-baggrund">
+                    <p>${wine.navn}</p>
+                    <p>${wine.producent}</p>
+                    <p id="produkt-pris">${wine.pris}</p>
+                </div>
+            </a>`;
 
         wineList.appendChild(wineElement);
     });
