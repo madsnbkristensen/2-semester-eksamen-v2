@@ -364,7 +364,7 @@ footer {
 .dot,
 .dot2,
 .dot3 {
-display: none;
+  display: none;
 }
 
 .active,
@@ -1021,6 +1021,7 @@ h4 {
   justify-content: center;
   padding-top: 20px
 }
+
 .aarhus-vinhandel-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -1030,41 +1031,55 @@ h4 {
   gap: 20px;
   overflow: hidden;
 }
+
 .aarhus-vinhandel-text-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
+
 .three-bottle-wrapper {
   display: flex;
   gap: 25px;
   margin-bottom: -50px;
 }
+
+.three-bottle-wrapper img {
+  height: 212px;
+  width: 55px;
+}
+
 .three-bottle-wrapper :nth-child(5) {
   display: none;
 }
-.contact-info-article{
+
+.contact-info-article {
   background-color: var(--bluebg);
   display: flex;
   height: 200px;
   align-items: center;
   justify-content: center;
 }
-.contact-info-content-wrapper{
+
+.contact-info-content-wrapper {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   color: white;
   gap: 15px;
 }
+
 .contact-info-ul {
   list-style: none;
   font-weight: 100;
 }
-.vores-vision-article{
-  height: 500px;
+
+.vores-vision-article {
+  height: 450px;
+  justify-content: flex-start;
 }
+
 @media (min-width: 769px) {
 
   #wineList {
@@ -1192,10 +1207,10 @@ h4 {
 }
 
 .udvalgt-produkt-tekst {
-width: 70%;
-margin: auto;
-font-size: 1.3rem; 
-line-height: 1.2rem;
+  width: 70%;
+  margin: auto;
+  font-size: 1.3rem;
+  line-height: 1.2rem;
 }
 
 
@@ -1205,11 +1220,11 @@ line-height: 1.2rem;
   text-align: start;
 
 
-  
+
 }
 
 #product-name {
-  font-size: clamp(1.5rem, 2.5vw + 1rem, 5rem); 
+  font-size: clamp(1.5rem, 2.5vw + 1rem, 5rem);
   padding: 10px;
 }
 
@@ -1280,31 +1295,33 @@ line-height: 1.2rem;
   height: 100%;
   font-size: 2rem;
 
-  
+
   text-align: center;
-  
+
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
-   opacity: 1; 
-   width: 20%;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+  width: 20%;
 
 
-} 
+}
 
 .beskrivende-tekst {
   background-color: var(--background);
   width: 100%;
   height: 120%;
 }
+
 #product-description {
   width: 90%;
   margin: auto;
   padding: 30px 0;
   font-size: clamp(1rem, 1.5vw + 1rem, 3.4rem);
   font-weight: 200;
-text-align: center;}
+  text-align: center;
+}
 
 
 .beskrivende-tekst hr {
@@ -1320,7 +1337,8 @@ text-align: center;}
   margin: auto;
   font-size: clamp(1.5rem, 2.8vw + 1rem, 3.4rem);
 }
-.anbefaler-wrapper h4  {
+
+.anbefaler-wrapper h4 {
   font-family: 'Oleo Script', cursive;
   margin: 0px 5px;
   width: 80%;
@@ -1343,26 +1361,30 @@ text-align: center;}
   align-items: center;
   position: relative;
 }
+
 .active {
   scroll-snap-type: none;
 }
+
 .horizontal-slider::-webkit-scrollbar {
   width: 0px;
-  background: transparent; /* make scrollbar transparent */
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
 
 .anbefalet {
-width: 200px;
-margin: 10px 10px;
+  width: 200px;
+  margin: 10px 10px;
 }
 
-.anbefalet p { 
+.anbefalet p {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   height: 80%;
 }
+
 /* Udvalgte produkt html SLUT */
 
 
@@ -1668,8 +1690,28 @@ margin: 10px 10px;
     height: 20vh;
   }
 
+  /*-------- google maps --------*/
   #map {
     height: 300px;
+  }
+
+  /*-------- om os --------*/
+
+  .aarhus-vinhandel-article {
+    font-size: 20px;
+  }
+
+  .aarhus-vinhandel-content-wrapper {
+    width: 60%;
+  }
+
+  .contact-info-content-wrapper {
+    justify-content: center;
+  }
+
+  .vores-vision-article {
+    padding: 20px 0;
+    height: 500px;
   }
 }
 
@@ -1873,6 +1915,36 @@ margin: 10px 10px;
 
   #map {
     height: 350px;
+  }
+
+  /*-------- om os --------*/
+
+  .three-bottle-wrapper :nth-child(5) {
+    display: block;
+    stroke: #FFDC97;
+    fill: #FFDC97;
+  }
+
+  .three-bottle-wrapper :nth-child(3),
+  .three-bottle-wrapper :nth-child(4) {
+    display: none;
+  }
+
+  .aarhus-vinhandel-article {
+    font-size: 20px;
+  }
+
+  .aarhus-vinhandel-content-wrapper {
+    flex-direction: row;
+  }
+
+  .contact-info-content-wrapper {
+    justify-content: center;
+  }
+
+  .vores-vision-article {
+    padding: 20px 0;
+    height: 500px;
   }
 }
 
