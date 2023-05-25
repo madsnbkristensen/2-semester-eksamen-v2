@@ -364,14 +364,7 @@ footer {
 .dot,
 .dot2,
 .dot3 {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+display: none;
 }
 
 .active,
@@ -1064,7 +1057,6 @@ h4 {
   flex-wrap: wrap;
   color: white;
   gap: 15px;
-  justify-content: ;
 }
 .contact-info-ul {
   list-style: none;
@@ -1200,12 +1192,10 @@ h4 {
 }
 
 .udvalgt-produkt-tekst {
-  width: 60%;
-  margin: auto;
-}
-
-.prisklasse {
-  font-size: 2.5rem;
+width: 70%;
+margin: auto;
+font-size: 1.3rem; 
+line-height: 1.2rem;
 }
 
 
@@ -1215,15 +1205,19 @@ h4 {
   text-align: start;
 
 
+  
 }
 
 #product-name {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2.5vw + 1rem, 5rem); 
+  padding: 10px;
 }
 
 /* hvorfor må jeg ikke ramme den? */
-#product-price {
-  font-size: 2rem;
+
+.product-price-div {
+  font-size: 2.3rem;
+  margin-top: 30px;
 }
 
 #product-image {
@@ -1238,9 +1232,9 @@ h4 {
 
 .baggrunds-kasse {
   position: absolute;
-  top: 40%;
+  top: 45%;
   background-color: var(--bluebg);
-  height: 40rem;
+  height: 45rem;
   width: 100%;
   z-index: -1;
 }
@@ -1248,9 +1242,9 @@ h4 {
 .icon-wrapper {
   display: flex;
   justify-content: space-between;
-  height: 30px;
+  height: 2.5rem;
   margin: 10px auto;
-  width: 60%;
+  width: 70%;
 }
 
 .icon-wrapper img {
@@ -1271,7 +1265,7 @@ h4 {
 .reserver-section a {
   background-color: var(--redbg);
   color: white;
-  width: 90%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1282,14 +1276,93 @@ h4 {
 .reserver-section input {
   background-color: white;
   color: black;
-  width: 10%;
+  width: 20%;
   height: 100%;
   font-size: 2rem;
 
+  
+  text-align: center;
+  
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1; 
+   width: 20%;
+
+
+} 
+
+.beskrivende-tekst {
+  background-color: var(--background);
+  width: 100%;
+  height: 120%;
+}
+#product-description {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+  font-size: clamp(1rem, 1.5vw + 1rem, 3.4rem);
+  font-weight: 200;
+text-align: center;}
+
+
+.beskrivende-tekst hr {
+  width: 30%;
+  height: 0px;
+}
+
+
+.anbefaler-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: clamp(1.5rem, 2.8vw + 1rem, 3.4rem);
+}
+.anbefaler-wrapper h4  {
+  font-family: 'Oleo Script', cursive;
+  margin: 0px 5px;
+  width: 80%;
+  text-align: center;
+}
+
+
+.produkt-liste {
+  display: flex;
 }
 
 
 
+.horizontal-slider {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.active {
+  scroll-snap-type: none;
+}
+.horizontal-slider::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+
+.anbefalet {
+width: 200px;
+margin: 10px 10px;
+}
+
+.anbefalet p { 
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 80%;
+}
 /* Udvalgte produkt html SLUT */
 
 
