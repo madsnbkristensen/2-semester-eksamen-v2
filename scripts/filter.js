@@ -69,6 +69,7 @@ function resetFilters() {
   }
   document.getElementById('resetButton').addEventListener('click', resetFilters);
 
+
 //___________________________________________________________
 
 // Add an event listener for window resize
@@ -144,7 +145,7 @@ function updateFilterOptions() {
   // Attach event listeners to checkbox buttons for filtering
   const checkboxButtons = filterWrapper.querySelectorAll('input[type="checkbox"]');
   checkboxButtons.forEach((checkboxButton) => {
-    checkboxButton.addEventListener('change', filterWines);
+    checkboxButton.addEventListener('change', filterWines2);
   });
 }
 
@@ -154,7 +155,7 @@ updateFilterOptions();
 // Rest of your existing code...
 
 // Function to filter wines based on selected options
-function filterWines() {
+function filterWines2() {
   const selectedLand = document.querySelector('input[name="land"]:checked')?.value || '';
   const selectedOmråde = document.querySelector('input[name="omraade"]:checked')?.value || '';
   const selectedProducent = document.querySelector('input[name="producent"]:checked')?.value || '';
@@ -172,6 +173,13 @@ function filterWines() {
   displayFilteredWines(filteredWines);
 }
 
+
+
 // Rest of your existing code...
+
+
+
+
+
 
 
