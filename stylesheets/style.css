@@ -1065,6 +1065,9 @@ h4 {
 .vores-vision-article{
   height: 500px;
 }
+
+
+
 @media (min-width: 769px) {
 
   #wineList {
@@ -1074,6 +1077,81 @@ h4 {
 }
 
 @media (min-width: 1024px) {
+ 
+  /* Udvalgt-produkt HTML  start  */ 
+  .udvalgt-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+    
+  }
+  
+  .baggrunds-kasse {
+    top: 40%;
+    height: 2000px;
+  }
+  
+  
+  .udvalgt-produkt-tekst-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 80%; 
+  
+  }
+  
+  .product-desc {
+    order: -1;
+    color: black;
+   
+  }
+  
+  
+  .reserver-section a {
+    width: 30%;
+    border-radius: 20px 0px 0px 20px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .reserver-section {
+    height: 100px;
+  }
+  .reserver-section input {
+    font-size: 3rem;
+  }
+  
+  .anbefaler-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+  
+  .produkt-liste{
+    width: 100%;
+    height: 100%;
+  }
+  
+  
+  .baggrunds-kasse {
+    top: 35%;
+    height: 2000px;
+  }
+  
+  .product-name-desktop {
+    margin: 40px 0px;
+  }
+  
+  
+  .reserver-section {
+    justify-content: left;
+  }
+  .udvalgt-produkt-tekst {
+    margin: 0px;
+  }
+
 
   .filter-wrapper {
     /* display: flex;
@@ -1191,16 +1269,17 @@ h4 {
 
 }
 
+
 .udvalgt-produkt-tekst {
 width: 70%;
 margin: auto;
 font-size: 1.3rem; 
 line-height: 1.2rem;
+color: white;
 }
 
 
 #product-details p {
-  color: white;
   margin: 20px auto;
   text-align: start;
 
@@ -1211,9 +1290,9 @@ line-height: 1.2rem;
 #product-name {
   font-size: clamp(1.5rem, 2.5vw + 1rem, 5rem); 
   padding: 10px;
+  text-align: center;
 }
 
-/* hvorfor må jeg ikke ramme den? */
 
 .product-price-div {
   font-size: 2.3rem;
@@ -1229,6 +1308,8 @@ line-height: 1.2rem;
   border-radius: 20px;
 
 }
+
+
 
 .baggrunds-kasse {
   position: absolute;
@@ -1375,6 +1456,15 @@ margin: 10px 10px;
 }
 
 @media (min-width: 768px) {
+
+/* Udvalgt produkt HTML styling */ 
+#product-image {
+  height: 65%;
+}
+
+
+
+
 
   .infographic,
   .video-article {
@@ -1675,6 +1765,14 @@ margin: 10px 10px;
 
 @media (min-width: 1440px) {
 
+  /* START */ 
+
+
+.baggrunds-kasse {
+  top: 40%;
+}
+   
+
   .overskrift-wrapper {
     margin-bottom: -80px;
   }
@@ -1877,6 +1975,19 @@ margin: 10px 10px;
 }
 
 @media (min-width: 1920px) {
+
+  /* udvalgt-produkt HTML START  */ 
+
+
+  .baggrunds-kasse {
+    top: 40%;
+    height: 2000px;
+  }
+
+
+  /* Udvalgt-produkt HTML SLUT */ 
+
+
   .produkt-teaser-section {
     justify-content: center;
     padding: 0;
