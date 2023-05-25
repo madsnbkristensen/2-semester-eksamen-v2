@@ -155,7 +155,7 @@ header.sticky .logo-2 {
 }
 
 .landingpage_text h2 {
-  margin-top: 30%;
+  margin-top: 110px;
   padding: 20px;
   font-size: clamp(1rem, 2rem, 5rem);
   color: white;
@@ -1496,7 +1496,7 @@ margin: auto;
 
   .landingpage_text h2 {
     font-size: 40px;
-    margin-top: 20%;
+    margin-top: 153px;
   }
 
   .big-wave {
@@ -1533,7 +1533,7 @@ margin: auto;
   }
 
   .produkt-teaser-section {
-    height: 40vh;
+    height: 430px;
     gap: 0px;
     justify-content: flex-start;
     flex-direction: row-reverse;
@@ -1668,7 +1668,7 @@ margin: auto;
 
   .landingpage_text h2 {
     font-size: 100px;
-    margin-top: 25%;
+    margin-top: 400px;
     padding: 45px;
   }
 
