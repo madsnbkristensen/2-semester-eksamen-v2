@@ -47,6 +47,13 @@ a {
 }
 
 /*-------- header --------*/
+.underside-header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  color: black;
+}
+
 
 .navbar {
   display: flex;
@@ -114,6 +121,7 @@ header .logo-2 {
   display: none;
 }
 
+
 header {
   transition: 0.5s;
 }
@@ -123,9 +131,9 @@ header.sticky {
   top: 0;
   background-color: white;
   z-index: 100;
-  box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.2);
--webkit-box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.2);
--moz-box-shadow: 0px 1px 5px 2px rgba(0,0,0,0.2); 
+  box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
 }
 
 header.sticky i,
@@ -141,6 +149,22 @@ header.sticky .logo-1 {
 
 header.sticky .logo-2 {
   display: block;
+}
+
+header .underside-logo-1 {
+  display: none;
+}
+
+header .underside-logo-2 {
+  display: flex;
+}
+
+.header-wrapper .underside-nav-icon {
+  color: black;
+}
+
+.underside-header .line {
+  stroke: black;
 }
 
 /*-------- big foto --------*/
@@ -340,14 +364,7 @@ footer {
 .dot,
 .dot2,
 .dot3 {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
+display: none;
 }
 
 .active,
@@ -572,7 +589,7 @@ footer h6 {
 }
 
 /*end of footer design */
-#map{
+#map {
   width: 100%;
   height: 200px;
 }
@@ -907,17 +924,17 @@ h4 {
   /* width: 95%;
   margin: 0 auto ; */
 
-  background-color: var(--select-bg) ;
+  background-color: var(--select-bg);
   border-top: var(--select-border) 1px solid;
   border-bottom: var(--select-border) 1px solid;
   height: 50px;
 }
 
-.filter-wrapper label{
+.filter-wrapper label {
   display: none;
 }
 
-.filter-wrapper select{
+.filter-wrapper select {
   width: 100%;
   text-align: center;
   appearance: none;
@@ -931,14 +948,14 @@ h4 {
   line-height: inherit;
 }
 
-.filterBtnCont{
+.filterBtnCont {
   display: flex;
   justify-content: center;
   gap: 20px;
   margin: 20px 0;
 }
 
-.filterBtnCont button{
+.filterBtnCont button {
   border: none;
   padding: 10px 35px;
   background-color: var(--mediumred);
@@ -968,9 +985,9 @@ h4 {
   width: 100%;
 }
 
-.produkt-kasser a{
-  -webkit-box-shadow: 3px 6px 15px -1px rgba(0,0,0,0.46); 
-  box-shadow: 3px 6px 15px -1px rgba(0,0,0,0.46);
+.produkt-kasser a {
+  -webkit-box-shadow: 3px 6px 15px -1px rgba(0, 0, 0, 0.46);
+  box-shadow: 3px 6px 15px -1px rgba(0, 0, 0, 0.46);
 }
 
 .produkt-tekst-baggrund {
@@ -995,7 +1012,60 @@ h4 {
   margin: 10px;
 }
 
-@media (min-width: 769px){
+/*--------- om os start --------*/
+
+.aarhus-vinhandel-article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px
+}
+.aarhus-vinhandel-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  gap: 20px;
+  overflow: hidden;
+}
+.aarhus-vinhandel-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.three-bottle-wrapper {
+  display: flex;
+  gap: 25px;
+  margin-bottom: -50px;
+}
+.three-bottle-wrapper :nth-child(5) {
+  display: none;
+}
+.contact-info-article{
+  background-color: var(--bluebg);
+  display: flex;
+  height: 200px;
+  align-items: center;
+  justify-content: center;
+}
+.contact-info-content-wrapper{
+  width: 90%;
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  gap: 15px;
+}
+.contact-info-ul {
+  list-style: none;
+  font-weight: 100;
+}
+.vores-vision-article{
+  height: 500px;
+}
+@media (min-width: 769px) {
 
   #wineList {
     display: grid;
@@ -1003,106 +1073,106 @@ h4 {
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
   .filter-wrapper {
     /* display: flex;
     flex-wrap: wrap;
     width: 100%; */
-  
+
     display: flex;
     flex-direction: column;
-  
+
     /* width: 95%;
     margin: 0 auto ; */
-  
-    background-color: var(--select-bg) ;
+
+    background-color: var(--select-bg);
     border: none;
     height: 100%;
     width: 250px;
     padding-bottom: 20px;
   }
-  
-  .filter-wrapper label{
+
+  .filter-wrapper label {
     display: block;
     cursor: pointer;
     margin: 10px 0 0 0;
   }
 
-  .filterBtnCont{
+  .filterBtnCont {
     display: none;
   }
 
- .wrapper-filter-desktop{
-  display: flex;
-  gap: 40px;
- }
+  .wrapper-filter-desktop {
+    display: flex;
+    gap: 40px;
+  }
 
- .filter-headline{
-  text-align: center;
-  font-size: 20px;
-  margin: 20px 0 0 0;
- }
+  .filter-headline {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+  }
 
- .filter-wrapper hr{
-  width: 80%;
-  margin: 0 auto 20px auto;
- }
+  .filter-wrapper hr {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
 
- .filter-wrapper input{
-  margin: 0 10px 0px 30px;
- }
+  .filter-wrapper input {
+    margin: 0 10px 0px 30px;
+  }
 
- .filter-wrapper input[type="checkbox"] {
-  width: 1.3em;
-  height: 1.3em;
-  background-color: white;
-  border-radius: 50%;
-  vertical-align: middle;
-  border: 1px solid #ddd;
-  appearance: none;
-  -webkit-appearance: none;
-  outline: none;
-  cursor: pointer;
-}
+  .filter-wrapper input[type="checkbox"] {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
 
-.filter-wrapper input[type="checkbox"]:checked {
-  background-color: black;
-}
+  .filter-wrapper input[type="checkbox"]:checked {
+    background-color: black;
+  }
 
-.produkt-kasser {
-  width: 70%;
-  margin: 0 auto;
-}
+  .produkt-kasser {
+    width: 70%;
+    margin: 0 auto;
+  }
 
-.produkt-tekst-baggrund {
-  background-color: #E94A4C;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  margin-top: -7px;
-  height: 90px;
-}
+  .produkt-tekst-baggrund {
+    background-color: #E94A4C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -7px;
+    height: 90px;
+  }
 
-.produkt-tekst-baggrund p {
-  font-size: .7rem;
-  line-height:  1rem;
-  font-weight: 200;
-  width: 90%;
-  margin: 5px auto 0 auto;
-}
+  .produkt-tekst-baggrund p {
+    font-size: .7rem;
+    line-height: 1rem;
+    font-weight: 200;
+    width: 90%;
+    margin: 5px auto 0 auto;
+  }
 
-#produkt-pris {
-  font-size: 1.3rem;
-  margin: 10px;
-}
+  #produkt-pris {
+    font-size: 1.3rem;
+    margin: 10px;
+  }
 
-#wineList{
-  gap: 30px 0;
-  width: 90%;
-  margin: 30px auto 30px auto;
-}
+  #wineList {
+    gap: 30px 0;
+    width: 90%;
+    margin: 30px auto 30px auto;
+  }
 
 
 }
@@ -1122,12 +1192,10 @@ h4 {
 }
 
 .udvalgt-produkt-tekst {
-width: 60%;
+width: 70%;
 margin: auto;
-}
-
-.prisklasse {
-  font-size: 2.5rem;
+font-size: 1.3rem; 
+line-height: 1.2rem;
 }
 
 
@@ -1135,16 +1203,21 @@ margin: auto;
   color: white;
   margin: 20px auto;
   text-align: start;
-  
+
+
   
 }
 
 #product-name {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2.5vw + 1rem, 5rem); 
+  padding: 10px;
 }
-/* hvorfor må jeg ikke ramme den? */ 
-#product-price {
-  font-size: 2rem;
+
+/* hvorfor må jeg ikke ramme den? */
+
+.product-price-div {
+  font-size: 2.3rem;
+  margin-top: 30px;
 }
 
 #product-image {
@@ -1159,9 +1232,9 @@ margin: auto;
 
 .baggrunds-kasse {
   position: absolute;
-  top: 40%;
+  top: 45%;
   background-color: var(--bluebg);
-  height: 40rem;
+  height: 45rem;
   width: 100%;
   z-index: -1;
 }
@@ -1169,14 +1242,15 @@ margin: auto;
 .icon-wrapper {
   display: flex;
   justify-content: space-between;
-  height: 30px;
+  height: 2.5rem;
   margin: 10px auto;
-  width: 60%;
+  width: 70%;
 }
+
 .icon-wrapper img {
   height: 100%;
   object-fit: contain;
- 
+
 }
 
 
@@ -1187,22 +1261,75 @@ margin: auto;
   align-items: center;
   justify-content: center;
 }
+
 .reserver-section a {
   background-color: var(--redbg);
   color: white;
-  width: 90%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
- 
+
 }
+
 .reserver-section input {
   background-color: white;
   color: black;
-  width: 10%;
+  width: 20%;
   height: 100%;
   font-size: 2rem;
+
+  
+  text-align: center;
+  
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1; 
+   width: 20%;
+
+
+} 
+
+.beskrivende-tekst {
+  background-color: var(--background);
+  width: 100%;
+  height: 120%;
+}
+#product-description {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+  font-size: clamp(1rem, 1.5vw + 1rem, 3.4rem);
+  font-weight: 200;
+text-align: center;}
+
+
+.beskrivende-tekst hr {
+  width: 30%;
+  height: 0px;
+}
+
+
+.anbefaler-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: clamp(1.5rem, 2.8vw + 1rem, 3.4rem);
+}
+.anbefaler-wrapper h4  {
+  font-family: 'Oleo Script', cursive;
+  margin: 0px 5px;
+  width: 80%;
+  text-align: center;
+}
+
+
+.produkt-liste {
+  display: flex;
 }
 
 .modal {
@@ -1305,6 +1432,35 @@ margin: auto;
 }
 
 
+.horizontal-slider {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.active {
+  scroll-snap-type: none;
+}
+.horizontal-slider::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+
+.anbefalet {
+width: 200px;
+margin: 10px 10px;
+}
+
+.anbefalet p { 
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 80%;
+}
 /* Udvalgte produkt html SLUT */
 
 
@@ -1371,9 +1527,9 @@ margin: auto;
   /* Inspirations side SLUT */
 
 
-/* Rødvins produkter side START */
+  /* Rødvins produkter side START */
 
-/* Rødvins produkter side SLUT */
+  /* Rødvins produkter side SLUT */
 
 
   /*footer design */
@@ -1553,9 +1709,10 @@ margin: auto;
   }
 
   /*-------- nyhedsbrev --------*/
-  .nyhedsbrev-article{
+  .nyhedsbrev-article {
     height: 700px;
   }
+
   .nyhedsbrev-section {
     max-width: 470px;
     gap: 50px;
@@ -1574,7 +1731,7 @@ margin: auto;
   }
 
   /*-------- inspirations teaser --------*/
-  .ins-teaser-article{
+  .ins-teaser-article {
     height: 700px;
   }
 
@@ -1608,6 +1765,7 @@ margin: auto;
   .big-wave {
     height: 20vh;
   }
+
   #map {
     height: 300px;
   }
@@ -1810,54 +1968,66 @@ margin: auto;
   header .logo {
     height: 80px;
   }
-  #map{
+
+  #map {
     height: 350px;
   }
 }
 
-@media (min-width: 1920px){
-  .produkt-teaser-section{
+@media (min-width: 1920px) {
+  .produkt-teaser-section {
     justify-content: center;
     padding: 0;
   }
-  .produkt-teaser-text{
+
+  .produkt-teaser-text {
     margin: 0;
     width: 100%;
     font-size: 28px;
   }
-  .produkt-teaser-text-container{
+
+  .produkt-teaser-text-container {
     gap: 20px;
   }
-  .produkt-teaser-article h3{
+
+  .produkt-teaser-article h3 {
     font-size: 45px;
   }
+
   .produkt-teaser-article h2 {
     font-size: 55px;
   }
-  .big-wave p{
+
+  .big-wave p {
     font-size: 30px;
     max-width: 650px;
     margin-top: 30px;
   }
-  .big-wave{
+
+  .big-wave {
     height: 30vh;
   }
+
   .landingpage_text {
     background-position: 160px -70px;
   }
+
   .mySlides img,
   .mySlides2 img,
   .mySlides3 img {
     width: 100%;
   }
-  header .logo{
+
+  header .logo {
     height: 150px;
     margin-top: 100px;
   }
-  header.sticky .logo{
+
+  header.sticky .logo {
     height: 80px;
     margin: 0;
   }
+
   .nyhedsbrev-article {
     height: 600px;
   }

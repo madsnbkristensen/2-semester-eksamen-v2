@@ -13,95 +13,180 @@
     <meta property="og:title" content="Arhus vinhandel">
     <meta property="og:url" content="TBA">
     <meta property="og:site_name" content="Aarhus vinhandel">
-    <meta property="og:description"
-        content="Webshop og hjemmeside for Aarhus vinhandel og Rytsok vin">
+    <meta property="og:description" content="Webshop og hjemmeside for Aarhus vinhandel og Rytsok vin">
     <meta property="og:locale" content="da_dk">
     <meta name="theme-color" content="TBA">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/60e57c91d1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoDLVNgl7VXxOA8QhaiXi5ryp6aLFhb6g">
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/style.css">
+
 </head>
 
 <body>
-    <header>
+    <header class="underside-header">
         <nav class="navbar">
             <!--LOGO-->
-            <a href="index.html"><img src="#" class="logo"></a>
+            <a href="index.html">
+                <img class="logo-1 logo underside-logo-1" src="./img/logo-01.svg" alt="logo">
+                <img class="logo-2 logo underside-logo-2" src="./img/logo-02.svg" alt="logo">
+            </a>
 
             <!--NAV MENU -->
+            <div class="header-wrapper">
+                <ul class="nav-menu">
+                    <li class="nav-item"> <a href="#" class="nav-link">Produkter</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">Inspiration</a> </li>
+                    <li class="nav-item"> <a href="#" class="nav-link">Om os</a> </li>
+                </ul>
 
-            <ul class="nav-menu">
-                <li class="nav-item"> <a href="#" class="nav-link">Produkter</a> </li>
-                <li class="nav-item"> <a href="#" class="nav-link">Inspiration</a> </li>
-                <li class="nav-item"> <a href="#" class="nav-link">Om os</a> </li>
-                </a>
-            </ul>
-            <!--BURGER MENU -->
+                <i class="fa-solid fa-basket-shopping nav-icons underside-nav-icon"></i>
+                <i class="fa-solid fa-magnifying-glass nav-icons underside-nav-icon"></i>
 
-            <label class="hamburger">
-                <input class="dropdown" type="checkbox">
-                <svg viewBox="0 0 32 32">
-                    <path class="line line-top-bottom"
-                        d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-                    </path>
-                    <path class="line" d="M7 16 27 16"></path>
-                </svg>
-            </label>
+                <!--BURGER MENU -->
+
+
+                <label class="hamburger">
+                    <input class="dropdown" type="checkbox">
+                    <svg viewBox="0 0 32 32">
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
+                        <path class="line" d="M7 16 27 16"></path>
+                    </svg>
+                </label>
+            </div>
         </nav>
     </header>
 
-<main>
+    <main>
+        <article class="aarhus-vinhandel-article">
+            <div class="aarhus-vinhandel-content-wrapper">
+                <div class="aarhus-vinhandel-text-wrapper">
+                    <h2>Aarhus ældste vinhandel</h2>
+                    <p>Aarhus Vinhandel har eksisteret i mange årtier. I år 2020 bliver butikken købt af Peter
+                        Rystok, som har drevet butikken i en ny og innovativ retning, hvor der er fokus på egen
+                        import af vin. Aarhus vinhandels vision er at skabe den bedste oplevelse for kunden, og give
+                        kunden mulighed for at få meget vin for pengene. Ved at importere vin selv direkte fra
+                        producenten, undgås grossister og mellemmænd, og derfor kan prisen på vinen skrues helt i
+                        bund.</p>
+                    <p>Vi ønsker at guide kunderne, så de kommer hjem med den rigtige vin til den rigtige lejlighed,
+                        og får den bedste oplevelse. Kom ned i butikken og besøg os, så kan du se vores udvalg eller
+                        få en hyggelig snak om vin!</p>
+                </div>
+                <div class="three-bottle-wrapper">
+                    <img src="./img/vinflaske-moerk-roed.svg" alt="">
+                    <img src="./img/vinflaske-lys-roed.svg" alt="">
+                    <img src="./img/vinflaske-moerk-roed.svg" alt="">
+                    <img src="./img/vinflaske-lys-roed.svg" alt="">
+                    <img src="./img/vinflaske-beige.svg" alt="">
+                </div>
+            </div>
+        </article>
+        <article class="contact-info-article">
+            <div class="contact-info-content-wrapper">
+                <ul class="contact-info-ul">
+                    <li>Tlf: 86133131</li>
+                    <li>Mobil: 40370888</li>
+                    <li>info.aarhusvinhandel.dk</li>
+                    <li>peter@rystok.dk</li>
+                </ul>
+                <ul class="contact-info-ul">
+                    <li>M.P Bruunsgade 39</li>
+                    <li>8000 Aarhus C</li>
+                </ul>
+                <ul class="contact-info-ul">
+                    <li>Man - Tor 10:00 - 18:00</li>
+                    <li>Fredag 10:00 - 18:30</li>
+                    <li>Lørdag 10:00 - 15:00</li>
+                </ul>
+            </div>
+        </article>
+        <article class="nyhedsbrev-article">
+            <section class="nyhedsbrev-section">
+                <div class="nyhedsbrev-text-wrapper">
+                    <h2 class="nyhedsbrev-text">Tilmeld dig vores nyhedsbrev!</h2>
+                    <img src="./img/paperplane.svg" alt="papairsfly">
+                    <p class="nyhedsbrev-text">Du er blandt de første, der får besked om de nyeste tilbud i Aarhus
+                        Vinhandel. Skynd dig og meld dig ind, og gå ikke glip af chancen for et godt tilbud! </p>
+                </div>
+                <div class="tilmeld-wrapper">
+                    <form action="">
+                        <div class="input-felt input-navn">
+                            <label for="navn">Navn</label>
+                            <input type="text" name="navn">
+                        </div>
+                        <div class="input-felt input-email">
+                            <label for="email">Email</label>
+                            <input type="text" name="email">
+                        </div>
+                        <button type="submit" name="submit">Tilmeld</button>
+                    </form>
+                </div>
+            </section>
+        </article>
+        <article class="aarhus-vinhandel-article vores-vision-article">
+            <div class="aarhus-vinhandel-content-wrapper">
+                <div class="aarhus-vinhandel-text-wrapper">
+                    <h2>Vores vision</h2>
+                    <p>Da vi har fuldt fokus på at giver jer den bedste kvalitet for pengene, har vi valgt at indføre vores reservationskoncept her på siden. Her kan du frit vælge fra et stort udvalg af unikke vine og spiritus som en reservation til afhentning og betaling i vores dejlige butik.</p>
+                    <p>Reservationskonceptet gør vores produkter endnu billigere for dig, da forsendelsesaftaler med shipping virksomheder presser prisen op, og derfor vil gøre vinen dyrere. </p>
+                    <p>Vi elsker også at møde vores kunder, og har stort fokus på god nærhed til kunderne og kundeservice, derfor glæder vi os altid til at se jer i butikken!</p>
+                </div>
+            </div>
+        </article>
+    </main>
 
 
 
-</main>
 
-
-    <script src="/scripts/burgermenu.js"></script>
-
-
-<footer>
-    <article>
-        <div class="footer-wrapper-mobile">
-<section class="kontakt-footer">
-<h6>Kontakt</h6>
-<ul>
-<li>Tlf.: 86133131  </li>
-  <li>Mobil: 40370888</li>  
-  <li>Mail: info.aarhusvinhandel.dk</li>  
-    <li> Mail: peter@rystok.dk</li>
-</ul>
-</section>
-<hr class="div-line-one">
-<section class="adresse-footer">
-<h6>Adresse</h6>
-<ul>
-<li>Aarhus Vinhandel ApS </li> 
-<li> M.P. Bruunsgade 39 </li>
-<li> 8000 Aarhus C</li>
-</ul>
-</section>
-<section class="soMe-footer">
-<h6>SoMe</h6>
-<i class="fa-brands fa-instagram soMe"style="color: #ffffff;"></i>
-<i class="fa-brands fa-facebook soMe"style="color: #ffffff;"></i>
-</section>
-</div>
-<section class="aabningstider-footer">
-<h6>Åbningstider
-</h6>
-<ul> 
-<li>Mandag: 10.00 - 18.00  </li>
-<li>Tirsdag: 10.00 - 18.00 </li>
-<li>Onsdag: 10.00 - 18.00 </li>
-<li>Torsdag: 10.00 - 18.00</li>
-<li>Fredag: 10.00 - 18.30 </li>
-<li>Lørdag: 10.00 - 15.00</li>
-</ul>
-</section>
-    </article>
+    <footer>
+        <article>
+            <div class="footer-wrapper-mobile">
+                <section class="kontakt-footer">
+                    <h6>Kontakt</h6>
+                    <ul>
+                        <li>Tlf.: 86133131 </li>
+                        <li>Mobil: 40370888</li>
+                        <li>Mail: info.aarhusvinhandel.dk</li>
+                        <li> Mail: peter@rystok.dk</li>
+                    </ul>
+                </section>
+                <hr class="div-line-one">
+                <section class="adresse-footer">
+                    <h6>Adresse</h6>
+                    <ul>
+                        <li>Aarhus Vinhandel ApS </li>
+                        <li> M.P. Bruunsgade 39 </li>
+                        <li> 8000 Aarhus C</li>
+                    </ul>
+                </section>
+                <section class="soMe-footer">
+                    <h6>SoMe</h6>
+                    <i class="fa-brands fa-instagram soMe" style="color: #ffffff;"></i>
+                    <i class="fa-brands fa-facebook soMe" style="color: #ffffff;"></i>
+                </section>
+            </div>
+            <section class="aabningstider-footer">
+                <h6>Åbningstider
+                </h6>
+                <ul>
+                    <li>Mandag: 10.00 - 18.00 </li>
+                    <li>Tirsdag: 10.00 - 18.00 </li>
+                    <li>Onsdag: 10.00 - 18.00 </li>
+                    <li>Torsdag: 10.00 - 18.00</li>
+                    <li>Fredag: 10.00 - 18.30 </li>
+                    <li>Lørdag: 10.00 - 15.00</li>
+                </ul>
+            </section>
+        </article>
     </footer>
+    <script src="/scripts/burgermenu.js"></script>
 </body>
+
 </html>
