@@ -364,7 +364,7 @@ footer {
 .dot,
 .dot2,
 .dot3 {
-display: none;
+  display: none;
 }
 
 .active,
@@ -1021,6 +1021,7 @@ h4 {
   justify-content: center;
   padding-top: 20px
 }
+
 .aarhus-vinhandel-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -1030,46 +1031,66 @@ h4 {
   gap: 20px;
   overflow: hidden;
 }
+
 .aarhus-vinhandel-text-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 15px;
 }
+
 .three-bottle-wrapper {
   display: flex;
   gap: 25px;
   margin-bottom: -50px;
 }
+
+.three-bottle-wrapper img {
+  height: 212px;
+  width: 55px;
+}
+
 .three-bottle-wrapper :nth-child(5) {
   display: none;
 }
-.contact-info-article{
+
+.contact-info-article {
   background-color: var(--bluebg);
   display: flex;
   height: 200px;
   align-items: center;
   justify-content: center;
 }
-.contact-info-content-wrapper{
+
+.contact-info-content-wrapper {
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   color: white;
   gap: 15px;
 }
+
 .contact-info-ul {
   list-style: none;
   font-weight: 100;
 }
-.vores-vision-article{
-  height: 500px;
+
+.vores-vision-article {
+  height: 450px;
+  justify-content: flex-start;
 }
-
-
 
 @media (min-width: 769px) {
 
+/* udvalgt-produkt html */ 
+
+.beskrivende-tekst {
+  padding-top: 20px;
+}
+
+.udvalgt-produkt-tekst-desktop {
+  gap: 10px;
+}
   #wineList {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -1150,6 +1171,7 @@ h4 {
   }
   .udvalgt-produkt-tekst {
     margin: 0px;
+    color: white;
   }
 
 
@@ -1271,11 +1293,11 @@ h4 {
 
 
 .udvalgt-produkt-tekst {
-width: 70%;
-margin: auto;
-font-size: 1.3rem; 
-line-height: 1.2rem;
-color: white;
+
+  width: 70%;
+  margin: auto;
+  font-size: 1.3rem;
+  line-height: 1.2rem;
 }
 
 
@@ -1284,11 +1306,11 @@ color: white;
   text-align: start;
 
 
-  
+
 }
 
 #product-name {
-  font-size: clamp(1.5rem, 2.5vw + 1rem, 5rem); 
+  font-size: clamp(1.5rem, 2.5vw + 1rem, 5rem);
   padding: 10px;
   text-align: center;
 }
@@ -1361,31 +1383,33 @@ color: white;
   height: 100%;
   font-size: 2rem;
 
-  
+
   text-align: center;
-  
+
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button {  
-   opacity: 1; 
-   width: 20%;
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  opacity: 1;
+  width: 20%;
 
 
-} 
+}
 
 .beskrivende-tekst {
   background-color: var(--background);
   width: 100%;
   height: 120%;
 }
+
 #product-description {
   width: 90%;
   margin: auto;
   padding: 30px 0;
   font-size: clamp(1rem, 1.5vw + 1rem, 3.4rem);
   font-weight: 200;
-text-align: center;}
+  text-align: center;
+}
 
 
 .beskrivende-tekst hr {
@@ -1401,7 +1425,8 @@ text-align: center;}
   margin: auto;
   font-size: clamp(1.5rem, 2.8vw + 1rem, 3.4rem);
 }
-.anbefaler-wrapper h4  {
+
+.anbefaler-wrapper h4 {
   font-family: 'Oleo Script', cursive;
   margin: 0px 5px;
   width: 80%;
@@ -1413,6 +1438,105 @@ text-align: center;}
   display: flex;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255, 0.9);
+  overflow-y: auto;
+  animation: slide-in 0.3s forwards;
+  z-index: 5000;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.closeBtn {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+/* .modal{
+  height: 100vh;
+  background-color: rgb(255,255,255,0.7);
+} */
+
+.modal h3 {
+  text-align: center;
+}
+
+.modal-inner-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px 0;
+}
+
+.modal-inner-wrapper button {
+  width: 150px;
+}
+
+.modal img {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.modal h4 {
+  text-align: center;
+  background-color: #E94A4C;
+  width: 50%;
+  height: 40px;
+  margin: 0 auto;
+  color: white;
+}
+
+.modal p {
+  text-align: center;
+  background-color: #E94A4C;
+  width: 50%;
+  height: 40px;
+  margin: 0 auto;
+  color: white;
+}
+
+#shop-more-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: #780000;
+  border-radius: 15px;
+}
+
+#checkout-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #780000;
+  color: white;
+  border-radius: 15px;
+}
 
 
 .horizontal-slider {
@@ -1424,26 +1548,30 @@ text-align: center;}
   align-items: center;
   position: relative;
 }
+
 .active {
   scroll-snap-type: none;
 }
+
 .horizontal-slider::-webkit-scrollbar {
   width: 0px;
-  background: transparent; /* make scrollbar transparent */
+  background: transparent;
+  /* make scrollbar transparent */
 }
 
 
 .anbefalet {
-width: 200px;
-margin: 10px 10px;
+  width: 200px;
+  margin: 10px 10px;
 }
 
-.anbefalet p { 
+.anbefalet p {
   display: flex;
   align-items: flex-end;
   justify-content: center;
   height: 80%;
 }
+
 /* Udvalgte produkt html SLUT */
 
 
@@ -1758,8 +1886,28 @@ margin: 10px 10px;
     height: 20vh;
   }
 
+  /*-------- google maps --------*/
   #map {
     height: 300px;
+  }
+
+  /*-------- om os --------*/
+
+  .aarhus-vinhandel-article {
+    font-size: 20px;
+  }
+
+  .aarhus-vinhandel-content-wrapper {
+    width: 60%;
+  }
+
+  .contact-info-content-wrapper {
+    justify-content: center;
+  }
+
+  .vores-vision-article {
+    padding: 20px 0;
+    height: 500px;
   }
 }
 
@@ -1971,6 +2119,34 @@ margin: 10px 10px;
 
   #map {
     height: 350px;
+  }
+
+  /*-------- om os --------*/
+
+  .three-bottle-wrapper :nth-child(5) {
+    display: block;
+  }
+
+  .three-bottle-wrapper :nth-child(3),
+  .three-bottle-wrapper :nth-child(4) {
+    display: none;
+  }
+
+  .aarhus-vinhandel-article {
+    font-size: 20px;
+  }
+
+  .aarhus-vinhandel-content-wrapper {
+    flex-direction: row;
+  }
+
+  .contact-info-content-wrapper {
+    justify-content: center;
+  }
+
+  .vores-vision-article {
+    padding: 20px 0;
+    height: 500px;
   }
 }
 
