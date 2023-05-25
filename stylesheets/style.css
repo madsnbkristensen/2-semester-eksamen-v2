@@ -1357,7 +1357,7 @@ input[type=number]::-webkit-outer-spin-button {
   top: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(255,255,255,0.9);
+  background-color: rgb(255, 255, 255, 0.9);
   overflow-y: auto;
   animation: slide-in 0.3s forwards;
   z-index: 5000;
@@ -1367,6 +1367,7 @@ input[type=number]::-webkit-outer-spin-button {
   from {
     transform: translateX(100%);
   }
+
   to {
     transform: translateX(0);
   }
@@ -1384,7 +1385,7 @@ input[type=number]::-webkit-outer-spin-button {
   padding: 20px;
 }
 
-.closeBtn{
+.closeBtn {
   font-size: 50px;
   margin-right: 20px;
 }
@@ -1394,28 +1395,28 @@ input[type=number]::-webkit-outer-spin-button {
   background-color: rgb(255,255,255,0.7);
 } */
 
-.modal h3{
+.modal h3 {
   text-align: center;
 }
 
-.modal-inner-wrapper{
+.modal-inner-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px 0;
 }
 
-.modal-inner-wrapper button{
+.modal-inner-wrapper button {
   width: 150px;
 }
 
-.modal img{
+.modal img {
   width: 50%;
   margin: 0 auto;
   display: flex;
 }
 
-.modal h4{
+.modal h4 {
   text-align: center;
   background-color: #E94A4C;
   width: 50%;
@@ -1424,7 +1425,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: white;
 }
 
-.modal p{
+.modal p {
   text-align: center;
   background-color: #E94A4C;
   width: 50%;
@@ -1433,7 +1434,7 @@ input[type=number]::-webkit-outer-spin-button {
   color: white;
 }
 
-#shop-more-button{
+#shop-more-button {
   padding: 10px 20px;
   border: none;
   background-color: white;
@@ -1441,7 +1442,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 15px;
 }
 
-#checkout-button{
+#checkout-button {
   padding: 10px 20px;
   border: none;
   background-color: #780000;
@@ -2019,8 +2020,6 @@ input[type=number]::-webkit-outer-spin-button {
 
   .three-bottle-wrapper :nth-child(5) {
     display: block;
-    stroke: #FFDC97;
-    fill: #FFDC97;
   }
 
   .three-bottle-wrapper :nth-child(3),
