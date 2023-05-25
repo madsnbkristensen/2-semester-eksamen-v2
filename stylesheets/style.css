@@ -571,7 +571,7 @@ footer h6 {
 /*end of footer design */
 #map{
   width: 100%;
-  height: 20vh;
+  height: 200px;
 }
 
 /* Burger menu */
@@ -1502,6 +1502,9 @@ margin: auto;
   .big-wave {
     height: 20vh;
   }
+  #map {
+    height: 300px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -1637,6 +1640,7 @@ margin: auto;
 
   .ins-teaser-article {
     background-image: url(/img/ins-teaser-dekstop-foto.webp);
+    height: 635px;
   }
 
   .ins-teaser-content-wrapper {
@@ -1700,6 +1704,9 @@ margin: auto;
   header .logo {
     height: 80px;
   }
+  #map{
+    height: 350px;
+  }
 }
 
 @media (min-width: 1920px){
@@ -1722,7 +1729,7 @@ margin: auto;
     font-size: 55px;
   }
   .big-wave p{
-    font-size: 32px;
+    font-size: 30px;
     max-width: 650px;
     margin-top: 30px;
   }
@@ -1730,12 +1737,20 @@ margin: auto;
     height: 30vh;
   }
   .landingpage_text {
-    background-position: 80px -70px;
+    background-position: 160px -70px;
   }
   .mySlides img,
   .mySlides2 img,
   .mySlides3 img {
     width: 100%;
+  }
+  header .logo{
+    height: 150px;
+    margin-top: 100px;
+  }
+  header.sticky .logo{
+    height: 80px;
+    margin: 0;
   }
   
 }
