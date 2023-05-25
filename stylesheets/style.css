@@ -1350,6 +1350,104 @@ input[type=number]::-webkit-outer-spin-button {
   display: flex;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(255,255,255,0.9);
+  overflow-y: auto;
+  animation: slide-in 0.3s forwards;
+  z-index: 5000;
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.closeBtn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+.closeBtn{
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+/* .modal{
+  height: 100vh;
+  background-color: rgb(255,255,255,0.7);
+} */
+
+.modal h3{
+  text-align: center;
+}
+
+.modal-inner-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px 0;
+}
+
+.modal-inner-wrapper button{
+  width: 150px;
+}
+
+.modal img{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.modal h4{
+  text-align: center;
+  background-color: #E94A4C;
+  width: 50%;
+  height: 40px;
+  margin: 0 auto;
+  color: white;
+}
+
+.modal p{
+  text-align: center;
+  background-color: #E94A4C;
+  width: 50%;
+  height: 40px;
+  margin: 0 auto;
+  color: white;
+}
+
+#shop-more-button{
+  padding: 10px 20px;
+  border: none;
+  background-color: white;
+  color: #780000;
+  border-radius: 15px;
+}
+
+#checkout-button{
+  padding: 10px 20px;
+  border: none;
+  background-color: #780000;
+  color: white;
+  border-radius: 15px;
+}
 
 
 .horizontal-slider {
