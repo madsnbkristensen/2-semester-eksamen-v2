@@ -1146,12 +1146,10 @@ h4 {
 }
 
 .udvalgt-produkt-tekst {
-width: 60%;
+width: 70%;
 margin: auto;
-}
-
-.prisklasse {
-  font-size: 2.5rem;
+font-size: 1.3rem; 
+line-height: 1.2rem;
 }
 
 
@@ -1160,15 +1158,14 @@ margin: auto;
   margin: 20px auto;
   text-align: start;
   
-  
 }
 
 #product-name {
   font-size: 2.5rem;
 }
-/* hvorfor må jeg ikke ramme den? */ 
-#product-price {
-  font-size: 2rem;
+.product-price-div {
+  font-size: 2.3rem;
+  margin-top: 30px;
 }
 
 #product-image {
@@ -1195,7 +1192,7 @@ margin: auto;
   justify-content: space-between;
   height: 30px;
   margin: 10px auto;
-  width: 60%;
+  width: 70%;
 }
 .icon-wrapper img {
   height: 100%;
@@ -1214,7 +1211,7 @@ margin: auto;
 .reserver-section a {
   background-color: var(--redbg);
   color: white;
-  width: 90%;
+  width: 80%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -1224,14 +1221,90 @@ margin: auto;
 .reserver-section input {
   background-color: white;
   color: black;
-  width: 10%;
+  width: 20%;
   height: 100%;
-  font-size: 2rem;
+  font-size: 3rem;
+  text-align: center;
   
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button {  
+   opacity: 1; 
+   width: 20%;
+
+
+} 
+
+.beskrivende-tekst {
+  background-color: var(--background);
+  width: 100%;
+  height: 120%;
+}
+#product-description {
+  width: 90%;
+  margin: auto;
+  padding: 30px 0;
+  font-size: clamp(1rem, 1.5vw + 1rem, 3.4rem);
+font-weight: 200; }
+
+
+.beskrivende-tekst hr {
+  width: 30%;
+  height: 0px;
+}
+
+
+.anbefaler-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: clamp(1rem, 2vw + 1rem, 3.4rem);
+}
+.anbefaler-wrapper h4  {
+  font-family: 'Oleo Script', cursive;
+  margin: 0px 5px;
+  width: 80%;
+  text-align: center;
+}
+
+
+.produkt-liste {
+  display: flex;
 }
 
 
 
+.horizontal-slider {
+  width: 100%;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  color: white;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.active {
+  scroll-snap-type: none;
+}
+.horizontal-slider::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
+
+.anbefalet {
+width: 200px;
+margin: 10px 10px;
+}
+
+.anbefalet p { 
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 80%;
+}
 /* Udvalgte produkt html SLUT */
 
 
