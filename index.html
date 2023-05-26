@@ -18,7 +18,7 @@
     <meta name="theme-color" content="TBA">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/60e57c91d1.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/phosphor-icons"></script>
+ 
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoDLVNgl7VXxOA8QhaiXi5ryp6aLFhb6g"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,6 +26,9 @@
     <link rel="stylesheet" href="stylesheets/style.css">
 
 </head>
+   <!-- den sagde i lighthouse at den ikke blev brugt, så har flyttet den her for nu 
+      <script src="https://unpkg.com/phosphor-icons"></script>     -->
+
 
 <body>
     <header>
@@ -130,7 +133,7 @@
                     <a class="next arrow-black" onclick="plusSlides(1)"><i class="ph-caret-right"></i></a>
                 </div>
                 <div class="desktop-img-container">
-                    <img src="./img/rødvin_finca.webp" alt="">
+                    <img src="./img/rødvin_finca.webp" alt="" loading>
                     <img src="./img/rødvin_grandVeneur.webp" alt="">
                     <img src="./img/rødvin_lirac.webp" alt="">
                 </div>
@@ -323,6 +326,8 @@
     <script src="/scripts/headerscroll.js"></script>
     <script src="/scripts/kort.js"></script>
     <script src="/scripts/addtocart.js"></script>
+    <script src="/scripts/fade.js"></script>
+   
 </body>
 
 </html>
