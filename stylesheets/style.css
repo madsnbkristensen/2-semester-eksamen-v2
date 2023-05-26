@@ -76,7 +76,8 @@ header {
 .nav-menu a {
   color: white;
 }
-.underside-header a{
+
+.underside-header a {
   color: black;
 }
 
@@ -2137,7 +2138,8 @@ input[type=number]::-webkit-outer-spin-button {
   .three-bottle-wrapper :nth-child(2) {
     display: block;
   }
-  .three-bottle-wrapper :nth-child(5){
+
+  .three-bottle-wrapper :nth-child(5) {
     margin-left: -180px;
     margin-top: 40px;
     z-index: 2;
@@ -2148,7 +2150,8 @@ input[type=number]::-webkit-outer-spin-button {
     margin-top: 100px;
     z-index: 3;
   }
-  .three-bottle-wrapper :nth-child(2){
+
+  .three-bottle-wrapper :nth-child(2) {
     z-index: 1;
   }
 
@@ -2176,7 +2179,6 @@ input[type=number]::-webkit-outer-spin-button {
     position: absolute;
     right: 100px;
     margin-bottom: -400px;
-    z-index:;
   }
 
   .three-bottle-wrapper img {
@@ -2291,17 +2293,21 @@ input[type=number]::-webkit-outer-spin-button {
     width: 60%;
     align-items: center;
   }
-  .aarhus-vinhandel-text-wrapper{
+
+  .aarhus-vinhandel-text-wrapper {
     margin-top: 80px;
   }
+
   .three-bottle-wrapper {
     margin-bottom: -350px;
     right: 300px;
   }
+
   .three-bottle-wrapper img {
     height: 630px;
     width: 210px;
   }
+
   .vores-vision-text-wrapper {
     margin: 0;
   }

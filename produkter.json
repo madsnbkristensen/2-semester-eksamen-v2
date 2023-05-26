@@ -9,7 +9,14 @@
             "land": "Frankrig",
             "område": "Alsace",
             "producent": "Dennis Meyer",
-            "drue": "Pinot noir"
+            "drue": "Pinot noir",
+            "oko": "img/oko-color.svg",
+            "lystkod": "",
+            "morktkod": "",
+            "fisk": "",
+            "vegan": "img/vegan-color.svg",
+            "hygge": ""
+
         }, 
 
         {
@@ -21,7 +28,13 @@
             "land": "Frankrig",
             "område": "Loire, Louraine",
             "producent": "Coralie og Damien Delecheneau",
-            "drue": "Côt (Malbec), Cabernet Franc og Gamay"
+            "drue": "Côt (Malbec), Cabernet Franc og Gamay",
+            "oko": "",
+            "lystkod": "img/lystkod-color.svg",
+            "morktkod": "",
+            "fisk": "",
+            "vegan": "",
+            "hygge": "img/hygge-color.svg"
         }, 
 
         {
@@ -33,7 +46,13 @@
             "land": "Frankrig",
             "område": "Loire, Louraine",
             "producent": "Coralie og Damien Delecheneau",
-            "drue": "Côt (Malbec), Cabernet Franc og Gamay"
+            "drue": "Côt (Malbec), Cabernet Franc og Gamay",
+            "oko": "img/oko-color.svg",
+            "lystkod": "",
+            "morktkod": "",
+            "fisk": "",
+            "vegan": "",
+            "hygge": ""
         }, 
         {
             "navn": "La Grange Tiphaine, Ad Libitum, Touraine 2020",
@@ -44,7 +63,13 @@
             "land": "Frankrig",
             "område": "Loire, Louraine",
             "producent": "Coralie og Damien Delecheneau",
-            "drue": "Côt (Malbec), Cabernet Franc og Gamay"
+            "drue": "Côt (Malbec), Cabernet Franc og Gamay",
+            "oko": "img/oko-color.svg",
+            "lystkod": "",
+            "morktkod": "",
+            "fisk": "",
+            "vegan": "",
+            "hygge": ""
         }, 
         {
             "navn": "La Grange Tiphaine, Ad Libitum, Touraine 2020",
@@ -55,7 +80,13 @@
             "land": "Frankrig",
             "område": "Loire, Louraine",
             "producent": "Coralie og Damien Delecheneau",
-            "drue": "Côt (Malbec), Cabernet Franc og Gamay"
+            "drue": "Côt (Malbec), Cabernet Franc og Gamay",
+            "oko": "img/oko-color.svg",
+            "lystkod": "",
+            "morktkod": "",
+            "fisk": "",
+            "vegan": "",
+            "hygge": ""
         }, 
         {
             "navn": "La Grange Tiphaine, Ad Libitum, Touraine 2020",
@@ -66,7 +97,13 @@
             "land": "Frankrig",
             "område": "Loire, Louraine",
             "producent": "Coralie og Damien Delecheneau",
-            "drue": "Côt (Malbec), Cabernet Franc og Gamay"
+            "drue": "Côt (Malbec), Cabernet Franc og Gamay",
+            "oko": "img/oko-color.svg",
+            "lystkod": "",
+            "morktkod": "",
+            "fisk": "",
+            "vegan": "",
+            "hygge": ""
         }
     ]
         

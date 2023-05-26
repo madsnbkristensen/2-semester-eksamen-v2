@@ -44,7 +44,7 @@ function displayFilteredWines(filteredWines) {
         const wineElement = document.createElement('div');
         wineElement.classList.add('produkt-kasser');
         wineElement.innerHTML = `
-            <a href="udvalgt-produkt.html?id=${wine.id}&name=${encodeURIComponent(wine.navn)}&producer=${encodeURIComponent(wine.producent)}&price=${encodeURIComponent(wine.pris)}&image=${encodeURIComponent(wine.billede)}&country=${encodeURIComponent(wine.land)}&region=${encodeURIComponent(wine.område)}&grape=${encodeURIComponent(wine.drue)}&description=${encodeURIComponent(wine.beskrivelse)}">
+            <a href="udvalgt-produkt.html?id=${wine.id}&name=${encodeURIComponent(wine.navn)}&producer=${encodeURIComponent(wine.producent)}&price=${encodeURIComponent(wine.pris)}&image=${encodeURIComponent(wine.billede)}&country=${encodeURIComponent(wine.land)}&region=${encodeURIComponent(wine.område)}&grape=${encodeURIComponent(wine.drue)}&description=${encodeURIComponent(wine.beskrivelse)}&oko=${encodeURIComponent(wine.oko)}&lystkod=${encodeURIComponent(wine.lystkod)}&morktkod=${encodeURIComponent(wine.morktkod)}&fisk=${encodeURIComponent(wine.fisk)}&vegan=${encodeURIComponent(wine.vegan)}&hygge=${encodeURIComponent(wine.hygge)}">
                 <img src="${wine.billede}" alt="${wine.billedtekst}">
                 <div class="produkt-tekst-baggrund">
                     <p>${wine.navn}</p>
