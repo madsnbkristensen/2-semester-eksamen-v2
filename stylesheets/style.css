@@ -1417,6 +1417,27 @@ input[type=number]::-webkit-outer-spin-button {
   font-weight: 500;
 }
 
+/* Modal media query Start */
+@media (min-width: 768px){
+
+  .modal {
+    width: 50%;
+
+  }
+
+}
+
+@media (min-width: 1024px){
+
+  .modal {
+    width: 35%;
+
+  }
+
+}
+
+/* Modal media query Slut */
+
 /* Udvalgte produkt html SLUT */
 
 
