@@ -7,8 +7,14 @@ dropdown.addEventListener("click", () => {
   dropdown.classList.toggle("active");
   navMenu.classList.toggle("active");
 });
-document.querySelectorAll(".nav-link").forEach(n => n.
-    addEventListener("click", () => {
-        dropdown.classList.remove("active");
-        navMenu.classList.remove("active");
-    })) 
+
+const produkterLink = document.querySelector('.nav-item > a');
+const submenu = document.querySelector('.submenu');
+
+produkterLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    submenu.style.display = submenu.style.display === 'none' ? 'flex' : 'none';
+});
+
+
+
