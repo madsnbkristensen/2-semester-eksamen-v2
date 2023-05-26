@@ -115,6 +115,7 @@ header {
 
 .header-wrapper i {
   color: white;
+
 }
 
 .submenu {
@@ -193,7 +194,7 @@ header .underside-logo-2 {
   justify-content: center;
   height: 40vh;
   width: 100%;
-  background-image: url(/img/toby\ lol.png);
+  background-image: url(/img/wine-pouring.webp);
   background-size: cover;
   background-position: -25px;
   margin-top: -52px;
@@ -516,6 +517,53 @@ footer {
 .wine-bottle-wrapper img {
   margin-bottom: -120px;
 }
+
+/* Fade Animations - Start */
+
+.fade-in {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear {
+  opacity: 1;
+}
+
+.fade-in-2 {
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in-2.inuse {
+  opacity: 1;
+}
+
+.from-left {
+  transform: translateX(-100px);
+}
+
+.from-right {
+  transform: translateX(100px);
+}
+
+.from-bottom {
+  transform: translateY(50px);
+}
+
+.from-top-mid {
+  transform: translateY(-400px);
+}
+
+.from-top-right {
+  transform: translateY(-400px) translateX(-350px);
+}
+
+.from-top-left {
+  transform: translateY(-400px) translateX(350px);
+}
+
+
+/*Fade in animation slut */ 
 
 /*-------- footer --------*/
 
