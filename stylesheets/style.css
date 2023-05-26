@@ -1581,8 +1581,10 @@ box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
 
 .submit-cont{
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   margin: 30px 0;
+  align-items: center;
+  gap: 30px;
 }
 
 .submit-reserve{
@@ -1592,6 +1594,40 @@ box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
   color: white;
   border-radius: 20px;
   font-size: 20px;
+}
+
+#total-price-container{
+  font-size: 24px;
+}
+
+.checkout-end-img{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media (min-width:768px){
+.checkout-main{
+  width: 70%;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.checkout-form{
+  gap: 20px;
+}
+
+.checkout-form input{
+  border-radius: 5px;
+  border: 1px solid;
+}
+}
+
+@media (min-width:1024px){
+  .checkout-img{
+    width: 20%;
+  }
 }
 
 /* Reservations side slut */

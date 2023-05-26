@@ -43,6 +43,17 @@ function displayCartItems() {
     var newQuantity = event.target.value;
     var totalPriceElement = event.target.parentNode.querySelector('.checkout-item-price');
     totalPriceElement.textContent = 'Pris: ' + calculateTotalPrice(newQuantity, price) + ' kr';
+  
+    // Find the item in the cart array
+    var itemToUpdate = cart.find(function(item) {
+      return item.price === price;
+    });
+  
+    if (itemToUpdate) {
+      itemToUpdate.quantity = newQuantity;
+    }
+  
+    displayTotalPrice();
   }
   
   function calculateTotalPrice(quantity, price) {
@@ -50,9 +61,53 @@ function displayCartItems() {
     var totalPrice = itemPrice * quantity;
     return totalPrice.toFixed(2);
   }
-
   
+  function displayTotalPrice() {
+    var totalPriceContainer = document.getElementById('total-price-container');
+    var totalPrice = calculateCartTotal();
+    totalPriceContainer.textContent = 'Totalpris: ' + totalPrice + ' kr';
+  }
   
+  function calculateCartTotal() {
+    var total = 0;
+    cart.forEach(function(item) {
+      var itemPrice = parseFloat(item.price.replace('$', ''));
+      total += itemPrice * item.quantity;
+    });
+    return total.toFixed(2);
+  }
   
   displayCartItems();
+  displayTotalPrice();
+
+
+
+  var submitButton = document.getElementById('submit-reserve');
+
+submitButton.addEventListener('click', function() {
+  // Update the HTML content here
+  var mainContainer = document.getElementById('main-container');
+  mainContainer.innerHTML = `
+    <section class="top-checkout">
+            <h1>Aarhus</h1>
+            <img class="logo-checkout" src="/img/logo-03.svg" alt="">
+            <h1>Vinhandel</h1>
+        </section>
+        <section class="checkout-text">
+        <p>Tak for din reservation!</p>
+        <p>Du vil modtage svar på mail, så snart vi har set din reservation!</p>
+        </section>
+        <section class="submit-cont">
+        <button class="submit-reserve">Udforsk Mere</button>
+    </section>
+  `;
+
+  var mainContainer = document.getElementById('end-pic');
+  mainContainer.innerHTML = `
+    <img class="checkout-end-img" src="/img/wine-pouring.webp">
+  `;
+});
+
+
+  
   
