@@ -1,5 +1,26 @@
 var cart = [];
 
+
+// Retrieve cart data from localStorage
+function getCartFromLocalStorage() {
+  var savedCart = localStorage.getItem('cart');
+  if (savedCart) {
+    cart = JSON.parse(savedCart);
+    updateCartItems();
+  }
+}
+
+// Save cart data to localStorage
+function saveCartToLocalStorage() {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+// Add event listeners and perform other operations...
+
+// Load cart data from localStorage when the page loads
+getCartFromLocalStorage();
+
+
 function openCartModal() {
   var modal = document.getElementById('cart-modal');
   modal.style.display = 'block';
@@ -118,3 +139,5 @@ function loadCartFromLocalStorage() {
 }
 
 loadCartFromLocalStorage();
+
+

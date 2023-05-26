@@ -44,7 +44,7 @@
                     <li class="nav-item"> <a href="om_os.html" class="nav-link">Om os</a> </li>
                 </ul>
 
-                <i class="fa-solid fa-basket-shopping nav-icons"></i>
+                <i class="fa-solid fa-basket-shopping nav-icons" onclick="openCartModal()"></i>
                 <i class="fa-solid fa-magnifying-glass nav-icons"></i>
 
                 <!--BURGER MENU -->
@@ -61,6 +61,23 @@
                 </label>
             </div>
         </nav>
+
+        <section id="cart-modal" class="modal">
+            <span id="close-modal" class="closeBtn" onclick="closeCartModal()">&times;</span>
+            <div class="modal-content">
+                <h3>Din Kurv</h3>
+                <div class="modal-inner-wrapper">
+                    <div id="cart-items"></div>
+                    <div>
+                        <span class="price-cart price-text">Pris i alt:</span>
+                        <span class="price-cart" id="total-price"></span>
+                        <span class="price-cart">kr</span>
+                    </div>
+                    <button id="shop-more-button">Shop Videre</button>
+                    <button id="checkout-button">Send Reservation</button>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main>
@@ -301,6 +318,7 @@
     <script src="/scripts/slider.js"></script>
     <script src="/scripts/headerscroll.js"></script>
     <script src="/scripts/kort.js"></script>
+    <script src="/scripts/addtocart.js"></script>
 </body>
 
 </html>
