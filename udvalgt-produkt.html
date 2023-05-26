@@ -58,12 +58,18 @@
     <section id="cart-modal" class="modal">
         <span id="close-modal" class="closeBtn" onclick="closeCartModal()">&times;</span>
         <div class="modal-content">
-            <h3>Dit produkt er lagt i kurvern</h3>
+            <h3>Din Kurv</h3>
             <div class="modal-inner-wrapper">
                 <div id="cart-items"></div>
+                <div>
+                    <span class="price-cart price-text">Pris i alt:</span>
+                    <span class="price-cart" id="total-price"></span>
+                    <span class="price-cart">kr</span>
+                </div>
                 <button id="shop-more-button">Shop Videre</button>
                 <button id="checkout-button">Send Reservation</button>
             </div>
+        </div>
     </section>
 
 </header>
@@ -100,7 +106,7 @@
 
                     <section class="reserver-section">
                         <a id="reserveBtn" href="">Reservér</a>
-                        <input type="number" id="" name="" value="1"
+                        <input id="quantity-input" type="number" id="" name="" value="1"
                         min="1" max="10">
                     </section>
                    

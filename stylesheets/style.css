@@ -1480,10 +1480,6 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
 }
 
-.modal-content {
-  padding: 20px;
-}
-
 .closeBtn {
   font-size: 50px;
   margin-right: 20px;
@@ -1496,6 +1492,8 @@ input[type=number]::-webkit-outer-spin-button {
 
 .modal h3 {
   text-align: center;
+  margin: 20px auto 20px auto;
+  font-size: 25px;
 }
 
 .modal-inner-wrapper {
@@ -1522,6 +1520,8 @@ input[type=number]::-webkit-outer-spin-button {
   height: 40px;
   margin: 0 auto;
   color: white;
+  font-size: 12px;
+  padding: 0 2px;
 }
 
 .modal p {
@@ -1531,6 +1531,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 40px;
   margin: 0 auto;
   color: white;
+  font-size: 12px;
 }
 
 #shop-more-button {
@@ -1581,6 +1582,40 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: flex-end;
   justify-content: center;
   height: 80%;
+}
+
+.removeBtn{
+  border: none;
+  background-color: transparent;
+  display: flex;
+  margin: 10px auto 10px auto;
+  justify-content: center;
+  padding: 5px 10px;
+  border-radius: 7px;
+  text-decoration: underline;
+}
+
+.item-quantity{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-grid{
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.price-cart{
+  font-size: 20px;
+}
+
+.price-text{
+  margin-right: 10px;
+}
+
+#total-price{
+  font-weight: 500;
 }
 
 /* Udvalgte produkt html SLUT */
