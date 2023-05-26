@@ -1087,206 +1087,6 @@ h4 {
   justify-content: flex-start;
 }
 
-@media (min-width: 769px) {
-
-  /* udvalgt-produkt html */
-
-  .beskrivende-tekst {
-    padding-top: 20px;
-  }
-
-  .udvalgt-produkt-tekst-desktop {
-    gap: 10px;
-  }
-
-  #wineList {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media (min-width: 1024px) {
-
-  /* Udvalgt-produkt HTML  start  */
-  .udvalgt-desktop {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 80%;
-    margin: auto;
-
-  }
-
-  .baggrunds-kasse {
-    top: 40%;
-    height: 2000px;
-  }
-
-
-  .udvalgt-produkt-tekst-desktop {
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-
-  }
-
-  .product-desc {
-    order: -1;
-    color: black;
-
-  }
-
-
-  .reserver-section a {
-    width: 30%;
-    border-radius: 20px 0px 0px 20px;
-    font-size: 2rem;
-    font-weight: 500;
-  }
-
-  .reserver-section {
-    height: 100px;
-  }
-
-  .reserver-section input {
-    font-size: 3rem;
-  }
-
-  .anbefaler-slider {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-  }
-
-  .produkt-liste {
-    width: 100%;
-    height: 100%;
-  }
-
-
-  .baggrunds-kasse {
-    top: 35%;
-    height: 2000px;
-  }
-
-  .product-name-desktop {
-    margin: 40px 0px;
-  }
-
-
-  .reserver-section {
-    justify-content: left;
-  }
-
-  .udvalgt-produkt-tekst {
-    margin: 0px;
-    color: white;
-  }
-
-
-  .filter-wrapper {
-    /* display: flex;
-    flex-wrap: wrap;
-    width: 100%; */
-
-    display: flex;
-    flex-direction: column;
-
-    /* width: 95%;
-    margin: 0 auto ; */
-
-    background-color: var(--select-bg);
-    border: none;
-    height: 100%;
-    width: 250px;
-    padding-bottom: 20px;
-  }
-
-  .filter-wrapper label {
-    display: block;
-    cursor: pointer;
-    margin: 10px 0 0 0;
-  }
-
-  .filterBtnCont {
-    display: none;
-  }
-
-  .wrapper-filter-desktop {
-    display: flex;
-    gap: 40px;
-  }
-
-  .filter-headline {
-    text-align: center;
-    font-size: 20px;
-    margin: 20px 0 0 0;
-  }
-
-  .filter-wrapper hr {
-    width: 80%;
-    margin: 0 auto 20px auto;
-  }
-
-  .filter-wrapper input {
-    margin: 0 10px 0px 30px;
-  }
-
-  .filter-wrapper input[type="checkbox"] {
-    width: 1.3em;
-    height: 1.3em;
-    background-color: white;
-    border-radius: 50%;
-    vertical-align: middle;
-    border: 1px solid #ddd;
-    appearance: none;
-    -webkit-appearance: none;
-    outline: none;
-    cursor: pointer;
-  }
-
-  .filter-wrapper input[type="checkbox"]:checked {
-    background-color: black;
-  }
-
-  .produkt-kasser {
-    width: 70%;
-    margin: 0 auto;
-  }
-
-  .produkt-tekst-baggrund {
-    background-color: #E94A4C;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: -7px;
-    height: 90px;
-  }
-
-  .produkt-tekst-baggrund p {
-    font-size: .7rem;
-    line-height: 1rem;
-    font-weight: 200;
-    width: 90%;
-    margin: 5px auto 0 auto;
-  }
-
-  #produkt-pris {
-    font-size: 1.3rem;
-    margin: 10px;
-  }
-
-  #wineList {
-    gap: 30px 0;
-    width: 90%;
-    margin: 30px auto 30px auto;
-  }
-
-
-}
 
 /*  roodvin-produkter html SLUT  */
 
@@ -1298,27 +1098,24 @@ h4 {
   flex-direction: column;
   width: 100%;
   height: 150%;
-  text-align: center;
-
+  position: relative;
 }
 
+
+.product-image-desktop {
+  text-align: center;
+}
 
 .udvalgt-produkt-tekst {
-
+  color: white;
   width: 70%;
-  margin: auto;
-  font-size: 1.3rem;
-  line-height: 1.2rem;
-}
-
-
-#product-details p {
   margin: 20px auto;
-  text-align: start;
-
-
-
+  font-size: clamp(1.5rem, 2.1vw, 3rem);   
+  line-height: 2rem;
 }
+
+
+
 
 #product-name {
   font-size: clamp(1.5rem, 2.5vw + 1rem, 5rem);
@@ -1333,22 +1130,31 @@ h4 {
 }
 
 #product-image {
-  position: relative;
   height: 100%;
   object-fit: contain;
   width: 80%;
   margin: auto;
   border-radius: 20px;
 
+
+}
+
+
+.reserver-section {
+  display: flex;
+  width: 100%;
+  height: 60px;
+  align-items: center;
+  justify-content: center;
 }
 
 
 
 .baggrunds-kasse {
   position: absolute;
-  top: 45%;
   background-color: var(--bluebg);
-  height: 45rem;
+  height: 800px;
+  bottom: -10%;
   width: 100%;
   z-index: -1;
 }
@@ -1368,13 +1174,6 @@ h4 {
 }
 
 
-.reserver-section {
-  display: flex;
-  width: 100%;
-  height: 60px;
-  align-items: center;
-  justify-content: center;
-}
 
 .reserver-section a {
   background-color: var(--redbg);
@@ -1393,8 +1192,6 @@ h4 {
   width: 20%;
   height: 100%;
   font-size: 2rem;
-
-
   text-align: center;
 
 }
@@ -1407,20 +1204,22 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
-.beskrivende-tekst {
+.product-desc {
   background-color: var(--background);
-  width: 100%;
-  height: 120%;
-}
-
-#product-description {
-  width: 90%;
   margin: auto;
   padding: 30px 0;
   font-size: clamp(1rem, 1.5vw + 1rem, 3.4rem);
   font-weight: 200;
   text-align: center;
 }
+
+.beskrivende-tekst {
+  background-color: var(--background);
+  width: 100%;
+  height: 120%;
+}
+
+
 
 
 .beskrivende-tekst hr {
@@ -1631,11 +1430,29 @@ input[type=number]::-webkit-outer-spin-button {
 
 @media (min-width: 768px) {
 
-  /* Udvalgt produkt HTML styling */
-  #product-image {
-    height: 65%;
-  }
 
+
+    /* udvalgt-produkt html START  */
+
+
+    .beskrivende-tekst {
+      padding-top: 20px;
+    }
+  
+    .udvalgt-produkt-tekst-desktop {
+      gap: 10px;
+    }
+
+    #product-image {
+      height: 65%;
+    }
+  
+    /* udvalgt-produkt html  SLUT */ 
+  
+    #wineList {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
 
 
 
@@ -1957,15 +1774,208 @@ input[type=number]::-webkit-outer-spin-button {
   }
 }
 
-@media (min-width: 1440px) {
-
-  /* START */
 
 
-  .baggrunds-kasse {
-    top: 40%;
+@media (min-width: 1024px) {
+
+  /* Udvalgt-produkt HTML  start  */
+  .udvalgt-desktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;
+
   }
 
+  .baggrunds-kasse { 
+  height: 400px;
+  }
+
+
+  .udvalgt-produkt-tekst-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+
+  }
+
+  .product-desc {
+    order: -1;
+    color: black;
+    background-color: transparent;
+    margin-bottom: 15%;
+  }
+
+
+  .reserver-section a {
+    width: 50%;
+    border-radius: 20px 0px 0px 20px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+
+  .reserver-section {
+    height: 80px;
+  }
+
+  .reserver-section input {
+    font-size: 3rem;
+    border-radius: 0px 20px 20px 0px;
+  }
+
+  .anbefaler-slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+  }
+
+  .produkt-liste {
+    width: 100%;
+    height: 100%;
+  }
+
+
+  
+  .product-name-desktop {
+    margin: 40px 0px;
+  }
+
+
+  .reserver-section {
+    justify-content: left;
+  }
+
+  .udvalgt-produkt-tekst {
+    margin: 0px;
+    color: white;
+  }
+
+
+  .filter-wrapper {
+    /* display: flex;
+    flex-wrap: wrap;
+    width: 100%; */
+
+    display: flex;
+    flex-direction: column;
+
+    /* width: 95%;
+    margin: 0 auto ; */
+
+    background-color: var(--select-bg);
+    border: none;
+    height: 100%;
+    width: 250px;
+    padding-bottom: 20px;
+  }
+
+  .filter-wrapper label {
+    display: block;
+    cursor: pointer;
+    margin: 10px 0 0 0;
+  }
+
+  .filterBtnCont {
+    display: none;
+  }
+
+  .wrapper-filter-desktop {
+    display: flex;
+    gap: 40px;
+  }
+
+  .filter-headline {
+    text-align: center;
+    font-size: 20px;
+    margin: 20px 0 0 0;
+  }
+
+  .filter-wrapper hr {
+    width: 80%;
+    margin: 0 auto 20px auto;
+  }
+
+  .filter-wrapper input {
+    margin: 0 10px 0px 30px;
+  }
+
+  .filter-wrapper input[type="checkbox"] {
+    width: 1.3em;
+    height: 1.3em;
+    background-color: white;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .filter-wrapper input[type="checkbox"]:checked {
+    background-color: black;
+  }
+
+  .produkt-kasser {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .produkt-tekst-baggrund {
+    background-color: #E94A4C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -7px;
+    height: 90px;
+  }
+
+  .produkt-tekst-baggrund p {
+    font-size: .7rem;
+    line-height: 1rem;
+    font-weight: 200;
+    width: 90%;
+    margin: 5px auto 0 auto;
+  }
+
+  #produkt-pris {
+    font-size: 1.3rem;
+    margin: 10px;
+  }
+
+  #wineList {
+    gap: 30px 0;
+    width: 90%;
+    margin: 30px auto 30px auto;
+  }
+
+
+}
+
+@media (min-width: 1440px) {
+
+  /* UDVALGT PRODUKT HTML START */
+
+  .reserver-section a {
+    width: 50%;
+  }
+
+
+
+  .product-desc {
+    padding-bottom: 70px;
+    font-weight: 300;
+  }
+
+  .udvalgt-produkt-tekst {
+    font-size: 1.6rem;
+  }
+
+  /* UDVALGT PRODUKT HTML SLUT */  
 
   .overskrift-wrapper {
     margin-bottom: -80px;
@@ -2248,11 +2258,9 @@ input[type=number]::-webkit-outer-spin-button {
   /* udvalgt-produkt HTML START  */
 
 
-  .baggrunds-kasse {
-    top: 40%;
-    height: 2000px;
-  }
-
+.baggrunds-kasse {
+  height: 450px;
+}
 
   /* Udvalgt-produkt HTML SLUT */
 
