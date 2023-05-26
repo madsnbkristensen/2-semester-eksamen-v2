@@ -2288,21 +2288,21 @@ input[type=number]::-webkit-outer-spin-button {
 
   /*----- om os -----*/
   .aarhus-vinhandel-content-wrapper {
-    width: 50%;
+    width: 60%;
     align-items: center;
   }
   .aarhus-vinhandel-text-wrapper{
     margin-top: 80px;
-    margin-left: 100px;
   }
   .three-bottle-wrapper {
-    margin-bottom: -500px;
-    right: 250px;
+    margin-bottom: -350px;
+    right: 300px;
+  }
+  .three-bottle-wrapper img {
+    height: 630px;
+    width: 210px;
   }
   .vores-vision-text-wrapper {
     margin: 0;
-  }
-  .three-bottle-wrapper {
-    margin-bottom: -300px;
   }
 }
