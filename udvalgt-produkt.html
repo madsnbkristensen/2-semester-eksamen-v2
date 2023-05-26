@@ -24,6 +24,10 @@
     <link rel="stylesheet" href="stylesheets/style.css">
 
 </head>
+<header>
+    <nav class="navbar">
+        <!--LOGO-->
+        <a href="index.html"><img src="#" class="logo"></a>
 
         <!--NAV MENU -->
         <div class="header-wrapper">
@@ -78,49 +82,6 @@
 </header>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <!--LOGO-->
-            <a href="index.html"><img src="#" class="logo"></a>
-
-            <!--NAV MENU -->
-            <div class="header-wrapper">
-                <ul class="nav-menu">
-                    <li class="nav-item"> <a href="#" class="nav-link">Produkter</a> </li>
-                    <li class="nav-item"> <a href="#" class="nav-link">Inspiration</a> </li>
-                    <li class="nav-item"> <a href="#" class="nav-link">Om os</a> </li>
-                </ul>
-
-                <i class="fa-solid fa-basket-shopping nav-icons" onclick="openCartModal()"></i>
-                <i class="fa-solid fa-magnifying-glass nav-icons"></i>
-
-                <!--BURGER MENU -->
-
-
-                <label class="hamburger">
-                    <input class="dropdown" type="checkbox">
-                    <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom"
-                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-                        </path>
-                        <path class="line" d="M7 16 27 16"></path>
-                    </svg>
-                </label>
-            </div>
-        </nav>
-
-        <section id="cart-modal" class="modal">
-            <span id="close-modal" class="closeBtn" onclick="closeCartModal()">&times;</span>
-            <div class="modal-content">
-                <h3>Dit produkt er lagt i kurvern</h3>
-                <div class="modal-inner-wrapper">
-                    <div id="cart-items"></div>
-                    <button id="shop-more-button">Shop Videre</button>
-                    <button id="checkout-button">Send Reservation</button>
-                </div>
-        </section>
-
-    </header>
 
     <main class="udvalgt-produkt-wrapper">
         <h2 class="product-name-desktop" id="product-name"></h2>
@@ -134,7 +95,7 @@
                         <img id="morktkod-icon" class="icons" src="/img/morktkod-grey.svg" alt="">
                         <img id="fisk-icon" class="icons" src="/img/fisk-grey.svg" alt="">
                         <img id="vegan-icon" class="icons" src="/img/vegan-grey.svg" alt="">
-                        <img id="hygge-icon" class="icons" src="img/hygge-grey.svg" alt="">
+                        <img id="product-icon" class="icons" src="img/hygge-grey.svg" alt="">
                     </div>
                 </div>
                 <div class="udvalgt-produkt-tekst-desktop">
@@ -153,8 +114,8 @@
                         <input id="quantity-input" type="number" id="" name="" value="1"
                         min="1" max="10">
                     </section>
-
-
+                   
+                
                     <p class="product-desc" id="product-description"></p>
     
                     </div>
@@ -165,7 +126,7 @@
         </div>
       
 
-
+      
 
 
         <article class="beskrivende-tekst">
@@ -224,13 +185,13 @@
             </section>
         </article>
     </footer>
-    <script src="/scripts/headerscroll.js"></script>
-    <script src="/scripts/burgermenu.js"></script>
-    <script src="/scripts/udvalgt-produkt.js"></script>
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-12/jquery-2.0.3.min_1.js"></script>
-    <script src="/scripts/addtocart.js"></script>
-    <script src="/scripts/fetch-produkter.js"></script>
-    <script src="/scripts/slider-anbefalede.js"></script>
+<script src="/scripts/headerscroll.js"></script>
+<script src="/scripts/burgermenu.js"></script>
+<script src="/scripts/udvalgt-produkt.js"></script>
+<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/t-12/jquery-2.0.3.min_1.js"></script>
+<script src="/scripts/addtocart.js"></script>
+<script src="/scripts/fetch-produkter.js"></script>
+<script src="/scripts/slider-anbefalede.js"></script>
 
 </body>
 

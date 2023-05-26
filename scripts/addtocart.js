@@ -126,3 +126,29 @@ function removeFromCart(index) { // definere en funktion som fjerner et element 
 
 
 
+function saveCartToLocalStorage() {
+  localStorage.setItem('cart', JSON.stringify(cart));
+}
+
+
+function loadCartFromLocalStorage() {
+  var savedCart = localStorage.getItem('cart');
+  if (savedCart) {
+    cart = JSON.parse(savedCart);
+    updateCartItems();
+  }
+}
+
+loadCartFromLocalStorage();
+
+
+
+var checkoutButton = document.getElementById('checkout-button');
+checkoutButton.addEventListener('click', function() {
+  window.location.href = 'reservation.html';
+});
+
+
+
+
+
