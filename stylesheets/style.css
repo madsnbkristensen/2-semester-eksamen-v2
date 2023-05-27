@@ -563,7 +563,7 @@ footer {
 }
 
 
-/*Fade in animation slut */ 
+/*Fade in animation slut */
 
 /*-------- footer --------*/
 
@@ -659,6 +659,44 @@ footer h6 {
 #map {
   width: 100%;
   height: 200px;
+}
+
+/*----- 404 fejlside -----*/
+.content-wrapper-404{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.text-404 {
+  width: 100%;
+  background-color: var(--bluebg);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40vh;
+  gap: 20px;
+}
+.text-404 h2 {
+  font-size: 36px;
+}
+.text-404 p {
+  font-size: 22px;
+  width: 80%;
+  max-width: 460px;
+  text-align: center;
+}
+.text-404 a{
+  color: white;
+  text-decoration: underline;
+}
+.vinflaske-404 img {
+  position: absolute;
+  right: 0;
+  width: 80%;
+  margin-top: -7%;
+  z-index: 5;
 }
 
 /* Burger menu */
@@ -1170,7 +1208,7 @@ h4 {
   color: white;
   width: 70%;
   margin: 20px auto;
-  font-size: clamp(1.5rem, 2.1vw, 3rem);   
+  font-size: clamp(1.5rem, 2.1vw, 3rem);
   line-height: 2rem;
 }
 
@@ -1443,7 +1481,7 @@ input[type=number]::-webkit-outer-spin-button {
   height: 80%;
 }
 
-.removeBtn{
+.removeBtn {
   border: none;
   background-color: transparent;
   display: flex;
@@ -1454,31 +1492,31 @@ input[type=number]::-webkit-outer-spin-button {
   text-decoration: underline;
 }
 
-.item-quantity{
+.item-quantity {
   font-size: 30px;
   display: flex;
   align-items: center;
 }
 
-.cart-item-grid{
+.cart-item-grid {
   display: grid;
   grid-template-columns: 3fr 1fr;
 }
 
-.price-cart{
+.price-cart {
   font-size: 20px;
 }
 
-.price-text{
+.price-text {
   margin-right: 10px;
 }
 
-#total-price{
+#total-price {
   font-weight: 500;
 }
 
 /* Modal media query Start */
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
   .modal {
     width: 50%;
@@ -1487,7 +1525,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1024px) {
 
   .modal {
     width: 35%;
@@ -1503,7 +1541,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 /* Reservations side start */
 
-.top-checkout{
+.top-checkout {
   width: 90%;
   display: flex;
   margin: 0 auto;
@@ -1511,75 +1549,75 @@ input[type=number]::-webkit-outer-spin-button {
   align-items: center;
 }
 
-.top-checkout h1{
+.top-checkout h1 {
   font-size: 30px;
 }
 
-.logo-checkout{
+.logo-checkout {
   width: 120px;
 }
 
-.checkout-text{
+.checkout-text {
   text-align: center;
   width: 90%;
   margin: 0 auto 30px auto;
 }
 
-.checkout-form{
+.checkout-form {
   display: grid;
 }
 
-.checkout-form input{
+.checkout-form input {
   height: 50px;
 }
 
-.checkout-form input[type="text"]{
-height: 150px;
+.checkout-form input[type="text"] {
+  height: 150px;
 }
 
-.checkout-item-container{
+.checkout-item-container {
   width: 90%;
   margin: 30px auto;
   display: flex;
   gap: 10px;
 }
 
-.checkout-img{
-width: 40%;
-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
--webkit-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
--moz-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
+.checkout-img {
+  width: 40%;
+  box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
 }
 
-.checkout-item{
+.checkout-item {
   margin: auto 0;
 }
 
-.checkout-item-price{
+.checkout-item-price {
   font-size: 22px;
 }
 
-.checkout-item *{
+.checkout-item * {
   margin: 20px 0 20px 0;
 }
 
-.checkout-line{
+.checkout-line {
   border: #C1121F 1px solid;
 }
 
 
-.checkout-item-container input{
+.checkout-item-container input {
   width: 40px;
   border: none;
   height: 20px;
 }
 
-.bottom-checkout{
+.bottom-checkout {
   width: 90%;
   margin: 20px auto 0 auto;
 }
 
-.submit-cont{
+.submit-cont {
   display: flex;
   flex-direction: column;
   margin: 30px 0;
@@ -1587,7 +1625,7 @@ box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
   gap: 30px;
 }
 
-.submit-reserve{
+.submit-reserve {
   padding: 20px 40px;
   border: none;
   background-color: #780000;
@@ -1596,36 +1634,36 @@ box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
   font-size: 20px;
 }
 
-#total-price-container{
+#total-price-container {
   font-size: 24px;
 }
 
-.checkout-end-img{
+.checkout-end-img {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   display: block;
 }
 
-@media (min-width:768px){
-.checkout-main{
-  width: 70%;
-  margin: 0 auto;
-  max-width: 900px;
+@media (min-width:768px) {
+  .checkout-main {
+    width: 70%;
+    margin: 0 auto;
+    max-width: 900px;
+  }
+
+  .checkout-form {
+    gap: 20px;
+  }
+
+  .checkout-form input {
+    border-radius: 5px;
+    border: 1px solid;
+  }
 }
 
-.checkout-form{
-  gap: 20px;
-}
-
-.checkout-form input{
-  border-radius: 5px;
-  border: 1px solid;
-}
-}
-
-@media (min-width:1024px){
-  .checkout-img{
+@media (min-width:1024px) {
+  .checkout-img {
     width: 20%;
   }
 }
@@ -1644,27 +1682,27 @@ box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
 
 
 
-    /* udvalgt-produkt html START  */
+  /* udvalgt-produkt html START  */
 
 
-    .beskrivende-tekst {
-      padding-top: 20px;
-    }
-  
-    .udvalgt-produkt-tekst-desktop {
-      gap: 10px;
-    }
+  .beskrivende-tekst {
+    padding-top: 20px;
+  }
 
-    #product-image {
-      height: 65%;
-    }
-  
-    /* udvalgt-produkt html  SLUT */ 
-  
-    #wineList {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-    }
+  .udvalgt-produkt-tekst-desktop {
+    gap: 10px;
+  }
+
+  #product-image {
+    height: 65%;
+  }
+
+  /* udvalgt-produkt html  SLUT */
+
+  #wineList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
 
 
@@ -2000,8 +2038,8 @@ box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
 
   }
 
-  .baggrunds-kasse { 
-  height: 400px;
+  .baggrunds-kasse {
+    height: 400px;
   }
 
 
@@ -2050,7 +2088,7 @@ box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
   }
 
 
-  
+
   .product-name-desktop {
     margin: 40px 0px;
   }
@@ -2187,7 +2225,7 @@ box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
     font-size: 1.6rem;
   }
 
-  /* UDVALGT PRODUKT HTML SLUT */  
+  /* UDVALGT PRODUKT HTML SLUT */
 
   .overskrift-wrapper {
     margin-bottom: -80px;
@@ -2472,9 +2510,9 @@ box-shadow: 5px 4px 5px 0px rgba(0, 0, 0, 0.2);
   /* udvalgt-produkt HTML START  */
 
 
-.baggrunds-kasse {
-  height: 450px;
-}
+  .baggrunds-kasse {
+    height: 450px;
+  }
 
   /* Udvalgt-produkt HTML SLUT */
 
