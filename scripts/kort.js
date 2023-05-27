@@ -20,7 +20,7 @@ async function initMap() {
   const marker = new Marker({
     map: map,
     position: aarhusVinhandel,
-    title: "Rundhoej Alle",
+    title: "Aarhus Vinhandel",
   });
 }
 
