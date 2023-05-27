@@ -1,3 +1,5 @@
+
+
 var cart = []; // Erklære et tomt array til at lægge data ind i
 
 
