@@ -16,8 +16,7 @@
   --bluebg: #003049;
   --mediumred: #C1121F;
 
-  --select-bg: #FFFCF8;
-  --select-border: #8f8f8f;
+  --select-bg: #FFFCF8; 
 }
 
 h1,
@@ -518,52 +517,7 @@ footer {
   margin-bottom: -120px;
 }
 
-/* Fade Animations - Start */
 
-.fade-in {
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.fade-in.appear {
-  opacity: 1;
-}
-
-.fade-in-2 {
-  opacity: 0;
-  transition: opacity 250ms ease-in;
-}
-
-.fade-in-2.inuse {
-  opacity: 1;
-}
-
-.from-left {
-  transform: translateX(-100px);
-}
-
-.from-right {
-  transform: translateX(100px);
-}
-
-.from-bottom {
-  transform: translateY(50px);
-}
-
-.from-top-mid {
-  transform: translateY(-400px);
-}
-
-.from-top-right {
-  transform: translateY(-400px) translateX(-350px);
-}
-
-.from-top-left {
-  transform: translateY(-400px) translateX(350px);
-}
-
-
-/*Fade in animation slut */
 
 /*-------- footer --------*/
 
@@ -583,6 +537,46 @@ footer li {
 .div-line-one {
   width: 100%;
 }
+
+/* Fade Animations - Start */
+
+.fade-in{
+  opacity: 0;
+  transition: opacity 250ms ease-in;
+}
+
+.fade-in.appear{
+  opacity: 1;
+}
+
+.from-left{
+  transform: translateX(-100px);
+}
+
+.from-right{
+  transform: translateX(100px);
+
+}
+
+.from-bottom{
+  transform: translateY(50px);
+}
+
+.from-left,
+.from-right,
+.from-bottom{
+  transition: opacity 400ms ease-in, transform 400ms ease-in;
+  opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear,
+.from-bottom.appear{
+  transform: translateX(0);
+  opacity: 1;
+}
+
+/* Fade Animations - Slut */
 
 
 /*Footer design */
@@ -2603,3 +2597,6 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
   }
 }
+
+
+
