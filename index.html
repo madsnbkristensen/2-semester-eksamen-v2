@@ -18,12 +18,16 @@
     <meta name="theme-color" content="TBA">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/60e57c91d1.js" crossorigin="anonymous"></script>
- 
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoDLVNgl7VXxOA8QhaiXi5ryp6aLFhb6g"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNS5JsqfFHX_6UR1MR9JJGz6hN20fMhCk&callback=initMap" async defer></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="stylesheets/style.css">
+
+    <!-- Uncomment the line below if you want to use the Phosphor Icons library -->
+    <!-- <script src="https://unpkg.com/phosphor-icons"></script> -->
 
 </head>
    <!-- den sagde i lighthouse at den ikke blev brugt, så har flyttet den her for nu 
@@ -115,17 +119,17 @@
 
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides">
-                        <img src="./img/rødvin_finca.webp">
+                        <img src="./img/rødvin_finca.webp" alt="Finca rødvin">
                        
                     </div>
 
                     <div class="mySlides">
-                        <img src="./img/rødvin_grandVeneur.webp">
+                        <img src="./img/rødvin_grandVeneur.webp" alt="Grand Veneur rødvin">
                      
                     </div>
 
                     <div class="mySlides">
-                        <img src="./img/rødvin_lirac.webp">
+                        <img src="./img/rødvin_lirac.webp" alt="Lirac Rødvin">
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -133,9 +137,9 @@
                     <a class="next arrow-black" onclick="plusSlides(1)"><i class="ph-caret-right"></i></a>
                 </div>
                 <div class="desktop-img-container">
-                    <img src="./img/rødvin_finca.webp" alt="" loading>
-                    <img src="./img/rødvin_grandVeneur.webp" alt="">
-                    <img src="./img/rødvin_lirac.webp" alt="">
+                    <img src="./img/rødvin_finca.webp" alt="Finca Rødvin">
+                    <img src="./img/rødvin_grandVeneur.webp" alt="Grand Veneur Rødvin">
+                    <img src="./img/rødvin_lirac.webp" alt="Lirac Rødvin">
                 </div>
                 <!-- The dots/circles -->
                 <div>
@@ -157,17 +161,17 @@
 
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides2">
-                        <img src="./img/rom_bumbu.webp">
+                        <img src="./img/rom_bumbu.webp" alt="Bumbu Rom">
                        
                     </div>
 
                     <div class="mySlides2">
-                        <img src="./img/gin_sloe.webp">
+                        <img src="./img/gin_sloe.webp" alt="Sloe Gin">
                         
                     </div>
 
                     <div class="mySlides2">
-                        <img src="./img/gin_1831.webp">
+                        <img src="./img/gin_oldStills.webp" alt="Old Stills">
                        
                     </div>
 
@@ -176,9 +180,9 @@
                     <a class="next" onclick="plusSlides2(1)"><i class="ph-caret-right"></i></a>
                 </div>
                 <div class="desktop-img-container">
-                    <img src="./img/rom_bumbu.webp" alt="">
-                    <img src="./img/gin_sloe.webp" alt="">
-                    <img src="./img/gin_oldStills.webp" alt="">
+                    <img src="./img/rom_bumbu.webp" alt="Bumbu Rom">
+                    <img src="./img/gin_sloe.webp" alt="Sloe Gin">
+                    <img src="./img/gin_oldStills.webp" alt="Old Stills Gin">
                 </div>
 
                 <!-- The dots/circles -->
@@ -202,15 +206,15 @@
 
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides3">
-                        <img src="./img/øl_dalva.webp">
+                        <img src="./img/øl_dalva.webp" alt="Dalva Øl">
                     </div>
 
                     <div class="mySlides3">
-                        <img src="./img/øl_laBio.webp">
+                        <img src="./img/øl_laBio.webp" alt="Labio Øl">
                     </div>
 
                     <div class="mySlides3">
-                        <img src="./img/øl_laMaline.webp'">
+                        <img src="./img/øl_laMaline.webp" alt="La Maline Øl">
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -218,9 +222,9 @@
                     <a class="next arrow-black" onclick="plusSlides3(1)"><i class="ph-caret-right"></i></a>
                 </div>
                 <div class="desktop-img-container">
-                    <img src="./img/øl_dalva.webp" alt="">
-                    <img src="./img/øl_laBio.webp" alt="">
-                    <img src="./img/øl_laMaline.webp" alt="">
+                    <img src="./img/øl_dalva.webp" alt="Dalva">
+                    <img src="./img/øl_laBio.webp" alt="Labio">
+                    <img src="./img/øl_laMaline.webp" alt="La Maline">
                 </div>
 
                 <!-- The dots/circles -->
@@ -241,14 +245,14 @@
                         Vinhandel. Skynd dig og meld dig ind, og gå ikke glip af chancen for et godt tilbud! </p>
                 </div>
                 <div class="tilmeld-wrapper">
-                    <form action="">
+                    <form action="#">
                         <div class="input-felt input-navn">
-                            <label for="navn">Navn</label>
-                            <input type="text" name="navn" required>
+                            <label for="nyhedsbrev-navn">Navn</label>
+                            <input type="text" id="nyhedsbrev-navn" name="navn" required>
                         </div>
                         <div class="input-felt input-email">
-                            <label for="email">Email</label>
-                            <input type="email" name="email" required>
+                            <label for="nyhedsbrev-email">Email</label>
+                            <input type="email" id="nyhedsbrev-email" name="email" required>
 
                             
                 
