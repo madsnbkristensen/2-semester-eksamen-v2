@@ -10,10 +10,10 @@ dropdown.addEventListener("click", () => {
 const produkterLink = document.querySelector('.nav-item > a');
 const submenu = document.querySelector('.submenu');
 
-produkterLink.addEventListener('click', function (event) {
-    event.preventDefault();
-    submenu.style.display = submenu.style.display === 'none' ? 'flex' : 'none';
-});
+// produkterLink.addEventListener('click', function (event) {
+//     event.preventDefault();
+//     submenu.style.display = submenu.style.display === 'none' ? 'flex' : 'none';
+// });
 
 
 

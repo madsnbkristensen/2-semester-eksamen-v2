@@ -152,5 +152,3 @@ checkoutButton.addEventListener('click', function() {
 
 
 
-
-

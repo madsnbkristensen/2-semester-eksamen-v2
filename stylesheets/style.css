@@ -116,14 +116,25 @@ header {
 
 }
 
+.nav-item a{
+  z-index: 2;
+}
+
 .submenu {
   display: none;
   position: absolute;
-  padding: 10px;
-  margin-top: 40px;
+  padding-top: 80px;
   z-index: 1;
-
+  overflow: hidden;
 }
+
+.nav-item:hover .submenu {
+  display: grid;
+  width: 200%;
+  gap: 30px;
+  background-color: white;
+}
+
 
 
 
@@ -289,6 +300,18 @@ footer {
   border-radius: 10px;
   padding: 7px 13px;
   font-size: 16px;
+}
+
+.se-mere-button:hover{
+  background-color: transparent;
+  color: var(--mediumred);
+  border: 2px solid var(--mediumred);
+  transition: 0.3s;
+}
+
+.se-mere-button-2:hover{
+  color: white;
+  border: 2px solid white;
 }
 
 /*-------------- SLIDER --------------*/
@@ -475,6 +498,13 @@ footer {
   cursor: pointer;
 }
 
+.tilmeld-wrapper button:hover{
+  background-color: transparent;
+  color: var(--bluebg);
+  border: var(--bluebg) 2px solid;
+  transition: 0.3s;
+}
+
 /* inspirations teaser */
 .ins-teaser-content-wrapper {
   display: flex;
@@ -500,6 +530,12 @@ footer {
   padding: 5px 10px;
   border-radius: 10px;
   font-size: 22px;
+}
+
+.ins-teaser-article a:hover{
+  background-color: transparent;
+  border: white 2px solid;
+  transition: 0.3s;
 }
 
 .ins-teaser-article p {
@@ -1431,12 +1467,26 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 15px;
 }
 
+#shop-more-button:hover{
+  color: #780000;
+  background-color: transparent;
+  border: 1px solid #780000;
+  transition: 0.3s;
+}
+
 #checkout-button {
   padding: 10px 20px;
   border: none;
   background-color: #780000;
   color: white;
   border-radius: 15px;
+}
+
+#checkout-button:hover{
+  background-color: transparent;
+  border: 1px solid var(--redbg);
+  transition: 0.3s;
+  color: #780000;
 }
 
 
@@ -1624,6 +1674,14 @@ input[type=number]::-webkit-outer-spin-button {
   color: white;
   border-radius: 20px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.submit-reserve:hover{
+  background-color: transparent;
+  color: #780000;
+  border: 2px solid var(--redbg);
+  transition: 0.3s;
 }
 
 #total-price-container {

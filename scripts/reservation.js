@@ -108,6 +108,4 @@ submitButton.addEventListener('click', function() {
   `;
 });
 
-
-  
   
