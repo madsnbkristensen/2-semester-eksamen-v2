@@ -1710,7 +1710,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   #myVideo {
     height: 300px;
-    width: 500px;
+    width: 100%;
   }
 
   .video-article-text {
