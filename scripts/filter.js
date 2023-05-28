@@ -39,11 +39,13 @@ function filterWines() {
 function displayFilteredWines(filteredWines) {
     const wineList = document.getElementById('wineList');
     wineList.innerHTML = '';
+    // The above gets the filtered wines and saving them in the constant winelist
 
     if (filteredWines.length === 0) {
         wineList.innerHTML = '<span style="color: red; font-weight: bold; font-size: 32px;">Ingen resultater fundet :(</span>';
         return;
       }
+      // The above returns a message saying "no results found" if the winelist is empty
       
 
     filteredWines.forEach(wine => {
@@ -58,7 +60,7 @@ function displayFilteredWines(filteredWines) {
                     <p id="produkt-pris">${wine.pris}</p>
                 </div>
             </a>`;
-
+// The above encodes the anchor tag, and coding the display of the information from our winelist constant
         wineList.appendChild(wineElement);
     });
 }
