@@ -1,5 +1,4 @@
-// jshint esversion: 6
-// Hamburger Menu
+// Creating the constants, used for our burgermenu
 const dropdown = document.querySelector(".dropdown");
 const navMenu = document.querySelector(".nav-menu");
 

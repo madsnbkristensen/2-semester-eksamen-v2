@@ -1,5 +1,7 @@
 let wines = [];
 
+//Fetching our json file
+
 fetch('produkter.json')
     .then(function (response) {
         return response.json();
@@ -11,6 +13,8 @@ fetch('produkter.json')
     .catch(function (error) {
         console.log('Error fetching wine data:', error);
     });
+
+// Creating and running the function that filter trough our json file
 
 function filterWines() {
     const selectedLand = document.getElementById('land').value;
@@ -29,6 +33,8 @@ function filterWines() {
 
     displayFilteredWines(filteredWines);
 }
+
+// Creating and running the function that display our filtered wines on the page. And adding an anchor tag with encoded parameters, to be able to pass the data of our filtered wine, to the destination of the anchor tag.
 
 function displayFilteredWines(filteredWines) {
     const wineList = document.getElementById('wineList');
@@ -64,7 +70,7 @@ function resetFilters() {
     document.getElementById('producent').value = '';
     document.getElementById('drue').value = '';
   
-    // Nutil filtre og viser alle vine
+    // Reset filtres and display all wines
     displayFilteredWines(wines);
   }
   document.getElementById('resetButton').addEventListener('click', resetFilters);
