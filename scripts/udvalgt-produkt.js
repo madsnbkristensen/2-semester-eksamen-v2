@@ -28,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
    document.getElementById("product-price").textContent = productPrice;
    document.getElementById("product-description").textContent = productDescription;
 
+   //switch icons, if specific icon is present in json
+   
    if (okoIcon !== "") {
       document.getElementById("oko-icon").src = okoIcon;
     }
@@ -52,9 +54,5 @@ document.addEventListener("DOMContentLoaded", function() {
       document.getElementById("hygge-icon").src = hyggeIcon;
     }
     
-    
-    
-    
-
 });
 

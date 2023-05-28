@@ -1,5 +1,7 @@
 let wines = [];
 
+//Fetching our json file
+
 fetch('produkter.json')
     .then(function (response) {
         return response.json();
@@ -11,6 +13,8 @@ fetch('produkter.json')
     .catch(function (error) {
         console.log('Error fetching wine data:', error);
     });
+
+// Creating and running the function that filter trough our json file
 
 function filterWines() {
     const selectedLand = document.getElementById('land').value;
@@ -30,14 +34,18 @@ function filterWines() {
     displayFilteredWines(filteredWines);
 }
 
+// Creating and running the function that display our filtered wines on the page. And adding an anchor tag with encoded parameters, to be able to pass the data of our filtered wine, to the destination of the anchor tag.
+
 function displayFilteredWines(filteredWines) {
     const wineList = document.getElementById('wineList');
     wineList.innerHTML = '';
+    // The above gets the filtered wines and saving them in the constant winelist
 
     if (filteredWines.length === 0) {
         wineList.innerHTML = '<span style="color: red; font-weight: bold; font-size: 32px;">Ingen resultater fundet :(</span>';
         return;
       }
+      // The above returns a message saying "no results found" if the winelist is empty
       
 
     filteredWines.forEach(wine => {
@@ -52,7 +60,7 @@ function displayFilteredWines(filteredWines) {
                     <p id="produkt-pris">${wine.pris}</p>
                 </div>
             </a>`;
-
+// The above encodes the anchor tag, and coding the display of the information from our winelist constant
         wineList.appendChild(wineElement);
     });
 }
@@ -64,7 +72,7 @@ function resetFilters() {
     document.getElementById('producent').value = '';
     document.getElementById('drue').value = '';
   
-    // Nutil filtre og viser alle vine
+    // Reset filtres and display all wines
     displayFilteredWines(wines);
   }
   document.getElementById('resetButton').addEventListener('click', resetFilters);

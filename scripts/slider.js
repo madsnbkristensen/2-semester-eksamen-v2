@@ -1,3 +1,5 @@
+//Slider 1
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -31,6 +33,8 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
 }
 
+//Slider 2
+
 let slideIndex2 = 1;
 showSlides2(slideIndex2);
 
@@ -63,6 +67,8 @@ function showSlides2(n) {
   slides2[slideIndex2 - 1].style.display = "block";
   dots2[slideIndex2 - 1].className += " active";
 }
+
+//Slider 3
 
 let slideIndex3 = 1;
 showSlides3(slideIndex3);
