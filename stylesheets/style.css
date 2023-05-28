@@ -942,7 +942,7 @@ h4 {
 }
 
 .roodvin-kategori {
-  background-image: url(/img/111.webp);
+  background-image: linear-gradient(rgba(109, 107, 107, 0.527),rgba(105, 100, 100, 0.5)) , url(/img/rødvin-kategori.webp);  font-family: 'Raleway', sans-serif;
   background-position: center;
 }
 
@@ -1007,8 +1007,7 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: url(/img/111.webp);
-  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(rgba(109, 107, 107, 0.527),rgba(105, 100, 100, 0.5)) , url(/img/rødvin-kategori.webp);  font-family: 'Raleway', sans-serif;
   padding: 20px;
 }
 
