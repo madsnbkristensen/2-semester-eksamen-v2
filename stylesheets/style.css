@@ -2694,6 +2694,10 @@ input[type=number]::-webkit-outer-spin-button {
     height: 80px;
     margin: 0;
   }
+  header:hover .logo {
+    height: 80px;
+    margin: 0;
+  }
 
   .nyhedsbrev-article {
     height: 600px;
