@@ -75,7 +75,7 @@ function addToCart(event) { // Definere funktionen
   updateCartItems(); // Kalder funktion for at opdatere kurven
   saveCartToLocalStorage(); // Kalder funktion for at gemme til den lokale storage
 
-  alert('Product added to cart!'); // Alert
+  // alert('Product added to cart!'); 
 }
 
 function updateCartItems() { // Definere funktion som opdatere elementerne i kurven
