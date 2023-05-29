@@ -98,7 +98,7 @@ submitButton.addEventListener('click', function() {
         <p>Du vil modtage svar på mail, så snart vi har set din reservation!</p>
         </section>
         <section class="submit-cont">
-        <a href="index.html" class="submit-reserve udforsk-mere-end">Udforsk Mere</a>
+        <a href="index.html" class="submit-reserve">Udforsk Mere</a>
     </section>
   `;
 
