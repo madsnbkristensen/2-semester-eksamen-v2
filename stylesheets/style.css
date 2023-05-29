@@ -1056,7 +1056,7 @@ h4 {
 }
 
 .roodvin-kategori {
-  background-image: linear-gradient(rgba(109, 107, 107, 0.527),rgba(105, 100, 100, 0.5)) , url(/img/rødvin-kategori.webp);  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(rgba(109, 107, 107, 0.527),rgba(105, 100, 100, 0.5)) , url(/img/roodvin-kategori.webp);  font-family: 'Raleway', sans-serif;
   background-position: center;
 }
 
@@ -1121,7 +1121,7 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(109, 107, 107, 0.527),rgba(105, 100, 100, 0.5)) , url(/img/rødvin-kategori.webp);  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(rgba(109, 107, 107, 0.527),rgba(105, 100, 100, 0.5)) , url(/img/roodvin-kategori.webp);  font-family: 'Raleway', sans-serif;
   padding: 20px;
 }
 
@@ -1889,9 +1889,6 @@ input[type=number]::-webkit-outer-spin-button {
   /* Inspirations side SLUT */
 
 
-  /* Rødvins produkter side START */
-
-  /* Rødvins produkter side SLUT */
 
 
   /*footer design */
