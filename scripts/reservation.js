@@ -104,7 +104,7 @@ submitButton.addEventListener('click', function() {
 
   var mainContainer = document.getElementById('end-pic');
   mainContainer.innerHTML = `
-    <img class="checkout-end-img" src="/img/wine-pouring.webp">
+    <img class="checkout-end-img" src="/img/outro.webp">
   `;
 });
 
