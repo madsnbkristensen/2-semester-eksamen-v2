@@ -64,6 +64,23 @@
                 </label>
             </div>
         </nav>
+
+        <section id="cart-modal" class="modal">
+            <span id="close-modal" class="closeBtn" onclick="closeCartModal()">&times;</span>
+            <div class="modal-content">
+                <h3>Din Kurv</h3>
+                <div class="modal-inner-wrapper">
+                    <div id="cart-items"></div>
+                    <div>
+                        <span class="price-cart price-text">Pris i alt:</span>
+                        <span class="price-cart" id="total-price"></span>
+                        <span class="price-cart">kr</span>
+                    </div>
+                    <button id="shop-more-button">Shop Videre</button>
+                    <button id="checkout-button">Send Reservation</button>
+                </div>
+            </div>
+        </section>
     </header>
 
     <main>
@@ -280,6 +297,7 @@
     </footer>
     <script src="/scripts/burgermenu.js"></script>
     <script src="/scripts/fade.js"></script>
+    <script src="/scripts/addtocart.js"></script>
 </body>
 
 </html>
