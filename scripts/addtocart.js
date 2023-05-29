@@ -30,8 +30,11 @@ function closeCartModal() { // Funktion til at lukke en modal boks, som her er v
 var closeModalButton = document.getElementById('close-modal'); // Henter lukke knappen fra DOM
 closeModalButton.addEventListener('click', closeCartModal); // click event til at lukke kurven - closCartModal funktionen kaldes ved click
 
-var reserveLink = document.getElementById('reserveBtn'); // Henter reserver knappen i DOM
-reserveLink.addEventListener('click', addToCart); // click event til at lægge produkt i kurven - her kaldes addToCart ved click.
+var reserveLink = document.getElementById('reserveBtn');
+if (reserveLink) {
+  reserveLink.addEventListener('click', addToCart);
+}
+
 
 function addToCart(event) { // Definere funktionen
   event.preventDefault(); // stopper standard opførsel

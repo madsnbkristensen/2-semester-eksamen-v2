@@ -120,7 +120,15 @@ header {
   z-index: 2;
 }
 
-/* .submenu {
+.submenu{
+  display: none;
+}
+
+#submenu-mobile{
+  display: none;
+}
+
+/* .submenu-mobile {
   display: none;
   position: absolute;
   padding-top: 80px;
@@ -128,7 +136,7 @@ header {
   overflow: hidden;
 }
 
-.nav-item:hover .submenu {
+.nav-item:hover .submenu-mobile {
   display: grid;
   width: 200%;
   gap: 30px;
@@ -157,6 +165,7 @@ header .logo-2 {
 header {
   transition: 0.5s;
 }
+
 
 header.sticky {
   position: sticky;
@@ -206,12 +215,38 @@ header .underside-logo-2 {
     top: 100%;
     width: 100vw;
     justify-content: center;
+    align-items: center;
     gap: 40px;
-    background-color: var(--mediumred);
+    background-color: white;
+    border-top: 1px solid black;
+    height: 50px;
   }
   
   .submenu li{
     list-style-type: none;
+  }
+
+  header:hover{
+    background-color: white;
+    box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  header:hover .nav-link{
+    color: black;
+  }
+  
+  header:hover i{
+    color: black;
+  }
+  
+  header:hover .logo-1{
+    display: none;
+  }
+  
+  header:hover .logo-2{
+    display: block;
   }
 }
 
@@ -828,6 +863,28 @@ footer h6 {
   .nav-menu.active a {
     color: black;
   }
+
+  #submenu-mobile{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+  }
+
+  #submenu-mobile a{
+    color: #780000;
+  }
+
+ /* .navbar ul li{
+  margin: 0;
+  align-items: start;
+ } */
+
+ .nav-link{
+  margin-bottom: 10px;
+  border-bottom: 1px solid black;
+ }
+
+
 }
 
 /*End of burger menu */
