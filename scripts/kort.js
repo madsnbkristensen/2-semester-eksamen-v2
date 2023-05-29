@@ -28,4 +28,3 @@ async function initMap() {
 
 //Running the function
 
-initMap();
