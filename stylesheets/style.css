@@ -248,6 +248,9 @@ header .underside-logo-2 {
   header:hover .logo-2{
     display: block;
   }
+
+
+  
 }
 
 /*-------- big foto --------*/
@@ -2691,6 +2694,10 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   header.sticky .logo {
+    height: 80px;
+    margin: 0;
+  }
+  header:hover .logo {
     height: 80px;
     margin: 0;
   }

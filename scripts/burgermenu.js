@@ -21,11 +21,22 @@ const submenu = document.querySelector('.submenu');
 
 produkterLink.addEventListener('mouseenter', () => {
   submenu.style.display = 'flex';
-
 });
 
 produkterLink.addEventListener('mouseleave', () => {
-  submenu.style.display = 'none';
+  setTimeout(() => {
+    if (!submenu.matches(':hover')) {
+      submenu.style.display = 'none';
+    }
+  }, 300); // Add a delay of 300 milliseconds (0.3 seconds) before hiding the submenu
+});
+
+submenu.addEventListener('mouseleave', () => {
+  setTimeout(() => {
+    if (!produkterLink.matches(':hover')) {
+      submenu.style.display = 'none';
+    }
+  }, 0); // Add a delay of 300 milliseconds (0.3 seconds) before hiding the submenu
 });
 
 
