@@ -1,11 +1,11 @@
 // Initialize and add the map
 let map;
 
-//Function to form the map, by importing Googles libraries.
-
+// Function to form the map, by importing Google's libraries.
 async function initMap() {
   // The location of Aarhus vinhandel
-  const aarhusVinhandel = { lat: 56.14780350023491, lng:10.2037641071365 };
+  const aarhusVinhandel = { lat: 56.14780350023491, lng: 10.2037641071365 };
+
   // Request needed libraries.
   const { Map } = await google.maps.importLibrary("maps");
   const { Marker } = await google.maps.importLibrary("marker");
@@ -23,8 +23,6 @@ async function initMap() {
     position: aarhusVinhandel,
     title: "Aarhus Vinhandel",
   });
+
+
 }
-
-
-//Running the function
-
