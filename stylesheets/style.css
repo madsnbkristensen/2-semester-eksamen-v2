@@ -1228,6 +1228,10 @@ h4 {
 
 /*--------- om os start --------*/
 
+.peterRystok {
+  display: none;
+}
+
 .aarhus-vinhandel-article {
   display: flex;
   flex-direction: column;
@@ -2561,6 +2565,14 @@ input[type=number]::-webkit-outer-spin-button {
 
   /*-------- om os --------*/
 
+.peterRystok {
+  display: block;
+  width: 500px;
+  -webkit-box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.22); 
+box-shadow: 5px 5px 15px 2px rgba(0,0,0,0.22);
+}
+
+
   .three-bottle-wrapper :nth-child(2) {
     display: block;
   }
@@ -2739,6 +2751,8 @@ input[type=number]::-webkit-outer-spin-button {
   .vores-vision-text-wrapper {
     margin: 0;
   }
+
+
 }
 
 
