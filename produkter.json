@@ -1,6 +1,7 @@
-[{
+[
+    {
         "navn": "Reserva Tempranillo, 2018",
-        "billede": "img/rodvinprodukt3.webp",
+        "billede": "img/finca.webp",
         "billedtekst": "rødvin",
         "pris": "129,50kr",
         "beskrivelse": "Finca la Jaula Reserva Tempranillo er en kompleks rødvin fra Spanien. Den byder på modne frugtnoter, krydderier og elegante tanniner, med en lang og vedholdende finish. En fornøjelig vinoplevelse.",
@@ -17,13 +18,13 @@
 
     },
     {
-        "navn": "La Grange Tiphaine, Ad Libitum, Touraine 2019",
-        "billede": "img/rodvinprodukt2.webp",
+        "navn": "Alain Jaume, Domaine Clos de Sixte, Lirac 2019 ØKO",
+        "billede": "img/lirac.webp",
         "billedtekst": "rødvin",
         "pris": "159,50kr",
         "beskrivelse": "Clos de Sixte har masser af moden og koncentreret bær-fylde. 30% af vinen lagres på fade.. År efter år er denne vin en overraskelse fra en kommune som Lirac.",
         "land": "Frankrig",
-        "område": "Côtes du Rhône",
+        "område": "Rhône",
         "producent": "Alain Jaume",
         "drue": "50% Grenache, 35% Syrah, 15% Mouvedre",
         "oko": "img/oko-color.svg",
@@ -35,12 +36,12 @@
     },
     {
         "navn": "Alain Jaume, Grand Veneur Côtes du Rhône Réserve, 2019",
-        "billede": "img/rodvinprodukt1.webp",
+        "billede": "img/grandVeneur.webp",
         "billedtekst": "rødvin",
         "pris": "119,50kr",
         "beskrivelse": "ØKO. Flot mørk og saftig vin med noter af mørke bær og med blød syre i land-agtig stil.",
         "land": "Frankrig",
-        "område": "Côtes du Rhône",
+        "område": "Rhône",
         "producent": "Alain Jaume",
         "drue": "Grenache, Mouvedre, Syrah",
         "oko": "img/oko-color.svg",
@@ -52,7 +53,7 @@
     },
     {
         "navn": "Reserva Tempranillo, 2018",
-        "billede": "img/rodvinprodukt3.webp",
+        "billede": "img/finca.webp",
         "billedtekst": "rødvin",
         "pris": "129,50kr",
         "beskrivelse": "Finca la Jaula Reserva Tempranillo er en kompleks rødvin fra Spanien. Den byder på modne frugtnoter, krydderier og elegante tanniner, med en lang og vedholdende finish. En fornøjelig vinoplevelse.",
@@ -69,13 +70,13 @@
 
     },
     {
-        "navn": "La Grange Tiphaine, Ad Libitum, Touraine 2019",
-        "billede": "img/rodvinprodukt2.webp",
+        "navn": "Alain Jaume, Domaine Clos de Sixte, Lirac 2019 ØKO",
+        "billede": "img/lirac.webp",
         "billedtekst": "rødvin",
         "pris": "159,50kr",
         "beskrivelse": "Clos de Sixte har masser af moden og koncentreret bær-fylde. 30% af vinen lagres på fade.. År efter år er denne vin en overraskelse fra en kommune som Lirac.",
         "land": "Frankrig",
-        "område": "Côtes du Rhône",
+        "område": "Rhône",
         "producent": "Alain Jaume",
         "drue": "50% Grenache, 35% Syrah, 15% Mouvedre",
         "oko": "img/oko-color.svg",
@@ -87,12 +88,12 @@
     },
     {
         "navn": "Alain Jaume, Grand Veneur Côtes du Rhône Réserve, 2019",
-        "billede": "img/rodvinprodukt1.webp",
+        "billede": "img/grandVeneur.webp",
         "billedtekst": "rødvin",
         "pris": "119,50kr",
         "beskrivelse": "ØKO. Flot mørk og saftig vin med noter af mørke bær og med blød syre i land-agtig stil.",
         "land": "Frankrig",
-        "område": "Côtes du Rhône",
+        "område": "Rhône",
         "producent": "Alain Jaume",
         "drue": "Grenache, Mouvedre, Syrah",
         "oko": "img/oko-color.svg",
