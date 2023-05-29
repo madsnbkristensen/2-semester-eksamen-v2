@@ -15,7 +15,7 @@
   --background: #fdf0d5;
   --bluebg: #003049;
   --mediumred: #C1121F;
-  --select-bg: #FFFCF8; 
+  --select-bg: #FFFCF8;
 }
 
 h1,
@@ -116,15 +116,15 @@ header {
 
 }
 
-.nav-item a{
+.nav-item a {
   z-index: 2;
 }
 
-.submenu{
+.submenu {
   display: none;
 }
 
-#submenu-mobile{
+#submenu-mobile {
   display: none;
 }
 
@@ -145,7 +145,7 @@ header {
   background-color: white;
 } */
 
-header{
+header {
   position: relative;
 }
 
@@ -223,36 +223,36 @@ header .underside-logo-2 {
     border-top: 1px solid black;
     height: 50px;
   }
-  
-  .submenu li{
+
+  .submenu li {
     list-style-type: none;
   }
 
-  header:hover{
+  header:hover {
     background-color: white;
     box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0px 1px 5px 2px rgba(0, 0, 0, 0.2);
   }
-  
-  header:hover .nav-link{
+
+  header:hover .nav-link {
     color: black;
   }
-  
-  header:hover i{
+
+  header:hover i {
     color: black;
   }
-  
-  header:hover .logo-1{
+
+  header:hover .logo-1 {
     display: none;
   }
-  
-  header:hover .logo-2{
+
+  header:hover .logo-2 {
     display: block;
   }
 
 
-  
+
 }
 
 /*-------- big foto --------*/
@@ -361,14 +361,14 @@ footer {
   font-size: 16px;
 }
 
-.se-mere-button:hover{
+.se-mere-button:hover {
   background-color: transparent;
   color: var(--mediumred);
   border: 2px solid var(--mediumred);
   transition: 0.3s;
 }
 
-.se-mere-button-2:hover{
+.se-mere-button-2:hover {
   color: white;
   border: 2px solid white;
 }
@@ -557,7 +557,7 @@ footer {
   cursor: pointer;
 }
 
-.tilmeld-wrapper button:hover{
+.tilmeld-wrapper button:hover {
   background-color: transparent;
   color: var(--bluebg);
   border: var(--bluebg) 2px solid;
@@ -591,7 +591,7 @@ footer {
   font-size: 22px;
 }
 
-.ins-teaser-article a:hover{
+.ins-teaser-article a:hover {
   background-color: transparent;
   border: white 2px solid;
   transition: 0.3s;
@@ -634,38 +634,38 @@ footer li {
 
 /* Fade Animations - Start */
 
-.fade-in{
+.fade-in {
   opacity: 0;
   transition: opacity 250ms ease-in;
 }
 
-.fade-in.appear{
+.fade-in.appear {
   opacity: 1;
 }
 
-.from-left{
+.from-left {
   transform: translateX(-100px);
 }
 
-.from-right{
+.from-right {
   transform: translateX(100px);
 
 }
 
-.from-bottom{
+.from-bottom {
   transform: translateY(50px);
 }
 
 .from-left,
 .from-right,
-.from-bottom{
+.from-bottom {
   transition: opacity 400ms ease-in, transform 400ms ease-in;
   opacity: 0;
 }
 
 .from-left.appear,
 .from-right.appear,
-.from-bottom.appear{
+.from-bottom.appear {
   transform: translateX(0);
   opacity: 1;
 }
@@ -750,11 +750,12 @@ footer h6 {
 }
 
 /*----- 404 fejlside -----*/
-.content-wrapper-404{
+.content-wrapper-404 {
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
+
 .text-404 {
   width: 100%;
   background-color: var(--bluebg);
@@ -766,19 +767,27 @@ footer h6 {
   height: 40vh;
   gap: 20px;
 }
+
 .text-404 h2 {
   font-size: 36px;
 }
+
 .text-404 p {
   font-size: 22px;
   width: 80%;
   max-width: 460px;
   text-align: center;
 }
-.text-404 a{
-  color: white;
+.text-404 span {
   text-decoration: underline;
 }
+
+.text-404 a {
+  color: white;
+  position: absolute;
+  z-index: 10;
+}
+
 .vinflaske-404 img {
   position: absolute;
   right: 0;
@@ -869,25 +878,25 @@ footer h6 {
     color: black;
   }
 
-  #submenu-mobile{
+  #submenu-mobile {
     display: flex;
     flex-direction: column-reverse;
     gap: 10px;
   }
 
-  #submenu-mobile a{
+  #submenu-mobile a {
     color: #780000;
   }
 
- /* .navbar ul li{
+  /* .navbar ul li{
   margin: 0;
   align-items: start;
  } */
 
- .nav-link{
-  margin-bottom: 10px;
-  border-bottom: 1px solid black;
- }
+  .nav-link {
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
 
 
 }
@@ -1058,7 +1067,8 @@ h4 {
 }
 
 .roodvin-kategori {
-  background-image: linear-gradient(rgba(109, 107, 107, 0.527),rgba(105, 100, 100, 0.5)) , url(/img/roodvin-kategori.webp);  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(rgba(109, 107, 107, 0.527), rgba(105, 100, 100, 0.5)), url(/img/roodvin-kategori.webp);
+  font-family: 'Raleway', sans-serif;
   background-position: center;
 }
 
@@ -1123,7 +1133,8 @@ h4 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-image: linear-gradient(rgba(109, 107, 107, 0.527),rgba(105, 100, 100, 0.5)) , url(/img/roodvin-kategori.webp);  font-family: 'Raleway', sans-serif;
+  background-image: linear-gradient(rgba(109, 107, 107, 0.527), rgba(105, 100, 100, 0.5)), url(/img/roodvin-kategori.webp);
+  font-family: 'Raleway', sans-serif;
   padding: 20px;
 }
 
@@ -1548,7 +1559,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 15px;
 }
 
-#shop-more-button:hover{
+#shop-more-button:hover {
   color: #780000;
   background-color: transparent;
   border: 1px solid #780000;
@@ -1563,7 +1574,7 @@ input[type=number]::-webkit-outer-spin-button {
   border-radius: 15px;
 }
 
-#checkout-button:hover{
+#checkout-button:hover {
   background-color: transparent;
   border: 1px solid var(--redbg);
   transition: 0.3s;
@@ -1758,7 +1769,7 @@ input[type=number]::-webkit-outer-spin-button {
   cursor: pointer;
 }
 
-.submit-reserve:hover{
+.submit-reserve:hover {
   background-color: transparent;
   color: #780000;
   border: 2px solid var(--redbg);
@@ -2701,6 +2712,7 @@ input[type=number]::-webkit-outer-spin-button {
     height: 80px;
     margin: 0;
   }
+
   header:hover .logo {
     height: 80px;
     margin: 0;
@@ -2740,6 +2752,3 @@ input[type=number]::-webkit-outer-spin-button {
     margin: 0;
   }
 }
-
-
-
