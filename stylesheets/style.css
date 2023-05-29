@@ -2166,7 +2166,7 @@ input[type=number]::-webkit-outer-spin-button {
   }
 
   .baggrunds-kasse {
-    height: 400px;
+    height: 450px;
   }
 
 
@@ -2194,6 +2194,7 @@ input[type=number]::-webkit-outer-spin-button {
 
   .reserver-section {
     height: 80px;
+    margin: 10px 0px;
   }
 
   .reserver-section input {
@@ -2341,6 +2342,10 @@ input[type=number]::-webkit-outer-spin-button {
     width: 50%;
   }
 
+
+  .baggrunds-kasse {
+    height: 550px;
+  }
 
 
   .product-desc {
@@ -2638,7 +2643,7 @@ input[type=number]::-webkit-outer-spin-button {
 
 
   .baggrunds-kasse {
-    height: 450px;
+    height: 500px;
   }
 
   /* Udvalgt-produkt HTML SLUT */
