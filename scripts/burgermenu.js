@@ -17,3 +17,13 @@ const submenu = document.querySelector('.submenu');
 
 
 
+
+produkterLink.addEventListener('mouseenter', () => {
+  submenu.style.display = 'flex';
+});
+
+produkterLink.addEventListener('mouseleave', () => {
+  submenu.style.display = 'none';
+});
+
+
