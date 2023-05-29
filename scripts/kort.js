@@ -24,8 +24,5 @@ async function initMap() {
     title: "Aarhus Vinhandel",
   });
 
-  // Accessing userAgentData to replace usage of navigator.userAgent
-  const userAgentData = window.navigator.userAgentData;
-  const browserName = userAgentData.brands[0].brand;
-  console.log(`Browser Name: ${browserName}`);
+
 }
