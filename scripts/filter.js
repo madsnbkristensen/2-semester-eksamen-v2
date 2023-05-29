@@ -1,3 +1,6 @@
+
+// jshint esversion: 6
+
 let wines = [];
 
 //Fetching our json file
