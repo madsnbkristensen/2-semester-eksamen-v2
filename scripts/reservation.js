@@ -98,7 +98,7 @@ submitButton.addEventListener('click', function() {
         <p>Du vil modtage svar på mail, så snart vi har set din reservation!</p>
         </section>
         <section class="submit-cont">
-        <button class="submit-reserve">Udforsk Mere</button>
+        <a href="index.html" class="submit-reserve udforsk-mere-end">Udforsk Mere</a>
     </section>
   `;
 
@@ -107,5 +107,6 @@ submitButton.addEventListener('click', function() {
     <img class="checkout-end-img" src="/img/outro.webp">
   `;
 });
+
 
   
