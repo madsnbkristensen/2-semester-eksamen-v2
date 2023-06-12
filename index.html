@@ -17,9 +17,11 @@
     <meta property="og:locale" content="da_dk">
     <meta name="theme-color" content="#fdf0d5">
     <title>Aarhus Vinhandel</title>
-    <script src="https://unpkg.com/phosphor-icons" async defer ></script>
-    <script src="https://kit.fontawesome.com/60e57c91d1.js" crossorigin="anonymous" async defer ></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNS5JsqfFHX_6UR1MR9JJGz6hN20fMhCk&amp;callback=initMap" async defer></script>
+    <script src="https://unpkg.com/phosphor-icons" async defer></script>
+    <script src="https://kit.fontawesome.com/60e57c91d1.js" crossorigin="anonymous" async defer></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNS5JsqfFHX_6UR1MR9JJGz6hN20fMhCk&amp;callback=initMap"
+        async defer></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="icon" href="./img/favicon.webp">
@@ -34,7 +36,7 @@
                 <img class="logo-1 logo" src="./img/logo-01.svg" alt="logo">
                 <img class="logo-2 logo" src="./img/logo-02.svg" alt="logo">
             </a>
-            
+
             <!-- NAV MENU -->
             <div class="header-wrapper">
                 <ul class="nav-menu">
@@ -52,18 +54,20 @@
 
                 <i class="fa-solid fa-basket-shopping nav-icons" onclick="openCartModal()"></i>
                 <i class="fa-solid fa-magnifying-glass nav-icons"></i>
-            
+
                 <!-- BURGER MENU -->
-        
+
                 <label for="burgermenu" class="hamburger">
                     <input id="burgermenu" class="dropdown" type="checkbox">
                     <svg viewBox="0 0 32 32">
-                        <path class="line line-top-bottom" d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"></path>
+                        <path class="line line-top-bottom"
+                            d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                        </path>
                         <path class="line" d="M7 16 27 16"></path>
                     </svg>
                 </label>
             </div>
-            
+
         </nav>
 
         <ul class="submenu">
@@ -119,16 +123,16 @@
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides">
                         <img src="./img/roodvin_finca.webp" alt="Finca rødvin">
-                       
+
                     </div>
 
                     <div class="mySlides">
                         <img src="./img/roodvin_grandVeneur.webp" alt="Grand Veneur rødvin">
-                     
+
                     </div>
 
                     <div class="mySlides">
-                        <img  src="./img/roodvin_lirac.webp" alt="Lirac Rødvin">
+                        <img src="./img/roodvin_lirac.webp" alt="Lirac Rødvin">
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -161,17 +165,17 @@
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides2">
                         <img src="./img/rom_bumbu.webp" alt="Bumbu Rom">
-                       
+
                     </div>
 
                     <div class="mySlides2">
-                        <img  src="./img/gin_sloe.webp" alt="Sloe Gin">
-                        
+                        <img src="./img/gin_sloe.webp" alt="Sloe Gin">
+
                     </div>
 
                     <div class="mySlides2">
                         <img src="./img/gin_oldStills.webp" alt="Old Stills">
-                       
+
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -205,15 +209,15 @@
 
                     <!-- Full-width images with number and caption text -->
                     <div class="mySlides3">
-                        <img   src="./img/ool_dalva.webp" alt="Dalva Øl">
+                        <img src="./img/ool_dalva.webp" alt="Dalva Øl">
                     </div>
 
                     <div class="mySlides3">
-                        <img  src="./img/ool_laBio.webp" alt="Labio Øl">
+                        <img src="./img/ool_laBio.webp" alt="Labio Øl">
                     </div>
 
                     <div class="mySlides3">
-                        <img   src="./img/ool_laMaline.webp" alt="La Maline Øl">
+                        <img src="./img/ool_laMaline.webp" alt="La Maline Øl">
                     </div>
 
                     <!-- Next and previous buttons -->
@@ -222,9 +226,9 @@
                 </div>
 
                 <div class="desktop-img-container">
-                    <img  src="./img/ool_dalva.webp" alt="Dalva">
-                    <img  src="./img/ool_laBio.webp" alt="Labio">
-                    <img   src="./img/ool_laMaline.webp" alt="La Maline">
+                    <img src="./img/ool_dalva.webp" alt="Dalva">
+                    <img src="./img/ool_laBio.webp" alt="Labio">
+                    <img src="./img/ool_laMaline.webp" alt="La Maline">
                 </div>
 
                 <!-- The dots/circles -->
@@ -245,7 +249,7 @@
                         Vinhandel. Skynd dig og meld dig ind, og gå ikke glip af chancen for et godt tilbud! </p>
                 </div>
                 <div class="tilmeld-wrapper">
-                    <form action="#" autocomplete="on">
+                    <form id="emailForm" name="submit-to-google-sheet" autocomplete="on">
                         <div class="input-felt input-navn">
                             <label for="nyhedsbrev-navn">Navn</label>
                             <input type="text" id="nyhedsbrev-navn" name="navn" autocomplete="name" required>
@@ -254,10 +258,10 @@
                             <label for="nyhedsbrev-email">Email</label>
                             <input type="email" id="nyhedsbrev-email" name="email" autocomplete="email" required>
                         </div>
-                        
+
                         <button id="tilmeldBtn" type="submit" name="submit">Tilmeld</button>
                     </form>
-                    
+
                 </div>
             </section>
         </article>
@@ -305,8 +309,10 @@
                 </section>
                 <section class="soMe-footer">
                     <h6>SoMe</h6>
-                  <a href="https://www.instagram.com/aarhusvinhandel/?hl=da" target="_blank" > <i class="fa-brands fa-instagram soMe" style="color: #ffffff;"></i> </a> 
-                  <a href="https://www.facebook.com/aarhusvinhandel" target="_blank" >  <i class="fa-brands fa-facebook soMe" style="color: #ffffff;"></i> </a>
+                    <a href="https://www.instagram.com/aarhusvinhandel/?hl=da" target="_blank"> <i
+                            class="fa-brands fa-instagram soMe" style="color: #ffffff;"></i> </a>
+                    <a href="https://www.facebook.com/aarhusvinhandel" target="_blank"> <i
+                            class="fa-brands fa-facebook soMe" style="color: #ffffff;"></i> </a>
                 </section>
             </div>
             <section class="aabningstider-footer">
@@ -330,9 +336,7 @@
     <script src="/scripts/addtocart.js"></script>
     <script src="/scripts/fade.js"></script>
     <script src="/scripts/tilmeld.js"></script>
-
-
-   
+    <script src="/scripts/newsletter.js"></script>
 </body>
 
 </html>
