@@ -4,6 +4,10 @@ const emailForm = document.getElementById('emailForm');
 emailForm.addEventListener('submit', e => {
   e.preventDefault();
   fetch(scriptURL, { method: 'POST', body: new FormData(emailForm) })
-    .then(response => console.log('Success!', response))
+
+    .then(response => { console.log('Success!', response)
+    emailForm.reset();
+  })
+
     .catch(error => console.error('Error!', error.message));
 });
